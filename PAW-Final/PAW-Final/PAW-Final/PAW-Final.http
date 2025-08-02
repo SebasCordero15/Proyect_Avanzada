@@ -1,0 +1,6 @@
+@PAW_Final_HostAddress = http://localhost:5269
+
+GET {{PAW_Final_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
