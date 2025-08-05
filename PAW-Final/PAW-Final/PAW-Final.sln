@@ -1,13 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36221.1 d17.14
+VisualStudioVersion = 17.14.36221.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW-Final", "PAW-Final\PAW-Final.csproj", "{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.API", "PAW-Final\PAW.API.csproj", "{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Models", "PAW.Models\PAW.Models.csproj", "{8247C843-100A-4207-A10B-5DFA022A8B32}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Data", "PAW.Data\PAW.Data.csproj", "{E51EE1E4-CDE8-41FE-A870-1EA658752707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Repository", "PAW.Repository\PAW.Repository.csproj", "{86620E3A-C881-4FE3-88AA-362F9FB019E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Business", "PAW.Business\PAW.Business.csproj", "{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAW.Architecture", "PAW.Architecture\PAW.Architecture.csproj", "{BEB2F1CA-67EE-4086-986A-30E69AA3714C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +33,18 @@ Global
 		{E51EE1E4-CDE8-41FE-A870-1EA658752707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E51EE1E4-CDE8-41FE-A870-1EA658752707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E51EE1E4-CDE8-41FE-A870-1EA658752707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86620E3A-C881-4FE3-88AA-362F9FB019E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86620E3A-C881-4FE3-88AA-362F9FB019E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86620E3A-C881-4FE3-88AA-362F9FB019E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86620E3A-C881-4FE3-88AA-362F9FB019E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEB2F1CA-67EE-4086-986A-30E69AA3714C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEB2F1CA-67EE-4086-986A-30E69AA3714C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEB2F1CA-67EE-4086-986A-30E69AA3714C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEB2F1CA-67EE-4086-986A-30E69AA3714C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

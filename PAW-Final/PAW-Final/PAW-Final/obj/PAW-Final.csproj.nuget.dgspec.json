@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Desktop\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj": {}
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Desktop\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj": {
+    "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Desktop\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj",
+        "projectUniqueName": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj",
         "projectName": "PAW-Final",
-        "projectPath": "C:\\Users\\Maria\\Desktop\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Desktop\\PAW-Final\\PAW-Final\\PAW-Final\\obj\\",
+        "projectPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.csproj",
+        "packagesPath": "C:\\Users\\juans\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\juans\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

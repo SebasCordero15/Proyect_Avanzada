@@ -1,0 +1,12 @@
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\bin\Debug\net8.0\PAW.Models.deps.json
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\bin\Debug\net8.0\PAW.Models.dll
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\bin\Debug\net8.0\PAW.Models.pdb
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.AssemblyInfoInputs.cache
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.AssemblyInfo.cs
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.csproj.CoreCompileInputs.cache
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.sourcelink.json
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.dll
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\refint\PAW.Models.dll
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\PAW.Models.pdb
+C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Models\obj\Debug\net8.0\ref\PAW.Models.dll

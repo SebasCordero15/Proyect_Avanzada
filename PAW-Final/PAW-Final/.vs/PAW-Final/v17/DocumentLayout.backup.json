@@ -1,38 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sebas\\Desktop\\PAW-Final\\",
+  "WorkspaceRootPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.architecture\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\comentarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\comentarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\listumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\listumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\tarjetumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tarjetumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.data\\paw.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\paw.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.models\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.data\\mssql\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.models\\entities\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.models\\entities\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\list.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\paw-final\\paw.models\\entities\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,27 +78,202 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JsonSerialize.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\JsonSerialize.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeToolTip": "PAW.Architecture\\JsonSerialize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:58:00.489Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClientRestProvider.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeToolTip": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:57:22.025Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d562c6a0-d2fe-4c19-a8b3-e5cbc09bf375}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TableroViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:44:33.902Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5c82a791-7c9f-441e-952b-8848655dd85e}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:42:55.775Z",
+              "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5e929736-0e81-4d52-a78e-546a1649faca}"
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ComentarioViewmodel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:38:37.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Listum.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Listum.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Listum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:21.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tablero.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tablero.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tablero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:25.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:31.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:59.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TarjetumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:43.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Tarjetum.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:28.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Comentario.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comentario.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Comentario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:35:59.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProyectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T05:50:24.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PAW.Data",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeDocumentMoniker": "PAW.Data\\PAW.Data.csproj",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeToolTip": "PAW.Data\\PAW.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-05T05:42:04.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "PAW-Final.http",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeDocumentMoniker": "PAW-Final\\PAW-Final.http",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeToolTip": "PAW-Final\\PAW-Final.http",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-05T05:35:02.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -70,15 +281,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
@@ -86,11 +293,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 15,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW-Final\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
               "RelativeDocumentMoniker": "PAW-Final\\Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW-Final\\Program.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
               "RelativeToolTip": "PAW-Final\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -99,146 +306,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 16,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW-Final\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
               "RelativeDocumentMoniker": "PAW-Final\\appsettings.json",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW-Final\\appsettings.json",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
               "RelativeToolTip": "PAW-Final\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-30T06:10:03.493Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DBContext.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Data\\MSSql\\DBContext.cs",
-              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\DBContext.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Data\\MSSql\\DBContext.cs",
-              "RelativeToolTip": "PAW.Data\\MSSql\\DBContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T06:03:33.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Comments.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Comments.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comments.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Comments.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Comments.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T06:00:26.805Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Card.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Card.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Card.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Card.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Card.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T06:00:14.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "List.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\List.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\List.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\List.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\List.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:59:47.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Board.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Board.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Board.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\Board.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:59:14.348Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\User.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\PAW-Final\\PAW.Models\\Entities\\User.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T05:59:06.306Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 99,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:21:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 150,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }
