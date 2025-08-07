@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAW.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1492baf47b79716046a2e376a3bfeb56f405daf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef192c58826675d44c13d3f93be7b636af3dddcd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAW.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAW.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

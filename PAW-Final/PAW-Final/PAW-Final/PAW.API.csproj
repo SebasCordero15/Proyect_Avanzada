@@ -8,7 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PAW.Business\PAW.Business.csproj" />
+    <ProjectReference Include="..\PAW.Data\PAW.Data.csproj" />
+    <ProjectReference Include="..\PAW.Models\PAW.Models.csproj" />
+    <ProjectReference Include="..\PAW.Repository\PAW.Repository.csproj" />
   </ItemGroup>
 
 </Project>

@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace PAW.Business
 {
-    public class ComentarioService : IComentarioBusiness
+    public class ComentarioBusiness : IComentarioBusiness
     {
         private readonly IComentarioRepository _comentarioRepository;
 
-        public ComentarioService(IComentarioRepository comentarioRepository)
+        public ComentarioBusiness(IComentarioRepository comentarioRepository)
         {
             _comentarioRepository = comentarioRepository;
         }
