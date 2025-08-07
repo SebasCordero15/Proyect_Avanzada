@@ -3,6 +3,98 @@
   "WorkspaceRootPath": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\tarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\tarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\interfaces\\itarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\itarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\listumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\listumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\interfaces\\ilistumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\ilistumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\tablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\tablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\interfaces\\itablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\itablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\interfaces\\iusuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\iusuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\itarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\itarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\listumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\listumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\ilistumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\ilistumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\tablerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\tablerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\itablerointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\itablerointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\comentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\comentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.business\\interfaces\\icomentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\icomentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\paw.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\paw.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -59,16 +151,16 @@
       "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\paw.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW-Final.csproj|solutionrelative:paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\juans\\onedrive\\documentos\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,201 +170,305 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "JsonSerialize.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
-              "RelativeDocumentMoniker": "PAW.Architecture\\JsonSerialize.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
-              "RelativeToolTip": "PAW.Architecture\\JsonSerialize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:58:00.489Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ClientRestProvider.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
-              "RelativeDocumentMoniker": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
-              "RelativeToolTip": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Title": "TarjetumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\TarjetumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\TarjetumBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\TarjetumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\TarjetumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:57:22.025Z",
+              "WhenOpened": "2025-08-07T05:20:27.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TableroViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TableroViewModel.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
-              "RelativeToolTip": "PAW.Models\\ViewModels\\TableroViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "ITarjetumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:44:33.902Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListumViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ListumViewModel.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
-              "RelativeToolTip": "PAW.Models\\ViewModels\\ListumViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:42:55.775Z",
+              "WhenOpened": "2025-08-07T05:20:12.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ComentarioViewmodel.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
-              "RelativeToolTip": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "ListumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\ListumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\ListumBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\ListumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\ListumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:38:37.288Z",
+              "WhenOpened": "2025-08-07T05:19:50.686Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Listum.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Listum.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Listum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "IListumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:36:21.966Z",
+              "WhenOpened": "2025-08-07T05:19:33.433Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Tablero.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tablero.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Tablero.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "TableroBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\TableroBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\TableroBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\TableroBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\TableroBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:36:25.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:36:31.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UsuarioViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
-              "RelativeToolTip": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:43:59.113Z",
+              "WhenOpened": "2025-08-07T05:19:11.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "TarjetumViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
-              "RelativeToolTip": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Title": "ITableroBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:43:43.545Z",
+              "WhenOpened": "2025-08-07T05:18:51.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\UsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\UsuarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:18:24.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:17:41.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TarjetumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:16:49.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ITarjetumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:16:32.915Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Tarjetum.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "ListumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ListumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\ListumRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ListumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\ListumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:36:28.112Z",
+              "WhenOpened": "2025-08-07T05:16:11.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Comentario.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comentario.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Comentario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Title": "IListumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T06:35:59.543Z",
+              "WhenOpened": "2025-08-07T05:15:33.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "ProyectDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Title": "TableroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TableroRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TableroRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TableroRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\TableroRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-05T05:50:24.562Z",
+              "WhenOpened": "2025-08-07T05:14:35.606Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "PAW.Data",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
-              "RelativeDocumentMoniker": "PAW.Data\\PAW.Data.csproj",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
-              "RelativeToolTip": "PAW.Data\\PAW.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-05T05:42:04.021Z",
+              "Title": "ITableroInterface.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:45.299Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "PAW-Final.http",
-              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
-              "RelativeDocumentMoniker": "PAW-Final\\PAW-Final.http",
-              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
-              "RelativeToolTip": "PAW-Final\\PAW-Final.http",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-08-05T05:35:02.565Z",
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:25.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:03.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ComentarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\ComentarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\ComentarioBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\ComentarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\ComentarioBusiness.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:07:22.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IComentarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:06:34.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:04:22.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "IComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:03:51.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:00:44.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:59:35.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PAW.Repository",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+              "RelativeDocumentMoniker": "PAW.Repository\\PAW.Repository.csproj",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+              "RelativeToolTip": "PAW.Repository\\PAW.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:58:54.393Z",
               "EditorCaption": ""
             },
             {
@@ -293,7 +489,202 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 24,
+              "Title": "JsonSerialize.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\JsonSerialize.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeToolTip": "PAW.Architecture\\JsonSerialize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:58:00.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ClientRestProvider.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeToolTip": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:57:22.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TableroViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:44:33.902Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ListumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:42:55.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ComentarioViewmodel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:38:37.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Listum.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Listum.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Listum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:21.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Tablero.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tablero.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tablero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:25.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:31.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:59.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TarjetumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:43.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Tarjetum.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:28.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Comentario.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comentario.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Comentario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:35:59.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ProyectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T05:50:24.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "PAW.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeDocumentMoniker": "PAW.Data\\PAW.Data.csproj",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeToolTip": "PAW.Data\\PAW.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-05T05:42:04.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "PAW-Final.http",
+              "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeDocumentMoniker": "PAW-Final\\PAW-Final.http",
+              "ToolTip": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeToolTip": "PAW-Final\\PAW-Final.http",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-05T05:35:02.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
               "RelativeDocumentMoniker": "PAW-Final\\Program.cs",
@@ -306,7 +697,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\juans\\OneDrive\\Documentos\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
               "RelativeDocumentMoniker": "PAW-Final\\appsettings.json",
