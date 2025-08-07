@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "Nuevo perfil",
+    "Projects": [
+      {
+        "Path": "PAW-Final\\PAW.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
