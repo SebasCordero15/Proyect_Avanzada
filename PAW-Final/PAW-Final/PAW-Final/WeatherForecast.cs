@@ -1,4 +1,4 @@
-namespace PAW_Final
+namespace PAW.API
 {
     public class WeatherForecast
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace PAW_Final.Controllers
+namespace PAW.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
