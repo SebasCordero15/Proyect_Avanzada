@@ -1,0 +1,12 @@
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\bin\Debug\net8.0\PAW.Architecture.deps.json
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\bin\Debug\net8.0\PAW.Architecture.dll
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\bin\Debug\net8.0\PAW.Architecture.pdb
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.AssemblyInfoInputs.cache
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.AssemblyInfo.cs
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.csproj.CoreCompileInputs.cache
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.sourcelink.json
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.dll
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\refint\PAW.Architecture.dll
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\PAW.Architecture.pdb
+C:\Users\sebas\Desktop\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Architecture\obj\Debug\net8.0\ref\PAW.Architecture.dll

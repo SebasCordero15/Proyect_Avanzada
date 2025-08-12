@@ -5,6 +5,10 @@
       {
         "Path": "PAW-Final\\PAW.API.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "PAW.Mvc\\PAW.Mvc.csproj",
+        "Action": "Start"
       }
     ]
   }
