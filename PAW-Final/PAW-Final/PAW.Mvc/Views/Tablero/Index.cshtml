@@ -1,0 +1,33 @@
+﻿@model List<PAW.Models.ViewModels.TableroViewModel>
+@{
+    ViewData["Title"] = "Tableros";
+}
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h2 class="mb-0">Tableros</h2>
+    <a asp-action="Create" class="btn btn-primary btn-sm">Nuevo tablero</a>
+</div>
+
+@if (!(Model?.Any() ?? false))
+{
+    <div class="alert alert-info">No hay tableros todavía.</div>
+}
+else
+{
+    <div class="list-group">
+        @foreach (var t in Model)
+        {
+            <div class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-semibold">@t.Titulo</div>
+                    <small class="text-muted">@t.FechaCreacion?.ToString("dd/MM/yyyy")</small>
+                </div>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-outline-primary btn-sm" asp-controller="Board" asp-action="Details" asp-route-id="@t.Id">Abrir</a>
+                    <a class="btn btn-outline-secondary btn-sm" asp-action="Edit" asp-route-id="@t.Id">Editar</a>
+                    <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@t.Id">Eliminar</a>
+                </div>
+            </div>
+        }
+    </div>
+}
+

@@ -2,8 +2,9 @@
 
 <div class="card-item"
      data-card-id="@Model.Id"
-     data-open-card="@Model.Id"
      data-card-title="@Model.Titulo"
+     data-card-desc="@Model.Descripcion"
+     data-card-due="@(Model.FechaVencimiento.HasValue? Model.FechaVencimiento.Value.ToString("yyyy-MM-dd") : "")"
      title="Abrir tarjeta">
 
     <div class="d-flex align-items-start justify-content-between gap-2">
@@ -13,13 +14,53 @@
             {
                 <div class="text-muted small mt-1">@Model.Descripcion</div>
             }
+            @if (Model.FechaVencimiento.HasValue)
+            {
+                <div class="text-muted small">Vence: @Model.FechaVencimiento.Value.ToString("dd/MM/yyyy")</div>
+            }
         </div>
+
         <div class="dropdown">
-            <button class="btn btn-sm btn-light border-0" data-bs-toggle="dropdown">⋮</button>
+            <button class="btn btn-sm btn-light border-0" data-bs-toggle="dropdown" aria-expanded="false">⋮</button>
             <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item btn-edit-card" href="#" data-card-id="@Model.Id">Editar</a></li>
                 <li><a class="dropdown-item text-danger btn-delete-card" href="#" data-card-id="@Model.Id">Eliminar</a></li>
             </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de edición para ESTA tarjeta -->
+<div class="modal fade" id="editCardModal-@Model.Id" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form method="post" data-edit-card-form="@Model.Id">
+                @Html.AntiForgeryToken()
+                <div class="modal-header">
+                    <h5 class="modal-title">Editar tarjeta</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <div class="mb-2">
+                        <label class="form-label">Título</label>
+                        <input class="form-control" type="text" name="titulo" value="@Model.Titulo" required />
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Descripción</label>
+                        <textarea class="form-control" name="descripcion" rows="3">@Model.Descripcion</textarea>
+                    </div>
+                    <div class="mb-2">
+                        <label class="form-label">Fecha de vencimiento</label>
+                        <input class="form-control" type="date" name="fechaVencimiento"
+                               value="@(Model.FechaVencimiento.HasValue? Model.FechaVencimiento.Value.ToString("yyyy-MM-dd") : "")" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Cancelar</button>
+                    <button class="btn btn-primary" type="submit">Guardar</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
