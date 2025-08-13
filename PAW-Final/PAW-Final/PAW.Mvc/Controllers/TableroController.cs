@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PAW.Models.Entities;
 using PAW.Models.ViewModels;
 using System.Net.Http.Json;
 
@@ -40,19 +41,45 @@ namespace PAW.Mvc.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(TableroViewModel vm)
         {
-            if (!ModelState.IsValid) return View(vm);
+            if (!ModelState.IsValid)
+                return View(vm);
 
-            var client = _http.CreateClient("api");
-            var res = await client.PostAsJsonAsync("api/tablero", vm);
-
-            if (!res.IsSuccessStatusCode)
+            try
             {
-                ModelState.AddModelError("", "No se pudo crear el tablero.");
+                // Mapear TableroViewModel → Tablero
+                var tablero = new Tablero
+                {
+                    Titulo = vm.Titulo,
+                    FechaCreacion = DateTime.Now, // asignar fecha actual
+                    UsuarioId = vm.UsuarioId,
+                    Lista = vm.Lista?.Select(l => new Listum
+                    {
+                        Titulo = l.Titulo
+                        // asigna otras propiedades de Listum si existen
+                    }).ToList() ?? new List<Listum>()
+                };
+
+                var client = _http.CreateClient("api");
+                var res = await client.PostAsJsonAsync("api/tablero", tablero);
+
+                if (!res.IsSuccessStatusCode)
+                {
+                    // Leer el mensaje de error real de la API
+                    var error = await res.Content.ReadAsStringAsync();
+                    ModelState.AddModelError("", $"No se pudo crear el tablero: {error}");
+                    return View(vm);
+                }
+
+                // Redirigir al índice de tableros si todo fue bien
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                // Capturar cualquier excepción inesperada
+                ModelState.AddModelError("", $"Ocurrió un error: {ex.Message}");
                 return View(vm);
             }
-            return RedirectToAction(nameof(Index));
         }
-
         // GET: Tablero/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
