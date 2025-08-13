@@ -1,67 +1,60 @@
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using PAW.Data.MSSql;
-using PAW.Models.Entities;
-using PAW.Mvc.Models;
+﻿using Microsoft.AspNetCore.Mvc;
+using PAW.Models.ViewModels;
 using System;
-using System.Data.Common;
-using System.Diagnostics;
+using System.Linq;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace PAW.Mvc.Controllers
 {
-    public class BoardsController : Controller
-    {
-        private readonly ProyectDbContext _db;
-        public BoardsController(ProyectDbContext db) => _db = db;
+    
 
-        // Listado de tableros (index de funciones)
-        public async Task<IActionResult> Index()
+    [Authorize]
+    public class BoardController : Controller
+    {
+        // GET: /Board/Index/{id?}
+        // id = Id del tablero
+        [HttpGet]
+        public IActionResult Index(int id = 1)
         {
-            var boards = await _db.Tableros
-                .Include(t => t.Lista)
-                .Select(t => new BoardsIndexVm
+            // Mock para ver la UI. Luego lo cambiamos por llamadas a tu API.
+            var vm = new BoardPageViewModel
+            {
+                Tablero = new TableroViewModel
                 {
-                    Id = t.Id,
-                    Titulo = t.Titulo,
-                    CantListas = t.Lista.Count,
-                    CantTarjetas = t.Lista.SelectMany(l => l.Tarjeta).Count()
-                })
-                .OrderBy(t => t.Titulo)
-                .ToListAsync();
+                    Id = id,
+                    Titulo = "Proyecto PAW - Board de ejemplo",
+                    FechaCreacion = DateTime.Now,
+                    UsuarioId = 1
+                },
+                Columnas = new List<ListaConTarjetas>
+                {
+                    new ListaConTarjetas
+                    {
+                        Lista = new ListumViewModel{ Id=101, Titulo="Por hacer", Orden=1, TableroId=id },
+                        Tarjetas = new List<TarjetumViewModel>{
+                            new TarjetumViewModel{ Id=1001, Titulo="Configurar API", Descripcion="Endpoints CRUD", ListaId=101 },
+                            new TarjetumViewModel{ Id=1002, Titulo="Diseñar UI", Descripcion="Layout de columnas", ListaId=101 },
+                        }
+                    },
+                    new ListaConTarjetas
+                    {
+                        Lista = new ListumViewModel{ Id=102, Titulo="En progreso", Orden=2, TableroId=id },
+                        Tarjetas = new List<TarjetumViewModel>{
+                            new TarjetumViewModel{ Id=1003, Titulo="Servicios MVC", Descripcion="Service layer hacia API", ListaId=102 },
+                        }
+                    },
+                    new ListaConTarjetas
+                    {
+                        Lista = new ListumViewModel{ Id=103, Titulo="Hecho", Orden=3, TableroId=id },
+                        Tarjetas = new List<TarjetumViewModel>{
+                            new TarjetumViewModel{ Id=1004, Titulo="VM compuestos", Descripcion="BoardPageViewModel listo", ListaId=103 },
+                        }
+                    }
+                }
+            };
 
-            return View(boards);
+            return View("Index", vm);
         }
-
-        [HttpPost, ValidateAntiForgeryToken]
-        public async Task<IActionResult> Add(string titulo)
-        {
-            if (!string.IsNullOrWhiteSpace(titulo))
-            {
-                _db.Tableros.Add(new Tablero { Titulo = titulo });
-                await _db.SaveChangesAsync();
-            }
-            return RedirectToAction(nameof(Index));
-        }
-
-        [HttpPost, ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id)
-        {
-            var b = await _db.Tableros.FindAsync(id);
-            if (b != null)
-            {
-                _db.Tableros.Remove(b);
-                await _db.SaveChangesAsync();
-            }
-            return RedirectToAction(nameof(Index));
-        }
-    }
-
-    // ViewModel compacto para el �ndice
-    public class BoardsIndexVm
-    {
-        public int Id { get; set; }
-        public string? Titulo { get; set; }
-        public int CantListas { get; set; }
-        public int CantTarjetas { get; set; }
     }
 }

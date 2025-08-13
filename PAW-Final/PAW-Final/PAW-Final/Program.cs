@@ -9,16 +9,15 @@ using PAW.Data.MSSql;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container
+// Controllers + Swagger
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// 🧠 Configuración del DbContext
 builder.Services.AddDbContext<ProyectDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-// Repositorios (RepositoryBase + específicos)
+// Repos
 builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
@@ -26,16 +25,33 @@ builder.Services.AddScoped<IListumRepository, ListumRepository>();
 builder.Services.AddScoped<ITableroRepository, TableroRepository>();
 builder.Services.AddScoped<ITarjetumRepository, TarjetumRepository>();
 
-// Negocio (Business)
+// Business
 builder.Services.AddScoped<IUsuarioBusiness, UsuarioBusiness>();
 builder.Services.AddScoped<IComentarioBusiness, ComentarioBusiness>();
 builder.Services.AddScoped<IListumBusiness, ListumBusiness>();
 builder.Services.AddScoped<ITableroBusiness, TableroBusiness>();
 builder.Services.AddScoped<ITarjetumBusiness, TarjetumBusiness>();
 
+// 🔓 CORS DEV (agrega aquí los orígenes que te llaman: Swagger, tu MVC, etc.)
+const string CorsDev = "CorsDev";
+builder.Services.AddCors(opt =>
+{
+    opt.AddPolicy(CorsDev, p =>
+    {
+        p.WithOrigins(
+             "https://localhost:7218", // Swagger de esta API (si aplica)
+             "http://localhost:7218",
+             "https://localhost:7151", // tu MVC (ajusta)
+             "http://localhost:5000"
+          )
+         .AllowAnyHeader()
+         .AllowAnyMethod();
+        // Nota: NO uses AllowCredentials con AllowAnyOrigin
+    });
+});
+
 var app = builder.Build();
 
-// Middlewares
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -44,8 +60,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+// 👇 ¡CORS debe ir antes de MapControllers!
+app.UseCors(CorsDev);
+
 app.UseAuthorization();
 
 app.MapControllers();
+
+// Endpoint de salud rápido (opcional)
+app.MapGet("/ping", () => Results.Ok("pong"));
 
 app.Run();

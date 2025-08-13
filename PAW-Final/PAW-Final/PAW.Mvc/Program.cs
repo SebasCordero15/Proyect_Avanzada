@@ -1,36 +1,44 @@
-using Microsoft.EntityFrameworkCore;
-using PAW.Data.MSSql;
-using PAW.Mvc.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 
-// DbContext
-builder.Services.AddDbContext<ProyectDbContext>(opt =>
-    opt.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
-builder.Services.AddScoped<IAuthService, AuthService>();
+// 4.1) HttpClient hacia la API (ajusta la BaseAddress a tu API real)
+builder.Services.AddHttpClient("api", c =>
+{
+    c.BaseAddress = new Uri("https://localhost:7218/"); // <-- AJUSTA puerto/base de tu PAW.API
+});
+
+// 4.2) Cookie Authentication
+builder.Services
+    .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+    .AddCookie(o =>
+    {
+        o.LoginPath = "/Account/Login";
+        o.LogoutPath = "/Account/Logout";
+        o.AccessDeniedPath = "/Account/Login";
+        o.SlidingExpiration = true;
+        // o.ExpireTimeSpan = TimeSpan.FromHours(8);
+    });
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
 
+app.UseAuthentication();   // <<--- NUEVO
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Account}/{action=Login}/{id?}"); // opcional: arrancar en login
 
 app.Run();

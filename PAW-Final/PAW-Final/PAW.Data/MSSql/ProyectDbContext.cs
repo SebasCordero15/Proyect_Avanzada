@@ -26,12 +26,14 @@ public partial class ProyectDbContext : DbContext
 
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
-    public virtual DbSet<Sesion> Sesiones { get; set; } 
-
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-1MSSGI4\\SQLEXPRESS;Database=ProyectDB;Trusted_Connection=True;TrustServerCertificate=True;");
-
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+            // Usa el nombre de la cadena en vez de hardcodear:
+            optionsBuilder.UseSqlServer("Name=DefaultConnection");
+        }
+    }
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Comentario>(entity =>
@@ -115,33 +117,6 @@ public partial class ProyectDbContext : DbContext
             entity.Property(e => e.Clave).HasMaxLength(255);
             entity.Property(e => e.Correo).HasMaxLength(100);
             entity.Property(e => e.Nombre).HasMaxLength(100);
-        });
-
-        modelBuilder.Entity<Sesion>(entity =>
-        {
-            entity.HasKey(e => e.Id).HasName("PK__Sesion__3214EC07");
-
-            entity.ToTable("Sesion");
-
-            // Índice único para el token de sesión
-            entity.HasIndex(e => e.Token, "UQ__Sesion__Token").IsUnique();
-
-            // Propiedades
-            entity.Property(e => e.Token).HasMaxLength(200);
-            entity.Property(e => e.Ip).HasMaxLength(45);
-            entity.Property(e => e.UserAgent).HasMaxLength(256);
-
-            // Tiempos y flags
-            entity.Property(e => e.Creado).HasColumnType("datetime2");
-            entity.Property(e => e.Expira).HasColumnType("datetime2");
-            entity.Property(e => e.Revocado).HasDefaultValue(false);
-
-            // Relación con Usuario
-            entity.HasOne(d => d.Usuario)
-                  .WithMany(p => p.Sesiones)
-                  .HasForeignKey(d => d.UsuarioId)
-                  .OnDelete(DeleteBehavior.Cascade)
-                  .HasConstraintName("FK_Sesion_Usuario");
         });
 
         OnModelCreatingPartial(modelBuilder);

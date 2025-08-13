@@ -18,6 +18,4 @@ public partial class Usuario
     public virtual ICollection<Tablero> Tableros { get; set; } = new List<Tablero>();
 
     public virtual ICollection<Tarjetum> Tarjeta { get; set; } = new List<Tarjetum>();
-
-    public virtual ICollection<Sesion> Sesiones { get; set; } = new List<Sesion>();
 }

@@ -1,70 +1,270 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
+  "WorkspaceRootPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\filters\\requireloginattributr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\filters\\requireloginattributr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\paw.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\paw.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\board\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\board\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\board\\_form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.architecture\\paw.architecture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\paw.architecture.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\comentarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\comentarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\listumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\listumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\tarjetumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tarjetumviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\usuarioviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\loginvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\paw.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\paw.models.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\viewmodels\\boardpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\boardpageviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6BDAB4F-1548-4653-BB62-66D72447E711}|Paw.Services\\Paw.Services.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6BDAB4F-1548-4653-BB62-66D72447E711}|Paw.Services\\Paw.Services.csproj|solutionrelative:paw.services\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\tarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\tarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\comentariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\comentariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\paw.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\paw.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\paw.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\paw.repository.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.architecture\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\jsonserialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\tablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\tablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\tablerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\tablerorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\comentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\comentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\interfaces\\itarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\itarjetumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\listumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\listumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\interfaces\\ilistumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\ilistumbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\interfaces\\itablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\itablerobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\usuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\interfaces\\iusuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\iusuariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\itarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\itarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\listumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\listumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\ilistumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\ilistumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\itablerointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\itablerointerface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\usuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\iusuariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.business\\interfaces\\icomentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FFCB8A1-FA94-4390-A37B-5491C3105C5C}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\interfaces\\icomentariobusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\comentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\icomentariorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.repository\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BEB2F1CA-67EE-4086-986A-30E69AA3714C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\providers\\clientrestprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw.data\\paw.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\paw.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\maria\\downloads\\paw-final\\paw-final\\paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\paw-final.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,27 +274,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d562c6a0-d2fe-4c19-a8b3-e5cbc09bf375}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5c82a791-7c9f-441e-952b-8848655dd85e}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{5e929736-0e81-4d52-a78e-546a1649faca}"
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -102,11 +286,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{a34b1c5d-6d37-4a0c-a8b0-99f8e8158b48}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -114,277 +294,833 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Edit.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T00:47:51.509Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RequireLoginAttributr.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
-              "RelativeToolTip": "PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:45:26.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BoardController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\BoardController.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\BoardController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:43:58.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Services\\AuthService.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\AuthService.cs",
-              "RelativeToolTip": "PAW.Mvc\\Services\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:42:42.014Z",
+              "WhenOpened": "2025-08-13T06:53:49.227Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "IAuthService.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\IAuthService.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Services\\IAuthService.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\IAuthService.cs",
-              "RelativeToolTip": "PAW.Mvc\\Services\\IAuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:42:33.093Z",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Create.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Create.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T06:53:22.309Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "_Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_Form.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_Form.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_Form.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_Form.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T06:52:53.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "TableroController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\TableroController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\TableroController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAkwGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:40:32.249Z",
+              "WhenOpened": "2025-08-13T06:42:02.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T06:31:07.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Program.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
+              "RelativeToolTip": "PAW.Mvc\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:50:44.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAgwCYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T05:53:12.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwD0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:52:34.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginVm.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\LoginVm.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\LoginVm.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\LoginVm.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\LoginVm.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:51:51.211Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "PAW.Mvc",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
-              "RelativeDocumentMoniker": "PAW.Mvc\\PAW.Mvc.csproj",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
-              "RelativeToolTip": "PAW.Mvc\\PAW.Mvc.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-13T00:39:12.691Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwCYAAAByAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T05:44:03.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "ProyectDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAkwIoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:32:35.558Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Sesion.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Sesion.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Sesion.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Sesion.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Sesion.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:32:12.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-13T00:29:26.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
-              "RelativeToolTip": "PAW.Mvc\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T23:41:36.018Z",
+              "Title": "_CardItem.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T05:43:19.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-13T00:48:08.741Z",
+              "WhenOpened": "2025-08-13T05:42:35.114Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T05:41:39.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BoardController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwC4AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:41:09.887Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BoardPageViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\BoardPageViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\BoardPageViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\BoardPageViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\BoardPageViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:40:25.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\Paw.Services\\Class1.cs",
+              "RelativeDocumentMoniker": "Paw.Services\\Class1.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\Paw.Services\\Class1.cs",
+              "RelativeToolTip": "Paw.Services\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T05:33:43.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\WeatherForecast.cs",
+              "RelativeToolTip": "PAW-Final\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T07:01:35.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ComentarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\ComentarioController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\ComentarioController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\ComentarioController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\ComentarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:59:43.34Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PAW.Models.csproj",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+              "RelativeDocumentMoniker": "PAW.Models\\PAW.Models.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+              "RelativeToolTip": "PAW.Models\\PAW.Models.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T06:56:55.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PAW.API.csproj",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
+              "RelativeDocumentMoniker": "PAW-Final\\PAW.API.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
+              "RelativeToolTip": "PAW-Final\\PAW.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T06:56:02.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PAW.Architecture.csproj",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\PAW.Architecture.csproj",
+              "RelativeDocumentMoniker": "PAW.Architecture\\PAW.Architecture.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\PAW.Architecture.csproj",
+              "RelativeToolTip": "PAW.Architecture\\PAW.Architecture.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T06:56:28.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
+              "RelativeDocumentMoniker": "PAW-Final\\appsettings.json",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
+              "RelativeToolTip": "PAW-Final\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T06:10:03.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProyectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowH4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T05:50:24.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:57:47.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ListaController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\ListaController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\ListaController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\ListaController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\ListaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:58:45.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:45:06.138Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\appsettings.json",
-              "RelativeDocumentMoniker": "PAW.Mvc\\appsettings.json",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\appsettings.json",
-              "RelativeToolTip": "PAW.Mvc\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-12T23:45:53.583Z",
+              "Title": "TableroController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\TableroController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\TableroController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\TableroController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\TableroController.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:54:35.162Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-12T23:44:28.583Z"
+              "DocumentIndex": 37,
+              "Title": "JsonSerialize.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\JsonSerialize.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\JsonSerialize.cs",
+              "RelativeToolTip": "PAW.Architecture\\JsonSerialize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:58:00.489Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "DocumentIndex": 33,
+              "Title": "TarjetaController.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\TarjetaController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\TarjetaController.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\TarjetaController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\TarjetaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T06:17:16.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "PAW.Repository.csproj",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+              "RelativeDocumentMoniker": "PAW.Repository\\PAW.Repository.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+              "RelativeToolTip": "PAW.Repository\\PAW.Repository.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-07T04:58:54.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "ComentarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\ComentarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\ComentarioBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\ComentarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\ComentarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:07:22.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IUsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:17:41.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Listum.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Listum.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Listum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-12T23:44:19.817Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:21.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Program.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
+              "RelativeToolTip": "PAW-Final\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAgwD8AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T06:10:22.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "UsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\UsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\UsuarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:18:24.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TarjetumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\TarjetumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\TarjetumBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\TarjetumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\TarjetumBusiness.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:20:27.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ITableroBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\ITableroBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:18:51.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "TableroBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\TableroBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\TableroBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\TableroBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\TableroBusiness.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:19:11.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IListumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IListumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:19:33.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ListumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\ListumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\ListumBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\ListumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\ListumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:19:50.686Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ITarjetumBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\ITarjetumBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:20:12.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "TarjetumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAswBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:16:49.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ITarjetumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\ITarjetumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:16:32.915Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ListumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ListumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\ListumRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ListumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\ListumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:16:11.342Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "IListumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IListumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:15:33.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "TableroRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TableroRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TableroRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TableroRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\TableroRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:14:35.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ITableroInterface.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\ITableroInterface.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:45.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:25.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "IUsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:13:03.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "IComentarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IComentarioBusiness.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:06:34.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\ComentarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:04:22.265Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "IComentarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IComentarioRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:03:51.335Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\RepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T05:00:44.752Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "IRepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "RelativeToolTip": "PAW.Repository\\Interfaces\\IRepositoryBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-07T04:59:35.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ClientRestProvider.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "RelativeToolTip": "PAW.Architecture\\Providers\\ClientRestProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:57:22.025Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TableroViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TableroViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:44:33.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Properties\\launchSettings.json",
-              "RelativeToolTip": "PAW.Mvc\\Properties\\launchSettings.json",
+              "Title": "ListumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ListumViewModel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:42:55.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ComentarioViewmodel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\ComentarioViewmodel.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:38:37.288Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "Tablero.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tablero.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tablero.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:25.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:31.042Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:59.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TarjetumViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "RelativeToolTip": "PAW.Models\\ViewModels\\TarjetumViewModel.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAqwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:43:43.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Tarjetum.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-12T23:41:53.486Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 99,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:36:28.112Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cdbdee54-b399-484b-b763-db2c3393d646}"
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Comentario.cs",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comentario.cs",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Comentario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-05T06:35:59.543Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "PAW.Data.csproj",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeDocumentMoniker": "PAW.Data\\PAW.Data.csproj",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+              "RelativeToolTip": "PAW.Data\\PAW.Data.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-05T05:42:04.021Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d98f7c4d-b652-422c-bcdf-3d0e2b2da2c1}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:18:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:19:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:21:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 150,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "PAW-Final.http",
+              "DocumentMoniker": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeDocumentMoniker": "PAW-Final\\PAW-Final.http",
+              "ToolTip": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\PAW-Final.http",
+              "RelativeToolTip": "PAW-Final\\PAW-Final.http",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-08-05T05:35:02.565Z"
             }
           ]
         }

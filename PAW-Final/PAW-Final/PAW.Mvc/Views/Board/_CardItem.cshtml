@@ -1,0 +1,25 @@
+﻿@model PAW.Models.ViewModels.TarjetumViewModel
+
+<div class="card-item"
+     data-card-id="@Model.Id"
+     data-open-card="@Model.Id"
+     data-card-title="@Model.Titulo"
+     title="Abrir tarjeta">
+
+    <div class="d-flex align-items-start justify-content-between gap-2">
+        <div>
+            <div class="fw-semibold">@Model.Titulo</div>
+            @if (!string.IsNullOrWhiteSpace(Model.Descripcion))
+            {
+                <div class="text-muted small mt-1">@Model.Descripcion</div>
+            }
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-sm btn-light border-0" data-bs-toggle="dropdown">⋮</button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item btn-edit-card" href="#" data-card-id="@Model.Id">Editar</a></li>
+                <li><a class="dropdown-item text-danger btn-delete-card" href="#" data-card-id="@Model.Id">Eliminar</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

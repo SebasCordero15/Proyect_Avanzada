@@ -1,0 +1,11 @@
+﻿@model PAW.Models.ViewModels.TableroViewModel
+<div class="mb-3">
+    <label asp-for="Titulo" class="form-label"></label>
+    <input asp-for="Titulo" class="form-control" />
+    <span asp-validation-for="Titulo" class="text-danger"></span>
+</div>
+<div class="mb-3">
+    <label asp-for="UsuarioId" class="form-label"></label>
+    <input asp-for="UsuarioId" class="form-control" type="number" />
+    <span asp-validation-for="UsuarioId" class="text-danger"></span>
+</div>
