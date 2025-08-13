@@ -3,20 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\filters\\requireloginattributr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\filters\\requireloginattributr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\paw.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\paw.mvc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\services\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FC6C4058-8E6C-4287-808D-6AE011E195F8}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -30,7 +74,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 23,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,20 +130,176 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T00:47:51.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RequireLoginAttributr.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
+              "RelativeToolTip": "PAW.Mvc\\Filters\\RequireLoginAttributr.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:45:26.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BoardController.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:43:58.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\AuthService.cs",
+              "RelativeToolTip": "PAW.Mvc\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:42:42.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\IAuthService.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Services\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Services\\IAuthService.cs",
+              "RelativeToolTip": "PAW.Mvc\\Services\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:42:33.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:40:32.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PAW.Mvc",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
+              "RelativeDocumentMoniker": "PAW.Mvc\\PAW.Mvc.csproj",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
+              "RelativeToolTip": "PAW.Mvc\\PAW.Mvc.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-13T00:39:12.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProyectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAkwIoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:32:35.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Sesion.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Sesion.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Sesion.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Sesion.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:32:12.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-13T00:29:26.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Program.cs",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
+              "RelativeToolTip": "PAW.Mvc\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-12T23:41:36.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T00:48:08.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\appsettings.json",
               "RelativeDocumentMoniker": "PAW.Mvc\\appsettings.json",
               "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\appsettings.json",
               "RelativeToolTip": "PAW.Mvc\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-08-12T23:45:53.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Home\\Index.cshtml",
@@ -107,12 +307,11 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-12T23:44:28.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T23:44:28.583Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
@@ -125,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 14,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "PAW.Mvc\\Properties\\launchSettings.json",
@@ -133,21 +332,7 @@
               "RelativeToolTip": "PAW.Mvc\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-12T23:41:53.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Program.cs",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Program.cs",
-              "RelativeToolTip": "PAW.Mvc\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-12T23:41:36.018Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-12T23:41:53.486Z"
             }
           ]
         },

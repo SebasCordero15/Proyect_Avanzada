@@ -1,0 +1,41 @@
+﻿@model PAW.Mvc.Controllers.LoginVm
+@{
+    ViewData["Title"] = "Iniciar sesión";
+}
+<div class="auth-wrap container d-flex align-items-center justify-content-center py-5">
+    <div class="card shadow-sm p-4 auth-card">
+        <h3 class="mb-3 text-center">Iniciar sesión</h3>
+        <form asp-action="Login" method="post">
+            <input type="hidden" asp-for="ReturnUrl" />
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
+
+            <div class="mb-3">
+                <label asp-for="Correo" class="form-label"></label>
+                <input asp-for="Correo" class="form-control" placeholder="tu@correo.com" />
+                <span asp-validation-for="Correo" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Clave" class="form-label"></label>
+                <input asp-for="Clave" class="form-control" placeholder="••••••••" />
+                <span asp-validation-for="Clave" class="text-danger"></span>
+            </div>
+
+            <button class="btn btn-primary w-100">Entrar</button>
+            @Html.AntiForgeryToken()
+        </form>
+
+        <div class="text-center mt-3">
+            ¿No tienes cuenta? <a asp-action="Register">Crear una cuenta</a>
+        </div>
+    </div>
+</div>
+<style>
+    .auth-card {
+        max-width: 420px;
+        width: 100%;
+        border-radius: 16px
+    }
+
+    .auth-wrap {
+        min-height: 70vh
+    }</style>
