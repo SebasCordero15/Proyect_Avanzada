@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HRX3RxmgTP4=",
+  "dgSpecHash": "Fntj+r0GuoA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
+  "projectFilePath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Maria\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Maria\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

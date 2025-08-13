@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {}
+    "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
         "projectName": "PAW.Data",
-        "projectPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Data\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+    "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
         "projectName": "PAW.Models",
-        "projectPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
         "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\PAW.Models\\obj\\",
+        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,60 +1,117 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PAW.Models.ViewModels;
-using System;
-using System.Linq;
-using System.Collections.Generic;
-using Microsoft.AspNetCore.Authorization;
+using System.Net.Http.Json;
 
 namespace PAW.Mvc.Controllers
 {
-    
-
     [Authorize]
     public class BoardController : Controller
     {
-        // GET: /Board/Index/{id?}
-        // id = Id del tablero
-        [HttpGet]
-        public IActionResult Index(int id = 1)
+        private readonly IHttpClientFactory _http;
+
+        public BoardController(IHttpClientFactory http) => _http = http;
+
+        private class TableroDto
         {
-            // Mock para ver la UI. Luego lo cambiamos por llamadas a tu API.
-            var vm = new BoardPageViewModel
+            public int Id { get; set; }
+            public string Titulo { get; set; } = null!;
+            public DateTime FechaCreacion { get; set; }
+            public int UsuarioId { get; set; }
+        }
+
+        private class ListumDto
+        {
+            public int Id { get; set; }
+            public string Titulo { get; set; } = null!;
+            public int Orden { get; set; }
+            public int TableroId { get; set; }
+        }
+
+        private class TarjetumDto
+        {
+            public int Id { get; set; }
+            public string Titulo { get; set; } = null!;
+            public string? Descripcion { get; set; }
+            public DateTime? FechaCreacion { get; set; }
+            public DateTime? FechaVencimiento { get; set; }
+            public int ListaId { get; set; }
+            public int? UsuarioAsignadoId { get; set; }
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var client = _http.CreateClient("api");
+
+            try
             {
-                Tablero = new TableroViewModel
+                // 1️⃣ Obtener tableros
+                var tablerosResponse = await client.GetAsync("api/Tablero");
+                if (!tablerosResponse.IsSuccessStatusCode)
                 {
-                    Id = id,
-                    Titulo = "Proyecto PAW - Board de ejemplo",
-                    FechaCreacion = DateTime.Now,
-                    UsuarioId = 1
-                },
-                Columnas = new List<ListaConTarjetas>
+                    TempData["Error"] = $"Error al obtener tableros: {tablerosResponse.StatusCode}";
+                    return View(new List<TableroViewModel>());
+                }
+
+                var tablerosDto = await tablerosResponse.Content.ReadFromJsonAsync<List<TableroDto>>();
+
+                var tablerosVm = tablerosDto!.Select(t => new TableroViewModel
                 {
-                    new ListaConTarjetas
+                    Id = t.Id,
+                    Titulo = t.Titulo,
+                    FechaCreacion = t.FechaCreacion,
+                    UsuarioId = t.UsuarioId,
+                    NombreUsuario = null,
+                    Lista = new List<ListumViewModel>()
+                }).ToList();
+
+                // 2️⃣ Obtener listas por tablero
+                foreach (var tablero in tablerosVm)
+                {
+                    var listasResponse = await client.GetAsync($"api/Lista/tablero/{tablero.Id}");
+                    if (!listasResponse.IsSuccessStatusCode) continue;
+
+                    var listasDto = await listasResponse.Content.ReadFromJsonAsync<List<ListumDto>>();
+                    if (listasDto == null) continue;
+
+                    tablero.Lista = listasDto.Select(l => new ListumViewModel
                     {
-                        Lista = new ListumViewModel{ Id=101, Titulo="Por hacer", Orden=1, TableroId=id },
-                        Tarjetas = new List<TarjetumViewModel>{
-                            new TarjetumViewModel{ Id=1001, Titulo="Configurar API", Descripcion="Endpoints CRUD", ListaId=101 },
-                            new TarjetumViewModel{ Id=1002, Titulo="Diseñar UI", Descripcion="Layout de columnas", ListaId=101 },
-                        }
-                    },
-                    new ListaConTarjetas
+                        Id = l.Id,
+                        Titulo = l.Titulo,
+                        Orden = l.Orden,
+                        TableroId = l.TableroId,
+                        ListaTarjetas = new List<TarjetumViewModel>()
+                    }).OrderBy(l => l.Orden).ToList();
+
+                    // 3️⃣ Obtener tarjetas de cada lista mediante endpoint /lista/{listaId}
+                    foreach (var lista in tablero.Lista)
                     {
-                        Lista = new ListumViewModel{ Id=102, Titulo="En progreso", Orden=2, TableroId=id },
-                        Tarjetas = new List<TarjetumViewModel>{
-                            new TarjetumViewModel{ Id=1003, Titulo="Servicios MVC", Descripcion="Service layer hacia API", ListaId=102 },
-                        }
-                    },
-                    new ListaConTarjetas
-                    {
-                        Lista = new ListumViewModel{ Id=103, Titulo="Hecho", Orden=3, TableroId=id },
-                        Tarjetas = new List<TarjetumViewModel>{
-                            new TarjetumViewModel{ Id=1004, Titulo="VM compuestos", Descripcion="BoardPageViewModel listo", ListaId=103 },
-                        }
+                        var tarjetasResponse = await client.GetAsync($"api/Tarjeta/lista/{lista.Id}");
+                        if (!tarjetasResponse.IsSuccessStatusCode) continue;
+
+                        var tarjetasDto = await tarjetasResponse.Content.ReadFromJsonAsync<List<TarjetumDto>>();
+                        if (tarjetasDto == null) continue;
+
+                        lista.ListaTarjetas = tarjetasDto.Select(t => new TarjetumViewModel
+                        {
+                            Id = t.Id,
+                            Titulo = t.Titulo,
+                            Descripcion = t.Descripcion,
+                            FechaCreacion = t.FechaCreacion,
+                            FechaVencimiento = t.FechaVencimiento,
+                            ListaId = t.ListaId,
+                            UsuarioAsignadoId = t.UsuarioAsignadoId
+                        }).ToList();
                     }
                 }
-            };
 
-            return View("Index", vm);
+                return View(tablerosVm);
+            }
+            catch (HttpRequestException ex)
+            {
+                TempData["Error"] = $"No se pudo contactar el API: {ex.Message}";
+                return View(new List<TableroViewModel>());
+            }
         }
     }
 }

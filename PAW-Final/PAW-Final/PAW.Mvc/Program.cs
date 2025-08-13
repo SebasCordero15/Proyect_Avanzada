@@ -2,15 +2,23 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// 1?? Agregar soporte para controladores con vistas
 builder.Services.AddControllersWithViews();
 
-// 4.1) HttpClient hacia la API (ajusta la BaseAddress a tu API real)
+
+// 2?? Configurar HttpClient para consumir tu API
 builder.Services.AddHttpClient("api", c =>
 {
-    c.BaseAddress = new Uri("https://localhost:7218/"); // <-- AJUSTA puerto/base de tu PAW.API
-});
+    c.BaseAddress = new Uri("https://localhost:7218/"); // Ajusta puerto/base a tu PAW.API
+})
+.ConfigurePrimaryHttpMessageHandler(() =>
+    new HttpClientHandler
+    {
+        // Para certificados locales de desarrollo
+        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
+    });
 
-// 4.2) Cookie Authentication
+// 3?? Configurar autenticación por cookies
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(o =>
@@ -24,21 +32,26 @@ builder.Services
 
 var app = builder.Build();
 
+// 4?? Middleware para manejo de errores
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();
 }
 
+// 5?? Middleware general
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-app.UseAuthentication();   // <<--- NUEVO
+// 6?? Autenticación y autorización
+app.UseAuthentication();
 app.UseAuthorization();
 
+// 7?? Mapear rutas por defecto
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}"); // opcional: arrancar en login
+    pattern: "{controller=Account}/{action=Login}/{id?}");
 
+// 8?? Ejecutar la aplicación
 app.Run();

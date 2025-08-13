@@ -28,6 +28,7 @@ namespace PAW.Business
             return await _tarjetumRepository.GetByListaIdAsync(listaId);
         }
 
+
         public async Task<List<Tarjetum>> ObtenerPorUsuarioAsignado(int usuarioId)
         {
             return await _tarjetumRepository.GetByUsuarioAsignadoIdAsync(usuarioId);

@@ -22,6 +22,9 @@ namespace PAW.Models.ViewModels
         // Propiedad auxiliar
         [Display(Name = "Título del tablero")]
         public string? TituloTablero { get; set; }
+
+        public List<TarjetumViewModel> ListaTarjetas { get; set; } = new();
+
     }
 }
 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace PAW.Models.ViewModels
@@ -21,6 +22,8 @@ namespace PAW.Models.ViewModels
         // Propiedad auxiliar
         [Display(Name = "Nombre del usuario")]
         public string? NombreUsuario { get; set; }
+
+        // ✅ Aquí agregamos la lista de listas del tablero
+        public List<ListumViewModel> Lista { get; set; } = new();
     }
 }
-

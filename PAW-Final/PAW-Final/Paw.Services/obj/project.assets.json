@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
       "projectName": "Paw.Services",
-      "projectPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
+      "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
       "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Maria\\Downloads\\PAW-Final\\PAW-Final\\Paw.Services\\obj\\",
+      "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

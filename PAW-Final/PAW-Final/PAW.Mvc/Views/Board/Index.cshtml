@@ -1,486 +1,155 @@
-﻿@model PAW.Models.ViewModels.BoardPageViewModel
+﻿@model List<PAW.Models.ViewModels.TableroViewModel>
 @{
-    ViewData["Title"] = Model.Tablero?.Titulo ?? "Board";
+    ViewData["Title"] = "Mis Tableros";
 }
-<!-- Si en tu _Layout no tienes Bootstrap Icons, añade el CDN allí:
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
--->
+
+<h2 class="mb-4">@ViewData["Title"]</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+<div class="board-container">
+    @foreach (var tablero in Model)
+    {
+        <div class="board">
+            <div class="board-header">
+                <h3>@tablero.Titulo</h3>
+                <small>@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
+            </div>
+
+            <div class="lists-container">
+                @if (tablero.Lista.Any())
+                {
+                    @foreach (var lista in tablero.Lista)
+                    {
+                        <div class="list-column">
+                            <div class="list-header">
+                                <strong>@lista.Titulo</strong>
+                            </div>
+
+                            <div class="cards-container">
+                                @if (lista.ListaTarjetas.Any())
+                                {
+                                    @foreach (var tarjeta in lista.ListaTarjetas)
+                                    {
+                                        <div class="card-item">
+                                            <strong>@tarjeta.Titulo</strong>
+                                            @if (!string.IsNullOrEmpty(tarjeta.Descripcion))
+                                            {
+                                                <p class="small mb-0">@tarjeta.Descripcion</p>
+                                            }
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <p class="text-muted small">No hay tarjetas</p>
+                                }
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <p class="text-muted small">No hay listas</p>
+                }
+            </div>
+
+            <div class="board-footer">
+                <a asp-controller="Board" asp-action="Details" asp-route-id="@tablero.Id" class="btn btn-outline-primary btn-sm">
+                    Abrir tablero
+                </a>
+            </div>
+        </div>
+    }
+</div>
 
 <style>
-    :root {
-        --bg: #0f172a; /* slate-900 */
-        --bg-2: #111827cc; /* overlay */
-        --card: #0b1220bf; /* glass dark */
-        --text: #e5e7eb; /* slate-200 */
-        --muted: #9aa4b2; /* slate-400 */
-        --brand: #7c3aed; /* violet-600 */
-        --brand-2: #22d3ee; /* cyan-400 */
-        --ok: #22c55e;
-        --warn: #f59e0b;
-        --danger: #ef4444;
-        --chip: #1f2937; /* slate-800 */
-        --chip-bd: #334155; /* slate-700 */
-        --glass: blur(6px) saturate(120%);
-        --radius: 16px;
-        --shadow: 0 12px 32px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.04);
-    }
-
-    /* Fondo con gradiente + malla */
-    body {
-        background: radial-gradient(1200px 600px at 10% -10%, rgba(124,58,237,.25), transparent 60%), radial-gradient(1000px 500px at 100% 0%, rgba(34,211,238,.2), transparent 60%), linear-gradient(180deg, #0b1020, #0b1325 40%, #0f172a);
-        color: var(--text);
-    }
-
-    .board-topbar {
-        position: sticky;
-        top: 0;
-        z-index: 20;
-        padding: 1rem 0 1.25rem 0;
-        background: linear-gradient(180deg, rgba(11,16,32,.85), rgba(11,16,32,.35) 70%, transparent);
-        -webkit-backdrop-filter: var(--glass);
-        backdrop-filter: var(--glass);
-        border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-
-    .board-title {
-        display: flex;
-        align-items: center;
-        gap: .75rem;
-    }
-
-        .board-title .badge {
-            background: linear-gradient(135deg, rgba(124,58,237,.25), rgba(34,211,238,.25));
-            border: 1px solid rgba(255,255,255,.08);
-            color: var(--text);
-        }
-
-    .toolbar .btn {
-        border-radius: 999px;
-        border: 1px solid rgba(255,255,255,.08);
-        background: rgba(255,255,255,.04);
-        color: var(--text);
-    }
-
-        .toolbar .btn:hover {
-            background: rgba(255,255,255,.08);
-        }
-
-    .board-wrapper {
-        display: flex;
-        gap: 1rem;
-        align-items: flex-start;
-        overflow-x: auto;
-        padding: .5rem .25rem 2rem .25rem;
-        scroll-snap-type: x proximity;
-    }
-
-        .board-wrapper::-webkit-scrollbar {
-            height: 10px;
-        }
-
-        .board-wrapper::-webkit-scrollbar-thumb {
-            background: #334155;
-            border-radius: 8px;
-        }
-
-    .list-column {
-        width: 340px;
-        min-width: 340px;
-        scroll-snap-align: start;
-        background: var(--card);
-        -webkit-backdrop-filter: var(--glass);
-        backdrop-filter: var(--glass);
-        border: 1px solid rgba(255,255,255,.08);
-        border-radius: var(--radius);
-        box-shadow: var(--shadow);
+    /* Contenedor general */
+    .board-container {
         display: flex;
         flex-direction: column;
-        max-height: calc(100vh - 200px);
-        transition: transform .2s ease, box-shadow .2s ease;
+        gap: 2rem;
     }
 
-        .list-column:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 16px 40px rgba(0,0,0,.45);
-        }
+    /* Tablero */
+    .board {
+        background-color: #f8f9fa;
+        border-radius: 10px;
+        padding: 1rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
 
-    .list-header {
+    /* Cabecera tablero */
+    .board-header {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    /* Contenedor de listas */
+    .lists-container {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: .85rem .85rem;
-        border-bottom: 1px solid rgba(255,255,255,.06);
-        position: sticky;
-        top: 0;
-        z-index: 4;
-        background: transparent;
-        border-top-left-radius: var(--radius);
-        border-top-right-radius: var(--radius);
+        gap: 1rem;
+        overflow-x: auto;
+        padding-bottom: 0.5rem;
     }
 
-    .list-title {
-        font-weight: 700;
-        letter-spacing: .2px;
-        margin: 0;
-        font-size: .98rem;
+    /* Columnas de listas */
+    .list-column {
+        background-color: #e2e6ea;
+        border-radius: 8px;
+        min-width: 250px;
+        max-width: 280px;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        flex-shrink: 0;
     }
 
-    .list-body {
-        overflow-y: auto;
-        padding: .5rem .35rem;
+    /* Cabecera de lista */
+    .list-header {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    /* Tarjetas */
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     .card-item {
-        background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-        border: 1px solid rgba(255,255,255,.08);
-        border-radius: 14px;
-        padding: .85rem .85rem;
-        margin: .5rem;
-        box-shadow: 0 8px 20px rgba(0,0,0,.25);
-        cursor: grab;
-        transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+        background-color: #ffffff;
+        border-radius: 6px;
+        padding: 0.5rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        transition: transform 0.15s, box-shadow 0.15s;
+        cursor: pointer;
     }
 
         .card-item:hover {
             transform: translateY(-2px);
-            box-shadow: 0 12px 26px rgba(0,0,0,.35);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
 
-        .card-item:active {
-            cursor: grabbing;
-        }
-
-        .card-item.drag-over {
-            border-color: rgba(34,211,238,.5);
-            outline: 2px dashed rgba(34,211,238,.35);
-        }
-
-    .card-title {
-        font-weight: 600;
+    /* Footer */
+    .board-footer {
+        text-align: center;
+        margin-top: 1rem;
     }
 
-    .card-desc {
-        color: var(--muted);
-        font-size: .875rem;
-        margin-top: .25rem;
-        line-height: 1.3;
+    /* Scroll horizontal suave */
+    .lists-container::-webkit-scrollbar {
+        height: 8px;
     }
 
-    .chip {
-        display: inline-flex;
-        align-items: center;
-        gap: .4rem;
-        padding: .25rem .5rem;
-        border-radius: 999px;
-        background: var(--chip);
-        border: 1px solid var(--chip-bd);
-        color: var(--text);
-        font-size: .75rem;
-    }
-
-        .chip i {
-            font-size: .9rem;
-        }
-
-    .due.ok {
-        background: rgba(34,197,94,.15);
-        border-color: rgba(34,197,94,.35);
-    }
-
-    .due.warn {
-        background: rgba(245,158,11,.15);
-        border-color: rgba(245,158,11,.35);
-    }
-
-    .due.late {
-        background: rgba(239,68,68,.15);
-        border-color: rgba(239,68,68,.35);
-    }
-
-    .avatar {
-        --size: 28px;
-        width: var(--size);
-        height: var(--size);
-        border-radius: 999px;
-        display: inline-grid;
-        place-items: center;
-        background: linear-gradient(135deg, var(--brand), var(--brand-2));
-        color: #0b1325;
-        font-weight: 800;
-        font-size: .75rem;
-        border: 1px solid rgba(255,255,255,.5);
-        box-shadow: 0 2px 8px rgba(0,0,0,.35);
-    }
-
-    .avatar-stack {
-        display: flex;
-    }
-
-        .avatar-stack .avatar {
-            margin-left: -6px;
-        }
-
-            .avatar-stack .avatar:first-child {
-                margin-left: 0;
-            }
-
-    .add-card-btn {
-        margin: .25rem .75rem .75rem .75rem;
-        border-radius: 12px;
-        border: 1px dashed rgba(255,255,255,.15);
-        background: rgba(255,255,255,.03);
-        color: var(--text);
-    }
-
-        .add-card-btn:hover {
-            background: rgba(255,255,255,.06);
-        }
-
-    .list-placeholder.add {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 340px;
-        min-width: 340px;
-        height: 100px;
-        border: 2px dashed rgba(255,255,255,.18);
-        color: #cbd5e1;
-        border-radius: var(--radius);
-        background: rgba(255,255,255,.03);
-        -webkit-backdrop-filter: var(--glass);
-        backdrop-filter: var(--glass);
+    .lists-container::-webkit-scrollbar-thumb {
+        background: rgba(0,0,0,0.2);
+        border-radius: 4px;
     }
 </style>
-
-<div class="container-fluid">
-    <div class="board-topbar">
-        <div class="d-flex align-items-center gap-3">
-            <div class="board-title">
-                <i class="bi bi-kanban-fill" style="font-size:1.5rem;color:#22d3ee"></i>
-                <h2 class="m-0">@Model.Tablero?.Titulo</h2>
-                <span class="badge rounded-pill">Proyecto</span>
-            </div>
-            <div class="ms-auto toolbar d-flex gap-2">
-                <button class="btn btn-sm" id="btnRefresh"><i class="bi bi-arrow-clockwise"></i> Recargar</button>
-                <button class="btn btn-sm" data-bs-toggle="modal" data-bs-target="#modalNuevaLista">
-                    <i class="bi bi-plus-lg"></i> Nueva lista
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <div id="board" class="board-wrapper" data-tablero-id="@Model.Tablero?.Id">
-        @foreach (var col in Model.Columnas)
-        {
-            <div class="list-column" data-lista-id="@col.Lista.Id">
-                <div class="list-header">
-                    <h6 class="list-title">
-                        <i class="bi bi-view-list me-1" style="opacity:.8"></i>@col.Lista.Titulo
-                    </h6>
-                    <div class="btn-group">
-                        <button class="btn btn-sm btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"></button>
-                        <ul class="dropdown-menu dropdown-menu-end">
-                            <li><a class="dropdown-item btn-rename-lista" href="#" data-lista-id="@col.Lista.Id">Renombrar</a></li>
-                            <li><a class="dropdown-item btn-delete-lista text-danger" href="#" data-lista-id="@col.Lista.Id">Eliminar</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="list-body" data-dropzone="true">
-                    @foreach (var card in col.Tarjetas)
-                    {
-                        @await Html.PartialAsync("_CardItem", card)
-                    }
-                </div>
-
-                <button class="btn btn-sm add-card-btn btn-nueva-tarjeta" data-lista-id="@col.Lista.Id">
-                    <i class="bi bi-plus-lg"></i> Añadir tarjeta
-                </button>
-            </div>
-        }
-
-        <div class="list-placeholder add">
-            <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#modalNuevaLista">
-                <i class="bi bi-plus-lg"></i> Nueva lista
-            </button>
-        </div>
-    </div>
-</div>
-
-@* ---------- Modales ---------- *@
-<div class="modal fade" id="modalNuevaLista" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <form class="modal-content" id="formNuevaLista">
-            <div class="modal-header">
-                <h5 class="modal-title"><i class="bi bi-view-list me-2"></i>Crear lista</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <input type="hidden" name="TableroId" value="@Model.Tablero?.Id" />
-                <div class="mb-3">
-                    <label class="form-label">Título</label>
-                    <input class="form-control" name="Titulo" required />
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="submit">Crear</button>
-            </div>
-        </form>
-    </div>
-</div>
-
-<div class="modal fade" id="modalNuevaTarjeta" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <form class="modal-content" id="formNuevaTarjeta">
-            <div class="modal-header">
-                <h5 class="modal-title"><i class="bi bi-stickies me-2"></i>Crear tarjeta</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body">
-                <input type="hidden" name="ListaId" id="NuevaTarjeta_ListaId" />
-                <div class="mb-3">
-                    <label class="form-label">Título</label>
-                    <input class="form-control" name="Titulo" required />
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Descripción</label>
-                    <textarea class="form-control" name="Descripcion" rows="3"></textarea>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" type="submit">Crear</button>
-            </div>
-        </form>
-    </div>
-</div>
-
-@* ---------- Offcanvas detalle de Tarjeta ---------- *@
-<div class="offcanvas offcanvas-end text-light" tabindex="-1" id="offcanvasTarjeta" style="background:rgba(11,16,32,.98)">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="ocCardTitle">Detalle de tarjeta</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
-    </div>
-    <div class="offcanvas-body">
-        <div id="ocCardBody">
-            <p class="text-secondary">Aquí mostraremos descripción, vencimiento, asignado y comentarios.</p>
-        </div>
-        <div class="d-grid gap-2 mt-3">
-            <button class="btn btn-outline-light" id="btnEditarTarjeta"><i class="bi bi-pencil"></i> Editar</button>
-            <button class="btn btn-outline-danger" id="btnEliminarTarjeta"><i class="bi bi-trash3"></i> Eliminar</button>
-        </div>
-    </div>
-</div>
-
-@section Scripts {
-    <script>
-        (function(){
-            const board = document.getElementById("board");
-
-            // -------- DnD (drag & drop) ----------
-            let dragSrcEl = null;
-
-            function handleDragStart(e){
-                dragSrcEl = this;
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('text/plain', this.dataset.cardId);
-                this.classList.add('opacity-50');
-            }
-            function handleDragEnd(){
-                this.classList.remove('opacity-50');
-                document.querySelectorAll('.card-item.drag-over').forEach(el=>el.classList.remove('drag-over'));
-            }
-            function handleDragOver(e){ e.preventDefault(); e.dataTransfer.dropEffect = 'move'; }
-            function handleDragEnter(){ if (this.classList.contains('card-item')) this.classList.add('drag-over'); }
-            function handleDragLeave(){ if (this.classList.contains('card-item')) this.classList.remove('drag-over'); }
-
-            function handleDropOnCard(e){
-                e.preventDefault();
-                const cardId = e.dataTransfer.getData('text/plain');
-                const dragged = document.querySelector(`.card-item[data-card-id="${cardId}"]`);
-                if (dragged && dragged !== this){
-                    this.parentElement.insertBefore(dragged, this);
-                    dispatchReorderEvent(dragged);
-                }
-                this.classList.remove('drag-over');
-            }
-            function handleDropOnList(e){
-                e.preventDefault();
-                const cardId = e.dataTransfer.getData('text/plain');
-                const dragged = document.querySelector(`.card-item[data-card-id="${cardId}"]`);
-                if (!dragged) return;
-                this.appendChild(dragged);
-                dispatchReorderEvent(dragged);
-            }
-
-            function dispatchReorderEvent(cardEl){
-                const listaId = cardEl.closest('.list-column')?.dataset.listaId;
-                const orden = Array.from(cardEl.parentElement.querySelectorAll('.card-item'))
-                                   .map((el, idx)=>({ id: el.dataset.cardId, orden: idx+1 }));
-                document.dispatchEvent(new CustomEvent('card:reordered', { detail:{ listaId, orden } }));
-            }
-
-            function wireCardDnD(card){
-                card.setAttribute('draggable','true');
-                card.addEventListener('dragstart', handleDragStart);
-                card.addEventListener('dragend', handleDragEnd);
-                card.addEventListener('dragover', handleDragOver);
-                card.addEventListener('dragenter', handleDragEnter);
-                card.addEventListener('dragleave', handleDragLeave);
-                card.addEventListener('drop', handleDropOnCard);
-            }
-
-            document.querySelectorAll('.card-item').forEach(wireCardDnD);
-            document.querySelectorAll('.list-body[data-dropzone="true"]').forEach(zone=>{
-                zone.addEventListener('dragover', handleDragOver);
-                zone.addEventListener('drop', handleDropOnList);
-            });
-
-            // ---------- Abrir detalle ----------
-            document.addEventListener('click', (e)=>{
-                const btn = e.target.closest('[data-open-card]');
-                if (!btn) return;
-                const id = btn.getAttribute('data-open-card');
-                const title = btn.getAttribute('data-card-title') || ('Tarjeta #' + id);
-
-                document.getElementById('ocCardTitle').textContent = title;
-                // TODO: fetch detalle desde API y render en #ocCardBody
-                const oc = new bootstrap.Offcanvas('#offcanvasTarjeta');
-                oc.show();
-            });
-
-            // ---------- Nueva tarjeta ----------
-            document.querySelectorAll('.btn-nueva-tarjeta').forEach(b=>{
-                b.addEventListener('click', e=>{
-                    const listaId = e.currentTarget.getAttribute('data-lista-id');
-                    document.getElementById('NuevaTarjeta_ListaId').value = listaId;
-                    new bootstrap.Modal('#modalNuevaTarjeta').show();
-                });
-            });
-
-            // Formularios (placeholders)
-            document.getElementById('formNuevaLista')?.addEventListener('submit', e=>{
-                e.preventDefault();
-                // TODO: POST listas
-                bootstrap.Modal.getInstance(document.getElementById('modalNuevaLista')).hide();
-            });
-            document.getElementById('formNuevaTarjeta')?.addEventListener('submit', e=>{
-                e.preventDefault();
-                // TODO: POST tarjetas
-                bootstrap.Modal.getInstance(document.getElementById('modalNuevaTarjeta')).hide();
-            });
-
-            // Scroll horizontal cómodo
-            board.addEventListener('wheel', (e)=>{
-                if (e.shiftKey && Math.abs(e.deltaY) > Math.abs(e.deltaX)){
-                    board.scrollLeft += e.deltaY; e.preventDefault();
-                }
-            });
-
-            // Reorden (ahora solo emite el evento)
-            document.addEventListener('card:reordered', (e)=>{
-                // console.log('Reorden', e.detail);
-                // TODO: PATCH al API
-            });
-        })();
-    </script>
-}
