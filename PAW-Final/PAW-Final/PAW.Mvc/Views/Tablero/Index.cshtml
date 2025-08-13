@@ -21,11 +21,7 @@ else
                     <div class="fw-semibold">@t.Titulo</div>
                     <small class="text-muted">@t.FechaCreacion?.ToString("dd/MM/yyyy")</small>
                 </div>
-                <div class="d-flex gap-2">
-                    <a class="btn btn-outline-primary btn-sm" asp-controller="Board" asp-action="Details" asp-route-id="@t.Id">Abrir</a>
-                    <a class="btn btn-outline-secondary btn-sm" asp-action="Edit" asp-route-id="@t.Id">Editar</a>
-                    <a class="btn btn-outline-danger btn-sm" asp-action="Delete" asp-route-id="@t.Id">Eliminar</a>
-                </div>
+               
             </div>
         }
     </div>

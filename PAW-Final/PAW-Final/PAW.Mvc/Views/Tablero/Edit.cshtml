@@ -1,18 +1,34 @@
 ﻿@model PAW.Models.ViewModels.TableroViewModel
 @{
-    ViewData["Title"] = "Editar tablero";
+    ViewData["Title"] = "Editar Tablero";
 }
+
 <div class="container py-4" style="max-width:600px;">
-    <h3 class="mb-3">Editar tablero</h3>
-    <form asp-action="Edit" method="post" novalidate>
-        @Html.AntiForgeryToken()
-        <input type="hidden" asp-for="Id" />
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        @Html.Partial("_Form", Model)
-        <button class="btn btn-primary">Guardar cambios</button>
-        <a asp-action="Index" class="btn btn-link">Cancelar</a>
-    </form>
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-0">Editar Tablero</h4>
+        </div>
+        <div class="card-body">
+            <form asp-action="Edit" method="post" novalidate>
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                <div class="mb-3">
+                    <label asp-for="Titulo" class="form-label">Nombre del tablero</label>
+                    <input asp-for="Titulo" class="form-control" placeholder="Ingrese el nombre del tablero" />
+                    <span asp-validation-for="Titulo" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex gap-2 justify-content-end">
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
+
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

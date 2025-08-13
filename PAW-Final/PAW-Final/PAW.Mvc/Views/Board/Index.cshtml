@@ -16,12 +16,10 @@
     <div class="alert alert-danger">@err</div>
 }
 
-<!-- Antiforgery para uso en fetch (comentarios) -->
 <form asp-antiforgery="true" id="__af" style="display:none"></form>
 
 @if (!(Model?.Any() ?? false))
 {
-    <!-- Estado vacío -->
     <div class="border rounded-3 bg-light p-5 text-center">
         <h5 class="mb-2">Aún no tienes tableros</h5>
         <p class="text-muted mb-3">Crea tu primer tablero para empezar a agregar listas y tarjetas.</p>
@@ -34,9 +32,26 @@ else
         @foreach (var tablero in Model)
         {
             <div class="board">
-                <div class="board-header">
-                    <h3>@tablero.Titulo</h3>
-                    <small>@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
+                <div class="board-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3 class="mb-0">@tablero.Titulo</h3>
+                        <small class="text-muted">@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
+                    </div>
+
+                    <!-- Menú por tablero -->
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false">
+                            ⚙️
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
+                            <li>
+                                <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item text-danger" data-bs-toggle="modal" href="#deleteTableroModal-@tablero.Id">Eliminar</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- Agregar lista -->
@@ -96,7 +111,6 @@ else
                                                     </form>
                                                 </div>
 
-                                                <!-- Comentarios (carga y CRUD vía fetch) -->
                                                 <details class="mt-2" data-tarjeta="@tarjeta.Id" onclick="if(this.open){loadComments(@tarjeta.Id);}">
                                                     <summary class="small text-muted">💬 Comentarios</summary>
                                                     <div class="comments-box" id="comments-list-@tarjeta.Id">
@@ -121,7 +135,6 @@ else
                                     }
                                 </div>
 
-                                <!-- Agregar tarjeta -->
                                 <details class="mt-2">
                                     <summary class="text-muted small">➕ Agregar tarjeta</summary>
                                     <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
@@ -152,6 +165,9 @@ else
                     <a asp-controller="Board" asp-action="Details" asp-route-id="@tablero.Id" class="btn btn-outline-primary btn-sm">Abrir tablero</a>
                 </div>
             </div>
+
+            <!-- Renderizamos la partial view del modal -->
+            @await Html.PartialAsync("_DeleteTableroPartial", tablero)
         }
     </div>
 }
@@ -171,10 +187,7 @@ else
                 const res = await fetch(`@Url.Action("GetComments", "Board")?tarjetaId=${tarjetaId}`, { credentials: 'same-origin' });
                 const data = await res.json();
                 if (!Array.isArray(data)) throw new Error('Respuesta inválida');
-                if (data.length === 0) {
-                    cont.innerHTML = '<div class="small text-muted">Sin comentarios todavía.</div>';
-                    return;
-                }
+                if (data.length === 0) { cont.innerHTML = '<div class="small text-muted">Sin comentarios todavía.</div>'; return; }
                 cont.innerHTML = '';
                 for (const c of data) {
                     const row = document.createElement('div');
@@ -185,15 +198,10 @@ else
                     const form = document.createElement('form');
                     form.method = 'post';
                     form.onsubmit = (e) => deleteComment(e, c.id);
-                    form.innerHTML = `
-                        <input type="hidden" name="id" value="${c.id}">
-                        <input type="hidden" name="__RequestVerificationToken" value="${getAntiForgery()}">
-                        <button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
+                    form.innerHTML = `<input type="hidden" name="id" value="${c.id}"><input type="hidden" name="__RequestVerificationToken" value="${getAntiForgery()}"><button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
                     row.appendChild(text); row.appendChild(form); cont.appendChild(row);
                 }
-            } catch {
-                cont.innerHTML = '<div class="text-danger small">Error al cargar comentarios.</div>';
-            }
+            } catch { cont.innerHTML = '<div class="text-danger small">Error al cargar comentarios.</div>'; }
         }
 
         async function addComment(ev, tarjetaId) {
@@ -201,35 +209,22 @@ else
             const form = ev.target;
             const contenido = form.contenido.value.trim();
             if (!contenido) return false;
-
             const fd = new FormData();
             fd.append('tarjetaId', tarjetaId);
             fd.append('contenido', contenido);
             fd.append('__RequestVerificationToken', getAntiForgery());
-
-            const res = await fetch(`@Url.Action("CreateComment", "Board")`, {
-                method: 'POST', credentials: 'same-origin', body: fd
-            });
-            if (res.ok) { form.reset(); loadComments(tarjetaId); }
-            else { alert('No se pudo agregar el comentario.'); }
+            const res = await fetch(`@Url.Action("CreateComment", "Board")`, { method:'POST', credentials:'same-origin', body: fd });
+            if (res.ok) { form.reset(); loadComments(tarjetaId); } else { alert('No se pudo agregar el comentario.'); }
             return false;
         }
 
         async function deleteComment(ev) {
             ev.preventDefault();
-            if (!confirm('¿Eliminar este comentario?')) return false;
-
+            if(!confirm('¿Eliminar este comentario?')) return false;
             const fd = new FormData(ev.target);
             fd.append('__RequestVerificationToken', getAntiForgery());
-
-            const res = await fetch(`@Url.Action("DeleteComment", "Board")`, {
-                method: 'POST', credentials: 'same-origin', body: fd
-            });
-            if (res.ok) {
-                const details = ev.target.closest('details');
-                const tarjetaId = details?.getAttribute('data-tarjeta');
-                if (tarjetaId) loadComments(tarjetaId);
-            } else { alert('No se pudo eliminar el comentario.'); }
+            const res = await fetch(`@Url.Action("DeleteComment", "Board")`, { method:'POST', credentials:'same-origin', body: fd });
+            if(res.ok){ const details = ev.target.closest('details'); const tarjetaId = details?.getAttribute('data-tarjeta'); if(tarjetaId) loadComments(tarjetaId); } else { alert('No se pudo eliminar el comentario.'); }
             return false;
         }
 
@@ -244,26 +239,25 @@ else
     .board-container {
         display: flex;
         flex-direction: column;
-        gap: 2rem
+        gap: 2rem;
     }
 
     .board {
         background: #f8f9fa;
         border-radius: 10px;
         padding: 1rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,.1)
+        box-shadow: 0 4px 12px rgba(0,0,0,.1);
     }
 
     .board-header {
-        text-align: center;
-        margin-bottom: 1rem
+        margin-bottom: 1rem;
     }
 
     .lists-container {
         display: flex;
         gap: 1rem;
         overflow-x: auto;
-        padding-bottom: .5rem
+        padding-bottom: .5rem;
     }
 
     .list-column {
@@ -275,19 +269,19 @@ else
         display: flex;
         flex-direction: column;
         gap: .5rem;
-        flex-shrink: 0
+        flex-shrink: 0;
     }
 
     .list-header {
         font-weight: 700;
         margin-bottom: .5rem;
-        text-align: center
+        text-align: center;
     }
 
     .cards-container {
         display: flex;
         flex-direction: column;
-        gap: .5rem
+        gap: .5rem;
     }
 
     .card-item {
@@ -295,33 +289,33 @@ else
         border-radius: 6px;
         padding: .5rem;
         box-shadow: 0 2px 6px rgba(0,0,0,.1);
-        transition: transform .15s,box-shadow .15s
+        transition: transform .15s, box-shadow .15s;
     }
 
         .card-item:hover {
             transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,.15)
+            box-shadow: 0 4px 12px rgba(0,0,0,.15);
         }
 
     .board-footer {
         text-align: center;
-        margin-top: 1rem
+        margin-top: 1rem;
     }
 
     .lists-container::-webkit-scrollbar {
-        height: 8px
+        height: 8px;
     }
 
     .lists-container::-webkit-scrollbar-thumb {
         background: rgba(0,0,0,.2);
-        border-radius: 4px
+        border-radius: 4px;
     }
 
     .comments-box {
         background: #f3f4f6;
         border-radius: 8px;
         padding: .5rem;
-        margin-top: .25rem
+        margin-top: .25rem;
     }
 
     .comment-item {
@@ -329,6 +323,6 @@ else
         border: 1px solid #e5e7eb;
         border-radius: 6px;
         padding: .4rem .6rem;
-        margin: .35rem 0
+        margin: .35rem 0;
     }
 </style>

@@ -35,7 +35,16 @@ namespace PAW.Business
 
         public async Task Actualizar(Tablero tablero)
         {
-            await _tableroRepository.UpdateAsync(tablero);
+            // Traer el tablero que ya existe
+            var existing = await _tableroRepository.GetByIdAsync(tablero.Id);
+            if (existing == null)
+                throw new Exception("El tablero no existe");
+
+            // Solo actualizar el título
+            existing.Titulo = tablero.Titulo;
+
+            // Guardar cambios usando el repositorio
+            await _tableroRepository.UpdateAsync(existing);
         }
 
         public async Task Eliminar(int id)

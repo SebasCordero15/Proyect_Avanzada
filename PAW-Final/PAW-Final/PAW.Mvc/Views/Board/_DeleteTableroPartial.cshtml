@@ -1,0 +1,23 @@
+﻿@model PAW.Models.ViewModels.TableroViewModel
+
+<div class="modal fade" id="deleteTableroModal-@Model.Id" tabindex="-1" aria-labelledby="deleteTableroLabel-@Model.Id" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteTableroLabel-@Model.Id">Eliminar tablero</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                ¿Estás seguro de que deseas eliminar el tablero "<strong>@Model.Titulo</strong>"?
+            </div>
+            <div class="modal-footer">
+                <form asp-controller="Tablero" asp-action="DeleteConfirmed" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="id" value="@Model.Id" />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

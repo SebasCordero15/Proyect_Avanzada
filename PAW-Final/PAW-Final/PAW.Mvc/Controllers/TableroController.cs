@@ -81,6 +81,9 @@ namespace PAW.Mvc.Controllers
             }
         }
         // GET: Tablero/Edit/5
+       
+       
+
         public async Task<IActionResult> Edit(int id)
         {
             var client = _http.CreateClient("api");
@@ -97,34 +100,60 @@ namespace PAW.Mvc.Controllers
             if (id != vm.Id) return BadRequest();
             if (!ModelState.IsValid) return View(vm);
 
-            var client = _http.CreateClient("api");
-            var res = await client.PutAsJsonAsync($"api/tablero/{id}", vm);
-
-            if (!res.IsSuccessStatusCode)
+            try
             {
-                ModelState.AddModelError("", "No se pudo actualizar el tablero.");
+                // Solo enviamos el nombre actualizado
+                var updatedTablero = new Tablero
+                {
+                    Id = vm.Id,
+                    Titulo = vm.Titulo
+                };
+
+                var client = _http.CreateClient("api");
+                var res = await client.PutAsJsonAsync($"api/tablero/{id}", updatedTablero);
+
+                if (!res.IsSuccessStatusCode)
+                {
+                    var error = await res.Content.ReadAsStringAsync();
+                    ModelState.AddModelError("", $"No se pudo actualizar el tablero: {error}");
+                    return View(vm);
+                }
+
+                return RedirectToAction(nameof(Index));
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"Ocurrió un error: {ex.Message}");
                 return View(vm);
             }
-            return RedirectToAction(nameof(Index));
         }
-
         // GET: Tablero/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
             var client = _http.CreateClient("api");
             var tablero = await client.GetFromJsonAsync<TableroViewModel>($"api/tablero/{id}");
             if (tablero == null) return NotFound();
-            return View(tablero);
+
+            // Retornamos partial view para el modal
+            return PartialView("_DeleteTableroPartial", tablero);
         }
 
         // POST: Tablero/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var client = _http.CreateClient("api");
             var res = await client.DeleteAsync($"api/tablero/{id}");
+
+            if (!res.IsSuccessStatusCode)
+            {
+                TempData["Error"] = "No se pudo eliminar el tablero.";
+            }
+
             return RedirectToAction(nameof(Index));
         }
+
+
     }
 }

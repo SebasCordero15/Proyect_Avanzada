@@ -40,6 +40,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcX0NhcmRJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_DeleteTableroPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcX0RlbGV0ZVRhYmxlcm9QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,14 +62,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Maria/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Edit.cshtml]
