@@ -16,6 +16,15 @@ namespace PAW.Repository.Repositories
                 .Include(t => t.Lista)
                 .ToListAsync();
         }
+        public async Task DeleteAsync(int id)
+        {
+            var entity = await _dbSet.FindAsync(id);
+            if (entity != null)
+            {
+                _dbSet.Remove(entity);
+                await _context.SaveChangesAsync();
+            }
+        }
     }
 }
 

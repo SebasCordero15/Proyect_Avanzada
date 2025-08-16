@@ -31,24 +31,20 @@ else
     <div class="board-container">
         @foreach (var tablero in Model)
         {
-            <div class="board">
+            <div class="board" data-tablero="@tablero.Id">
                 <div class="board-header d-flex justify-content-between align-items-center">
                     <div>
                         <h3 class="mb-0">@tablero.Titulo</h3>
                         <small class="text-muted">@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
                     </div>
-
-                    <!-- Menú por tablero -->
-                    <div class="dropdown">
-                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false">
-                            ⚙️
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
+                    <!-- Menú por tablero --> <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ </button> <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
+                            <li> <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a> </li>
                             <li>
-                                <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a>
+                            <li>
+                                <a class="dropdown-item text-danger" href="#" onclick="deleteBoard(event, @tablero.Id)">Eliminar</a>
                             </li>
-                            <li>
-                                <a class="dropdown-item text-danger" data-bs-toggle="modal" href="#deleteTableroModal-@tablero.Id">Eliminar</a>
+
                             </li>
                         </ul>
                     </div>
@@ -58,7 +54,7 @@ else
                 <div class="mb-3 text-center">
                     <details>
                         <summary class="text-muted">➕ Agregar lista</summary>
-                        <form asp-controller="Board" asp-action="CreateList" method="post" class="row g-2 justify-content-center mt-2">
+                        <form asp-controller="Lista" asp-action="CreateList" method="post" class="row g-2 justify-content-center mt-2">
                             @Html.AntiForgeryToken()
                             <input type="hidden" name="tableroId" value="@tablero.Id" />
                             <div class="col-12 col-md-6">
@@ -71,27 +67,47 @@ else
                     </details>
                 </div>
 
-                <div class="lists-container">
+                <!-- Contenedor de listas -->
+                <div class="lists-container" data-tablero="@tablero.Id">
                     @if (tablero.Lista?.Any() ?? false)
                     {
                         @foreach (var lista in tablero.Lista.OrderBy(l => l.Orden))
                         {
-                            <div class="list-column">
+                            <div class="list-column" data-lista="@lista.Id" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <div class="list-header d-flex justify-content-between align-items-center">
                                     <strong>@lista.Titulo</strong>
-                                    <form asp-controller="Board" asp-action="DeleteList" method="post" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
-                                        @Html.AntiForgeryToken()
-                                        <input type="hidden" name="id" value="@lista.Id" />
-                                        <button class="btn btn-danger btn-sm" type="submit">Eliminar</button>
-                                    </form>
+
+                                    <!-- Dropdown para lista -->
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                            ⋮
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end">
+                                            <li>
+                                                <form asp-controller="Lista" asp-action="EditList" method="post" class="d-flex gap-1 m-0 p-0">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@lista.Id" />
+                                                    <input type="text" name="titulo" value="@lista.Titulo" class="form-control form-control-sm" style="width:120px;" required />
+                                                    <button class="btn btn-sm btn-primary p-1" type="submit">Guardar</button>
+                                                </form>
+                                            </li>
+                                            <li>
+                                                <form asp-controller="Lista" asp-action="DeleteList" method="post" class="m-0 p-0" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
+                                                    @Html.AntiForgeryToken()
+                                                    <input type="hidden" name="id" value="@lista.Id" />
+                                                    <button class="dropdown-item text-danger" type="submit">Eliminar</button>
+                                                </form>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
 
-                                <div class="cards-container">
+                                <div class="cards-container" data-lista="@lista.Id">
                                     @if (lista.ListaTarjetas?.Any() ?? false)
                                     {
                                         @foreach (var tarjeta in lista.ListaTarjetas)
                                         {
-                                            <div class="card-item" id="card-@tarjeta.Id">
+                                            <div class="card-item" id="card-@tarjeta.Id" draggable="true" ondragstart="drag(event)">
                                                 <div class="d-flex justify-content-between align-items-start gap-2">
                                                     <div>
                                                         <strong>@tarjeta.Titulo</strong>
@@ -135,6 +151,7 @@ else
                                     }
                                 </div>
 
+                                <!-- Agregar tarjeta -->
                                 <details class="mt-2">
                                     <summary class="text-muted small">➕ Agregar tarjeta</summary>
                                     <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
@@ -160,20 +177,27 @@ else
                         <p class="text-muted small">No hay listas</p>
                     }
                 </div>
-
-                <div class="board-footer">
-                    <a asp-controller="Board" asp-action="Details" asp-route-id="@tablero.Id" class="btn btn-outline-primary btn-sm">Abrir tablero</a>
-                </div>
             </div>
-
-            <!-- Renderizamos la partial view del modal -->
-            @await Html.PartialAsync("_DeleteTableroPartial", tablero)
         }
     </div>
 }
 
 @section Scripts {
     <script>
+        // ===================== DRAG & DROP =====================
+        let dragged;
+        function allowDrop(ev) { ev.preventDefault(); }
+        function drag(ev) { dragged = ev.target; }
+        function drop(ev) {
+            ev.preventDefault();
+            if (!dragged) return;
+            let targetList = ev.target.closest('.cards-container');
+            if (!targetList) return;
+            targetList.appendChild(dragged);
+            dragged = null;
+        }
+
+        // ===================== COMENTARIOS AJAX =====================
         function getAntiForgery() {
             const tokenInput = document.querySelector('#__af input[name="__RequestVerificationToken"]');
             return tokenInput ? tokenInput.value : '';
@@ -184,53 +208,83 @@ else
             if (!cont) return;
             cont.innerHTML = '<div class="small text-muted">Cargando comentarios…</div>';
             try {
-                const res = await fetch(`@Url.Action("GetComments", "Board")?tarjetaId=${tarjetaId}`, { credentials: 'same-origin' });
+                const res = await fetch(`@Url.Action("GetComments", "Board")?tarjetaId=${tarjetaId}`, { credentials:'same-origin' });
                 const data = await res.json();
-                if (!Array.isArray(data)) throw new Error('Respuesta inválida');
-                if (data.length === 0) { cont.innerHTML = '<div class="small text-muted">Sin comentarios todavía.</div>'; return; }
-                cont.innerHTML = '';
-                for (const c of data) {
+                if(!Array.isArray(data)) throw new Error('Invalid');
+                if(data.length===0){cont.innerHTML='<div class="small text-muted">Sin comentarios todavía.</div>';return;}
+                cont.innerHTML='';
+                for(const c of data){
                     const row = document.createElement('div');
-                    row.className = 'comment-item d-flex justify-content-between align-items-center gap-2';
+                    row.className='comment-item d-flex justify-content-between align-items-center gap-2';
                     const text = document.createElement('div');
                     const fecha = c.fechaCreacion ? new Date(c.fechaCreacion).toLocaleString() : '';
-                    text.innerHTML = `<div>${escapeHtml(c.contenido || '')}</div><div class="small text-muted">${fecha}</div>`;
-                    const form = document.createElement('form');
-                    form.method = 'post';
-                    form.onsubmit = (e) => deleteComment(e, c.id);
-                    form.innerHTML = `<input type="hidden" name="id" value="${c.id}"><input type="hidden" name="__RequestVerificationToken" value="${getAntiForgery()}"><button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
-                    row.appendChild(text); row.appendChild(form); cont.appendChild(row);
+                    text.innerHTML=`<div>${escapeHtml(c.contenido||'')}</div><div class="small text-muted">${fecha}</div>`;
+                    const form=document.createElement('form');
+                    form.method='post';
+                    form.onsubmit=e=>deleteComment(e,c.id);
+                    form.innerHTML=`<input type="hidden" name="id" value="${c.id}"><input type="hidden" name="__RequestVerificationToken" value="${getAntiForgery()}"><button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
+                    row.appendChild(text);row.appendChild(form);cont.appendChild(row);
                 }
-            } catch { cont.innerHTML = '<div class="text-danger small">Error al cargar comentarios.</div>'; }
+            } catch { cont.innerHTML='<div class="text-danger small">Error al cargar comentarios.</div>'; }
         }
 
-        async function addComment(ev, tarjetaId) {
+        async function addComment(ev, tarjetaId){
             ev.preventDefault();
-            const form = ev.target;
-            const contenido = form.contenido.value.trim();
-            if (!contenido) return false;
-            const fd = new FormData();
+            const form=ev.target;
+            const contenido=form.contenido.value.trim();
+            if(!contenido) return false;
+            const fd=new FormData();
             fd.append('tarjetaId', tarjetaId);
             fd.append('contenido', contenido);
             fd.append('__RequestVerificationToken', getAntiForgery());
-            const res = await fetch(`@Url.Action("CreateComment", "Board")`, { method:'POST', credentials:'same-origin', body: fd });
-            if (res.ok) { form.reset(); loadComments(tarjetaId); } else { alert('No se pudo agregar el comentario.'); }
+            const res=await fetch(`@Url.Action("CreateComment", "Board")`,{method:'POST',credentials:'same-origin',body:fd});
+            if(res.ok){form.reset(); loadComments(tarjetaId);} else{alert('No se pudo agregar el comentario.');}
             return false;
         }
 
-        async function deleteComment(ev) {
+        async function deleteComment(ev){
             ev.preventDefault();
             if(!confirm('¿Eliminar este comentario?')) return false;
-            const fd = new FormData(ev.target);
-            fd.append('__RequestVerificationToken', getAntiForgery());
-            const res = await fetch(`@Url.Action("DeleteComment", "Board")`, { method:'POST', credentials:'same-origin', body: fd });
-            if(res.ok){ const details = ev.target.closest('details'); const tarjetaId = details?.getAttribute('data-tarjeta'); if(tarjetaId) loadComments(tarjetaId); } else { alert('No se pudo eliminar el comentario.'); }
+            const fd=new FormData(ev.target);
+            fd.append('__RequestVerificationToken',getAntiForgery());
+            const res=await fetch(`@Url.Action("DeleteComment", "Board")`,{method:'POST',credentials:'same-origin',body:fd});
+            if(res.ok){ const details=ev.target.closest('details'); const tarjetaId=details?.getAttribute('data-tarjeta'); if(tarjetaId) loadComments(tarjetaId);} else {alert('No se pudo eliminar el comentario.');}
             return false;
         }
 
-        function escapeHtml(s) {
-            const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"':'&quot;', "'": '&#039;' };
-            return String(s).replace(/[&<>"']/g, m => map[m]);
+        function escapeHtml(s){const map={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'};return String(s).replace(/[&<>"']/g,m=>map[m]);}
+
+        // ===================== ELIMINAR TABLERO AJAX =====================
+       
+        async function deleteBoard(ev, tableroId) {
+            ev.preventDefault();
+
+            if (!confirm('¿Eliminar este tablero y todas sus listas y tarjetas?')) return false;
+
+            // Creamos FormData para enviar el token anti-forgery
+            const fd = new FormData();
+            fd.append('__RequestVerificationToken', getAntiForgery());
+
+            try {
+                const res = await fetch(`/Tablero/DeleteBoard/${tableroId}`, {
+                    method: 'POST',
+                    credentials: 'same-origin',
+                    body: fd
+                });
+
+                if (res.ok) {
+                    // Eliminar el tablero de la vista sin recargar
+                    const boardEl = document.querySelector(`.board[data-tablero='${tableroId}']`);
+                    if (boardEl) boardEl.remove();
+                } else {
+                    alert('No se pudo eliminar el tablero.');
+                }
+            } catch (err) {
+                console.error(err);
+                alert('Error al eliminar el tablero.');
+            }
+
+            return false;
         }
     </script>
 }
@@ -270,18 +324,23 @@ else
         flex-direction: column;
         gap: .5rem;
         flex-shrink: 0;
+        position: relative;
     }
 
     .list-header {
         font-weight: 700;
         margin-bottom: .5rem;
         text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .cards-container {
         display: flex;
         flex-direction: column;
         gap: .5rem;
+        min-height: 50px;
     }
 
     .card-item {
@@ -290,25 +349,16 @@ else
         padding: .5rem;
         box-shadow: 0 2px 6px rgba(0,0,0,.1);
         transition: transform .15s, box-shadow .15s;
+        cursor: grab;
     }
 
-        .card-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,.15);
+        .card-item:active {
+            cursor: grabbing;
         }
 
     .board-footer {
         text-align: center;
         margin-top: 1rem;
-    }
-
-    .lists-container::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    .lists-container::-webkit-scrollbar-thumb {
-        background: rgba(0,0,0,.2);
-        border-radius: 4px;
     }
 
     .comments-box {

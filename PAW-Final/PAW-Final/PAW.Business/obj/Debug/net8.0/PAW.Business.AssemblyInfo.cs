@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAW.Business")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8037ff60694241cf542b9b7222abe05506ef83c1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d893f695a0b9fd4c9b9a2e12f4cbcb338c91efc8")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAW.Business")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAW.Business")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

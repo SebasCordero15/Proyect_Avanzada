@@ -34,6 +34,8 @@ namespace PAW.Models.ViewModels
 
         [Display(Name = "Nombre del usuario asignado")]
         public string? NombreUsuarioAsignado { get; set; }
+
+        
     }
 }
 

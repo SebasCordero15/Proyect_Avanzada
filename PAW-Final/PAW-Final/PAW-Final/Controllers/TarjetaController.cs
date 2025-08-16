@@ -121,5 +121,28 @@ namespace PAW.Web.ApiControllers
             await _tarjetumBusiness.Eliminar(id);
             return NoContent();
         }
+
+        // GET: api/tarjeta/lista/5
+        [HttpGet("lista/{listaId}")]
+        public async Task<ActionResult<IEnumerable<TarjetumViewModel>>> GetByLista(int listaId)
+        {
+            var tarjetas = await _tarjetumBusiness.ObtenerPorLista(listaId);
+            if (tarjetas == null || !tarjetas.Any())
+                return Ok(new List<TarjetumViewModel>());
+
+            var result = tarjetas.Select(t => new TarjetumViewModel
+            {
+                Id = t.Id,
+                Titulo = t.Titulo,
+                Descripcion = t.Descripcion,
+                FechaCreacion = t.FechaCreacion,
+                FechaVencimiento = t.FechaVencimiento,
+                ListaId = t.ListaId,
+                UsuarioAsignadoId = t.UsuarioAsignadoId
+            }).ToList();
+
+            return Ok(result);
+        }
+
     }
 }

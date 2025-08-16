@@ -106,9 +106,21 @@ namespace PAW.Mvc.Controllers
                     foreach (var lista in tablero.Lista)
                     {
                         var tarjetasResponse = await client.GetAsync($"api/Tarjeta/lista/{lista.Id}");
-                        if (!tarjetasResponse.IsSuccessStatusCode) continue;
+
+                        if (!tarjetasResponse.IsSuccessStatusCode)
+                        {
+                            // Aquí vemos si la llamada al API falla
+                            Console.WriteLine($"Error al obtener tarjetas para la lista {lista.Id}: {tarjetasResponse.StatusCode}");
+                            continue;
+                        }
 
                         var tarjetasDto = await tarjetasResponse.Content.ReadFromJsonAsync<List<TarjetumDto>>() ?? new();
+
+                        if (!tarjetasDto.Any())
+                        {
+                            // Aquí vemos si la API devuelve lista vacía
+                            Console.WriteLine($"No se encontraron tarjetas para la lista {lista.Id}");
+                        }
 
                         lista.ListaTarjetas = tarjetasDto.Select(t => new TarjetumViewModel
                         {
@@ -120,7 +132,8 @@ namespace PAW.Mvc.Controllers
                             ListaId = t.ListaId,
                             UsuarioAsignadoId = t.UsuarioAsignadoId
                         }).ToList();
-                    }
+                    
+                }
                 }
 
                 return View(tablerosVm);
@@ -197,62 +210,8 @@ namespace PAW.Mvc.Controllers
             return View(vm);
         }
 
-        // =======================
-        // LISTAS
-        // =======================
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateList(int tableroId, string titulo)
-        {
-            if (string.IsNullOrWhiteSpace(titulo))
-            {
-                TempData["Error"] = "El título de la lista es obligatorio.";
-                return RedirectToAction(nameof(Index));
-            }
-
-            var client = _http.CreateClient("api");
-
-            // Calcular orden = último + 1
-            var listasResp = await client.GetAsync($"api/Lista/tablero/{tableroId}");
-            int nuevoOrden = 1;
-            if (listasResp.IsSuccessStatusCode)
-            {
-                var existentes = await listasResp.Content.ReadFromJsonAsync<List<ListumDto>>() ?? new();
-                nuevoOrden = (existentes.Any() ? existentes.Max(l => l.Orden) : 0) + 1;
-            }
-
-            var createPayload = new ListumDto
-            {
-                Titulo = titulo.Trim(),
-                Orden = nuevoOrden,
-                TableroId = tableroId
-            };
-
-            var res = await client.PostAsJsonAsync("api/Lista", createPayload);
-            if (!res.IsSuccessStatusCode)
-                TempData["Error"] = "No se pudo crear la lista.";
-
-            // Volver a la página previa si venía de Details
-            if (Request.Headers["Referer"].ToString().Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
-                return Redirect(Request.Headers["Referer"].ToString());
-
-            return RedirectToAction(nameof(Index));
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteList(int id)
-        {
-            var client = _http.CreateClient("api");
-            var res = await client.DeleteAsync($"api/Lista/{id}");
-            if (!res.IsSuccessStatusCode)
-                TempData["Error"] = "No se pudo eliminar la lista.";
-
-            if (Request.Headers["Referer"].ToString().Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
-                return Redirect(Request.Headers["Referer"].ToString());
-
-            return RedirectToAction(nameof(Index));
-        }
+        
+        
 
         // =======================
         // TARJETAS

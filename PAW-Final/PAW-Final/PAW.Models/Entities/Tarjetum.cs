@@ -24,4 +24,6 @@ public partial class Tarjetum
     public virtual Listum Lista { get; set; } = null!;
 
     public virtual Usuario? UsuarioAsignado { get; set; }
+
+    
 }

@@ -12,9 +12,10 @@ namespace PAW.Repository.Repositories
         public async Task<List<Tarjetum>> GetByListaIdAsync(int listaId)
         {
             return await _dbSet
-                .Where(t => t.ListaId == listaId)
-                .Include(t => t.Comentarios)
-                .ToListAsync();
+          .Where(t => t.ListaId == listaId)
+        .Include(t => t.Lista) // <- importante
+        .Include(t => t.Comentarios) // opcional
+        .ToListAsync();
         }
 
         public async Task<List<Tarjetum>> GetByUsuarioAsignadoIdAsync(int usuarioId)

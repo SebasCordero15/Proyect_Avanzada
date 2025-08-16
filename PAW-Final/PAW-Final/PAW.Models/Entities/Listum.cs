@@ -13,7 +13,7 @@ public partial class Listum
 
     public int TableroId { get; set; }
 
-    public virtual Tablero Tablero { get; set; } = null!;
+    public virtual Tablero? Tablero { get; set; }
 
     public virtual ICollection<Tarjetum> Tarjeta { get; set; } = new List<Tarjetum>();
 }

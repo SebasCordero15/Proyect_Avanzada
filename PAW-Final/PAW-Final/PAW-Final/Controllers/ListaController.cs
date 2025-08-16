@@ -50,23 +50,12 @@ namespace PAW.API.Controllers
             return CreatedAtAction(nameof(GetLista), new { id = nuevaLista.Id }, nuevaLista);
         }
 
-        // PUT: api/lista/5
-        [HttpPut("{id}")]
-        public async Task<ActionResult> ActualizarLista(int id, [FromBody] Listum listaActualizada)
-        {
-            if (id != listaActualizada.Id)
-                return BadRequest("El ID de la lista no coincide.");
+       
+      
+        
 
-            var existente = await _listumBusiness.ObtenerPorId(id);
-            if (existente == null)
-                return NotFound();
-
-            await _listumBusiness.Actualizar(listaActualizada);
-            return NoContent();
-        }
-
-        // DELETE: api/lista/5
-        [HttpDelete("{id}")]
+            // DELETE: api/lista/5
+            [HttpDelete("{id}")]
         public async Task<ActionResult> EliminarLista(int id)
         {
             var existente = await _listumBusiness.ObtenerPorId(id);
@@ -76,5 +65,35 @@ namespace PAW.API.Controllers
             await _listumBusiness.Eliminar(id);
             return NoContent();
         }
-    }
+
+        [HttpPut("{id}")]
+        public async Task<ActionResult> ActualizarLista(int id, [FromBody] Listum listaActualizada)
+        {
+            if (listaActualizada == null || string.IsNullOrWhiteSpace(listaActualizada.Titulo))
+                return BadRequest("El título de la lista es obligatorio.");
+
+            try
+            {
+                // Obtener la entidad existente rastreada por EF
+                var existente = await _listumBusiness.ObtenerPorId(id);
+                if (existente == null)
+                    return NotFound($"No se encontró la lista con ID {id}.");
+
+                // Actualizar solo la propiedad necesaria
+                existente.Titulo = listaActualizada.Titulo.Trim();
+
+                // Guardar cambios
+                await _listumBusiness.Actualizar(existente);
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                // Retornar detalle completo del error para depuración
+                return StatusCode(500, $"Error inesperado: {ex.Message}\n{ex.StackTrace}");
+            }
+        }
 }
+
+}
+

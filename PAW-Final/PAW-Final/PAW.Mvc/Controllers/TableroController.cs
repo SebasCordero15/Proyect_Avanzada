@@ -137,20 +137,30 @@ namespace PAW.Mvc.Controllers
             // Retornamos partial view para el modal
             return PartialView("_DeleteTableroPartial", tablero);
         }
-
-        // POST: Tablero/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public async Task<IActionResult> DeleteBoard(int id)
         {
             var client = _http.CreateClient("api");
-            var res = await client.DeleteAsync($"api/tablero/{id}");
+
+            // Llamada al API para eliminar el tablero
+            var res = await client.DeleteAsync($"api/Tablero/{id}");
 
             if (!res.IsSuccessStatusCode)
             {
+                // Si la petición es AJAX devolvemos el código de error
+                if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                    return StatusCode((int)res.StatusCode);
+
                 TempData["Error"] = "No se pudo eliminar el tablero.";
+                return RedirectToAction(nameof(Index));
             }
 
+            // Respuesta para AJAX
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+                return Ok();
+
+            // Redirigir si se usó form normal
             return RedirectToAction(nameof(Index));
         }
 
