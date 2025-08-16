@@ -6,7 +6,6 @@ namespace PAW.Repository.Interfaces
     {
         Task<List<Tablero>> GetByUsuarioIdAsync(int usuarioId);
 
-        Task<List<Tablero>> DeleteAsync(int id);
     }
 }
 

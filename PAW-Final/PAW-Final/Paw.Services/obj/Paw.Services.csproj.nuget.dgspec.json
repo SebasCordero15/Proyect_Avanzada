@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj": {}
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
         "projectName": "Paw.Services",
-        "projectPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
-        "packagesPath": "C:\\Users\\Maria\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Maria\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\Paw.Services.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\Paw.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Maria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

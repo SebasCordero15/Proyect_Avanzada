@@ -1,0 +1,14 @@
+﻿@model PAW.Models.ViewModels.ListumViewModel
+
+<form asp-controller="Board" asp-action="CreateCard" method="post" class="mb-2">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="listaId" value="@Model.Id" />
+    <input type="hidden" name="tableroId" value="@Model.TableroId" />
+    <div class="input-group">
+        <input class="form-control" name="titulo" placeholder="Nueva tarjeta..." required />
+        <button class="btn btn-primary" type="submit">Añadir</button>
+    </div>
+    <textarea class="form-control mt-2" name="descripcion" rows="2" placeholder="Descripción (opcional)"></textarea>
+    <input type="date" class="form-control mt-2" name="fechaVencimiento" />
+</form>
+

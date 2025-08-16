@@ -210,20 +210,20 @@ namespace PAW.Mvc.Controllers
             return View(vm);
         }
 
-        
-        
+
+
 
         // =======================
         // TARJETAS
         // =======================
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateCard(int listaId, string titulo, string? descripcion, DateTime? fechaVencimiento)
+        public async Task<IActionResult> CreateCard(int listaId, int tableroId, string titulo, string? descripcion, DateTime? fechaVencimiento)
         {
             if (string.IsNullOrWhiteSpace(titulo))
             {
                 TempData["Error"] = "El título de la tarjeta es obligatorio.";
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Details), new { id = tableroId });
             }
 
             var client = _http.CreateClient("api");
@@ -240,10 +240,8 @@ namespace PAW.Mvc.Controllers
             if (!res.IsSuccessStatusCode)
                 TempData["Error"] = "No se pudo crear la tarjeta.";
 
-            if (Request.Headers["Referer"].ToString().Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
-                return Redirect(Request.Headers["Referer"].ToString());
-
-            return RedirectToAction(nameof(Index));
+            // Vuelve SIEMPRE al tablero correcto (sin depender del Referer)
+            return RedirectToAction(nameof(Details), new { id = tableroId });
         }
 
         // Editar tarjeta (para modal/JS)
@@ -286,6 +284,40 @@ namespace PAW.Mvc.Controllers
 
             if (Request.Headers["Referer"].ToString().Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
                 return Redirect(Request.Headers["Referer"].ToString());
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetCardsByList(int listaId)
+        {
+            var client = _http.CreateClient("api");
+            var res = await client.GetAsync($"api/Tarjeta/lista/{listaId}");
+            if (!res.IsSuccessStatusCode) return Json(Array.Empty<object>());
+
+            var tarjetas = await res.Content.ReadFromJsonAsync<List<TarjetumDto>>() ?? new();
+            return Json(tarjetas.OrderBy(t => t.Id));
+        }
+
+        // Mover tarjeta entre listas (drag & drop)
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> MoveCard(int id, int nuevaListaId)
+        {
+            var client = _http.CreateClient("api");
+            var res = await client.PostAsync($"api/Tarjeta/{id}/mover/{nuevaListaId}", content: null);
+
+            if (!res.IsSuccessStatusCode)
+            {
+                if (IsAjaxRequest()) return StatusCode((int)res.StatusCode);
+                TempData["Error"] = "No se pudo mover la tarjeta.";
+            }
+
+            if (IsAjaxRequest()) return Ok();
+
+            var referer = Request.Headers["Referer"].ToString();
+            if (referer.Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
+                return Redirect(referer);
 
             return RedirectToAction(nameof(Index));
         }

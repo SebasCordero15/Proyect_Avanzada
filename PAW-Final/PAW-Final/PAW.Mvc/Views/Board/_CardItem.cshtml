@@ -1,7 +1,9 @@
 ﻿@model PAW.Models.ViewModels.TarjetumViewModel
 
 <div class="card-item"
+     draggable="true"
      data-card-id="@Model.Id"
+     data-lista-id="@Model.ListaId"
      data-card-title="@Model.Titulo"
      data-card-desc="@Model.Descripcion"
      data-card-due="@(Model.FechaVencimiento.HasValue? Model.FechaVencimiento.Value.ToString("yyyy-MM-dd") : "")"

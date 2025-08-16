@@ -9,14 +9,15 @@
     <div class="alert alert-danger">@TempData["Error"]</div>
 }
 
-<!-- Antiforgery para fetch (editar/eliminar tarjeta) -->
+<!-- Antiforgery para fetch (editar/eliminar/mover tarjeta) -->
 <form asp-antiforgery="true" id="__af"></form>
 
 <!-- Agregar lista -->
 <div class="mb-3">
     <details>
         <summary class="text-muted">➕ Agregar lista</summary>
-        <form asp-controller="Board" asp-action="CreateList" method="post" class="row g-2 mt-2">
+        <!-- 👇 ahora va a ListaController -->
+        <form asp-controller="Lista" asp-action="CreateList" method="post" class="row g-2 mt-2">
             @Html.AntiForgeryToken()
             <input type="hidden" name="tableroId" value="@Model.Id" />
             <div class="col-12 col-md-6">
@@ -35,14 +36,16 @@
         <div class="list-column bg-light rounded p-2" style="min-width:300px;max-width:340px;">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <strong>@lista.Titulo</strong>
-                <form asp-controller="Board" asp-action="DeleteList" method="post" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
+                <!-- 👇 ahora va a ListaController -->
+                <form asp-controller="Lista" asp-action="DeleteList" method="post" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
                     @Html.AntiForgeryToken()
                     <input type="hidden" name="id" value="@lista.Id" />
                     <button class="btn btn-danger btn-sm" type="submit">Eliminar</button>
                 </form>
             </div>
 
-            <div class="d-grid gap-2">
+            <!-- 👇 drop zone para tarjetas -->
+            <div class="d-grid gap-2 card-list" data-lista-id="@lista.Id">
                 @if (lista.ListaTarjetas?.Any() ?? false)
                 {
                     foreach (var tarjeta in lista.ListaTarjetas)
@@ -62,6 +65,7 @@
                 <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
                     @Html.AntiForgeryToken()
                     <input type="hidden" name="listaId" value="@lista.Id" />
+                    <input type="hidden" name="tableroId" value="@lista.TableroId" />
                     <div class="mb-2">
                         <input class="form-control form-control-sm" type="text" name="titulo" placeholder="Título" required />
                     </div>
@@ -85,7 +89,7 @@
           return t ? t.value : '';
         }
 
-        // Abrir modal de edición
+        // ----- Abrir modal de edición (tu lógica actual)
         document.addEventListener('click', (e) => {
           const btn = e.target.closest('.btn-edit-card');
           if (!btn) return;
@@ -93,14 +97,11 @@
           const id = btn.getAttribute('data-card-id');
           const modalEl = document.getElementById('editCardModal-' + id);
           if (!modalEl) return;
-          if (window.bootstrap?.Modal) {
-            new bootstrap.Modal(modalEl).show();
-          } else {
-            modalEl.style.display = 'block';
-          }
+          if (window.bootstrap?.Modal) new bootstrap.Modal(modalEl).show();
+          else modalEl.style.display = 'block';
         });
 
-        // Guardar edición
+        // ----- Guardar edición (tu lógica actual)
         document.addEventListener('submit', async (e) => {
           const form = e.target.closest('form[data-edit-card-form]');
           if (!form) return;
@@ -115,7 +116,6 @@
           });
 
           if (res.ok) {
-            // Actualiza UI del card
             const card = document.querySelector(`.card-item[data-card-id="${id}"]`);
             if (card) {
               const title = fd.get('titulo') ?? '';
@@ -152,7 +152,6 @@
                 dateEl.remove();
               }
             }
-
             const modalEl = document.getElementById('editCardModal-' + id);
             window.bootstrap?.Modal.getInstance(modalEl)?.hide();
           } else {
@@ -160,7 +159,7 @@
           }
         });
 
-        // Eliminar tarjeta (vía menú)
+        // ----- Eliminar tarjeta (tu lógica actual)
         document.addEventListener('click', async (e) => {
           const btn = e.target.closest('.btn-delete-card');
           if (!btn) return;
@@ -183,6 +182,44 @@
             alert('No se pudo eliminar la tarjeta.');
           }
         });
+
+        // ===== Drag & Drop para mover tarjetas entre listas =====
+        (function enableDnD() {
+          // Asegurar que todas las tarjetas sean arrastrables
+          document.querySelectorAll('.card-item').forEach(el => {
+            el.setAttribute('draggable', 'true');
+            el.addEventListener('dragstart', ev => {
+              ev.dataTransfer.setData('text/plain', el.dataset.cardId);
+            });
+          });
+
+          // Habilitar listas como zonas de drop
+          document.querySelectorAll('.card-list').forEach(list => {
+            list.addEventListener('dragover', ev => ev.preventDefault());
+            list.addEventListener('drop', async ev => {
+              ev.preventDefault();
+              const cardId = ev.dataTransfer.getData('text/plain');
+              const nuevaListaId = list.dataset.listaId;
+
+              const body = new URLSearchParams({ id: cardId, nuevaListaId });
+              const res = await fetch('@Url.Action("MoveCard", "Board")', {
+                method: 'POST',
+                headers: { 'RequestVerificationToken': getAF(), 'Content-Type': 'application/x-www-form-urlencoded' },
+                body
+              });
+
+              if (res.ok) {
+                // Mover en DOM sin recargar
+                const card = document.querySelector(`.card-item[data-card-id="${cardId}"]`);
+                if (card) {
+                  list.appendChild(card);
+                  card.dataset.listaId = nuevaListaId;
+                }
+              } else {
+                alert('No se pudo mover la tarjeta');
+              }
+            });
+          });
+        })();
     </script>
 }
-
