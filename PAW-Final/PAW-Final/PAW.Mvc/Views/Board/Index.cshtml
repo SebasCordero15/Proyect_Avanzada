@@ -36,21 +36,17 @@ else
                     <div>
                         <h3 class="mb-0">@tablero.Titulo</h3>
                         <small class="text-muted">@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
+                   
                     </div>
-                    <!-- Menú por tablero --> <div class="dropdown">
-                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ </button> <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
-                            <li> <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a> </li>
-                            <li>
-                            <li>
-                                <a class="dropdown-item text-danger" href="#" onclick="deleteBoard(event, @tablero.Id)">Eliminar</a>
-                            </li>
-
-                            </li>
+                    <div class="dropdown">
+                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
+                            <li><a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a></li>
+                            <li><a class="dropdown-item text-danger" href="#" onclick="deleteBoard(event, @tablero.Id)">Eliminar</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Agregar lista -->
                 <div class="mb-3 text-center">
                     <details>
                         <summary class="text-muted">➕ Agregar lista</summary>
@@ -67,7 +63,6 @@ else
                     </details>
                 </div>
 
-                <!-- Contenedor de listas -->
                 <div class="lists-container" data-tablero="@tablero.Id">
                     @if (tablero.Lista?.Any() ?? false)
                     {
@@ -76,12 +71,8 @@ else
                             <div class="list-column" data-lista="@lista.Id" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <div class="list-header d-flex justify-content-between align-items-center">
                                     <strong>@lista.Titulo</strong>
-
-                                    <!-- Dropdown para lista -->
                                     <div class="dropdown">
-                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                                            ⋮
-                                        </button>
+                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">⋮</button>
                                         <ul class="dropdown-menu dropdown-menu-end">
                                             <li>
                                                 <form asp-controller="Lista" asp-action="EditList" method="post" class="d-flex gap-1 m-0 p-0">
@@ -132,7 +123,6 @@ else
                                                     <div class="comments-box" id="comments-list-@tarjeta.Id">
                                                         <div class="small text-muted">Cargando comentarios…</div>
                                                     </div>
-
                                                     <form class="row g-2 align-items-center mt-1" onsubmit="return addComment(event, @tarjeta.Id);">
                                                         <div class="col-12">
                                                             <input class="form-control form-control-sm" type="text" name="contenido" placeholder="Escribe un comentario…" required />
@@ -151,7 +141,6 @@ else
                                     }
                                 </div>
 
-                                <!-- Agregar tarjeta -->
                                 <details class="mt-2">
                                     <summary class="text-muted small">➕ Agregar tarjeta</summary>
                                     <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
@@ -184,7 +173,7 @@ else
 
 @section Scripts {
     <script>
-        // ===================== DRAG & DROP =====================
+        // DRAG & DROP
         let dragged;
         function allowDrop(ev) { ev.preventDefault(); }
         function drag(ev) { dragged = ev.target; }
@@ -197,7 +186,7 @@ else
             dragged = null;
         }
 
-        // ===================== COMENTARIOS AJAX =====================
+        // COMENTARIOS AJAX
         function getAntiForgery() {
             const tokenInput = document.querySelector('#__af input[name="__RequestVerificationToken"]');
             return tokenInput ? tokenInput.value : '';
@@ -254,40 +243,22 @@ else
 
         function escapeHtml(s){const map={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'};return String(s).replace(/[&<>"']/g,m=>map[m]);}
 
-        // ===================== ELIMINAR TABLERO AJAX =====================
-       
         async function deleteBoard(ev, tableroId) {
             ev.preventDefault();
-
             if (!confirm('¿Eliminar este tablero y todas sus listas y tarjetas?')) return false;
-
-            // Creamos FormData para enviar el token anti-forgery
-            const fd = new FormData();
-            fd.append('__RequestVerificationToken', getAntiForgery());
-
+            const fd = new FormData(); fd.append('__RequestVerificationToken', getAntiForgery());
             try {
-                const res = await fetch(`/Tablero/DeleteBoard/${tableroId}`, {
-                    method: 'POST',
-                    credentials: 'same-origin',
-                    body: fd
-                });
-
+                const res = await fetch(`/Tablero/DeleteBoard/${tableroId}`, { method: 'POST', credentials: 'same-origin', body: fd });
                 if (res.ok) {
-                    // Eliminar el tablero de la vista sin recargar
                     const boardEl = document.querySelector(`.board[data-tablero='${tableroId}']`);
                     if (boardEl) boardEl.remove();
-                } else {
-                    alert('No se pudo eliminar el tablero.');
-                }
-            } catch (err) {
-                console.error(err);
-                alert('Error al eliminar el tablero.');
-            }
-
+                } else { alert('No se pudo eliminar el tablero.'); }
+            } catch { alert('Error al eliminar el tablero.'); }
             return false;
         }
     </script>
 }
+
 
 <style>
     .board-container {

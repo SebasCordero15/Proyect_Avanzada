@@ -19,5 +19,7 @@ namespace PAW.Models.ViewModels
         [DataType(DataType.Password)]
         [Display(Name = "Contraseña")]
         public string Clave { get; set; }
+
+
     }
 }

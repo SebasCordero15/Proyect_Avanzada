@@ -29,18 +29,15 @@ namespace PAW.Mvc.Controllers
 
             try
             {
-                // Buscar usuario por correo en tu API
                 var usuario = await client.GetFromJsonAsync<UsuarioViewModel>(
                     $"api/usuario/correo/{Uri.EscapeDataString(vm.Correo)}");
 
-                // Validar contraseña (simple)
                 if (usuario is null || usuario.Clave != vm.Clave)
                 {
                     ModelState.AddModelError(string.Empty, "Credenciales inválidas.");
                     return View(vm);
                 }
 
-                // Crear identidad y claims
                 var claims = new List<Claim>
                 {
                     new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
@@ -51,13 +48,11 @@ namespace PAW.Mvc.Controllers
                 var claimsIdentity = new ClaimsIdentity(
                     claims, CookieAuthenticationDefaults.AuthenticationScheme);
 
-                // Firmar al usuario
                 await HttpContext.SignInAsync(
                     CookieAuthenticationDefaults.AuthenticationScheme,
                     new ClaimsPrincipal(claimsIdentity)
                 );
 
-                // Redirigir
                 var url = string.IsNullOrWhiteSpace(vm.ReturnUrl)
                     ? Url.Action("Index", "Board")!
                     : vm.ReturnUrl;
@@ -70,6 +65,7 @@ namespace PAW.Mvc.Controllers
                 return View(vm);
             }
         }
+
         [HttpGet]
         public IActionResult Register()
         {
@@ -86,7 +82,6 @@ namespace PAW.Mvc.Controllers
 
             try
             {
-                // POST al API para crear usuario
                 var res = await client.PostAsJsonAsync("api/usuario", vm);
 
                 if (!res.IsSuccessStatusCode)
@@ -95,7 +90,6 @@ namespace PAW.Mvc.Controllers
                     return View(vm);
                 }
 
-                // Después de registrar, redirigir a login
                 return RedirectToAction("Login");
             }
             catch (HttpRequestException)
@@ -111,5 +105,65 @@ namespace PAW.Mvc.Controllers
             await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
             return RedirectToAction("Login");
         }
+
+        // GET: Account/Edit
+        [HttpGet]
+        public async Task<IActionResult> Edit()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (userIdClaim == null) return RedirectToAction("Login");
+
+            var client = _http.CreateClient("api");
+            var usuario = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{userIdClaim}");
+            if (usuario == null) return NotFound();
+
+            return View(usuario);
+        }
+
+        // POST: Account/Edit
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(UsuarioViewModel vm)
+        {
+            if (!ModelState.IsValid) return View(vm);
+
+            var client = _http.CreateClient("api");
+
+            // Traer usuario actual de la API para asegurarnos que exista
+            var usuarioActual = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{vm.Id}");
+            if (usuarioActual == null)
+                return NotFound();
+
+            // Crear objeto para actualizar solo nombre y correo, manteniendo clave actual
+            var usuarioParaActualizar = new UsuarioViewModel
+            {
+                Id = usuarioActual.Id,
+                Nombre = vm.Nombre,
+                Correo = vm.Correo,
+                Clave = usuarioActual.Clave // <--- mantenemos la clave existente
+            };
+
+            // Enviar PUT a la API
+            var res = await client.PutAsJsonAsync($"api/usuario/{vm.Id}", usuarioParaActualizar);
+            if (!res.IsSuccessStatusCode)
+            {
+                ModelState.AddModelError(string.Empty, "No se pudo actualizar el usuario.");
+                return View(vm);
+            }
+
+            // Actualizar claim de Name si cambió el nombre
+            var claimsIdentity = (ClaimsIdentity)User.Identity!;
+            var nameClaim = claimsIdentity.FindFirst(ClaimTypes.Name);
+            if (nameClaim != null && nameClaim.Value != vm.Nombre)
+            {
+                claimsIdentity.RemoveClaim(nameClaim);
+                claimsIdentity.AddClaim(new Claim(ClaimTypes.Name, vm.Nombre));
+            }
+
+            // Redirigir al Board
+            return RedirectToAction("Index", "Board");
+        }
     }
 }
+
+

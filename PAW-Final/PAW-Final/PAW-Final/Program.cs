@@ -10,7 +10,12 @@ using PAW.Data.MSSql;
 var builder = WebApplication.CreateBuilder(args);
 
 // Controllers + Swagger
-builder.Services.AddControllers();
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.IgnoreCycles;
+    options.JsonSerializerOptions.WriteIndented = true;
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -31,6 +36,8 @@ builder.Services.AddScoped<IComentarioBusiness, ComentarioBusiness>();
 builder.Services.AddScoped<IListumBusiness, ListumBusiness>();
 builder.Services.AddScoped<ITableroBusiness, TableroBusiness>();
 builder.Services.AddScoped<ITarjetumBusiness, TarjetumBusiness>();
+
+
 
 // 🔓 CORS DEV (agrega aquí los orígenes que te llaman: Swagger, tu MVC, etc.)
 const string CorsDev = "CorsDev";

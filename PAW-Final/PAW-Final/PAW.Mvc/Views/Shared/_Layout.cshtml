@@ -25,12 +25,8 @@
 
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="appNavbar">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
+
+
 
                         @* Solo muestra el board si está autenticado *@
                         @if (User?.Identity?.IsAuthenticated ?? false)
@@ -54,6 +50,12 @@
                                         @User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
+                                    
+                                    <li>
+                                        <a class="dropdown-item" asp-controller="Account" asp-action="Edit">Editar perfil</a>
+                                    </li>
+                                    <li><hr class="dropdown-divider" /></li>
+
                                     <li>
                                         <form asp-controller="Account" asp-action="Logout" method="post" class="px-3">
                                             @Html.AntiForgeryToken()

@@ -7,8 +7,10 @@ namespace PAW.Business.Interfaces
         Task<List<Tablero>> ObtenerTodos();
         Task<Tablero?> ObtenerPorId(int id);
         Task<List<Tablero>> ObtenerPorUsuario(int usuarioId);
+
         Task Crear(Tablero tablero);
         Task Actualizar(Tablero tablero);
         Task Eliminar(int id);
     }
 }
+

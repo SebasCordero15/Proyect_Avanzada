@@ -26,19 +26,16 @@ namespace PAW.API.Controllers
         }
 
         // GET: api/Tablero/5
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<ActionResult<Tablero>> GetPorId(int id)
         {
             var tablero = await _tableroBusiness.ObtenerPorId(id);
-            if (tablero == null)
-            {
-                return NotFound();
-            }
+            if (tablero == null) return NotFound();
             return Ok(tablero);
         }
 
         // GET: api/Tablero/usuario/3
-        [HttpGet("usuario/{usuarioId}")]
+        [HttpGet("usuario/{usuarioId:int}")]
         public async Task<ActionResult<List<Tablero>>> GetPorUsuario(int usuarioId)
         {
             var tableros = await _tableroBusiness.ObtenerPorUsuario(usuarioId);
@@ -49,48 +46,37 @@ namespace PAW.API.Controllers
         [HttpPost]
         public async Task<ActionResult> Crear([FromBody] Tablero tablero)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
             await _tableroBusiness.Crear(tablero);
-
-            // Devuelve el recurso creado con su URI
             return CreatedAtAction(nameof(GetPorId), new { id = tablero.Id }, tablero);
         }
 
         // PUT: api/Tablero/5
-        [HttpPut("{id}")]
+        [HttpPut("{id:int}")]
         public async Task<ActionResult> Actualizar(int id, [FromBody] Tablero tablero)
         {
-            if (id != tablero.Id)
-            {
-                return BadRequest("El ID del tablero no coincide.");
-            }
+            if (id != tablero.Id) return BadRequest("El ID del tablero no coincide.");
 
             var existente = await _tableroBusiness.ObtenerPorId(id);
-            if (existente == null)
-            {
-                return NotFound();
-            }
+            if (existente == null) return NotFound();
 
             await _tableroBusiness.Actualizar(tablero);
-            return NoContent(); // 204 sin contenido
+            return NoContent();
         }
 
         // DELETE: api/Tablero/5
-        [HttpDelete("{id}")]
+        [HttpDelete("{id:int}")]
         public async Task<ActionResult> Eliminar(int id)
         {
             var existente = await _tableroBusiness.ObtenerPorId(id);
-            if (existente == null)
-            {
-                return NotFound();
-            }
+            if (existente == null) return NotFound();
 
             await _tableroBusiness.Eliminar(id);
             return NoContent();
         }
     }
 }
+
+
+

@@ -79,5 +79,9 @@ namespace PAW.API.Controllers
             await _usuarioBusiness.Eliminar(id);
             return NoContent();
         }
+
+
+
+
     }
 }

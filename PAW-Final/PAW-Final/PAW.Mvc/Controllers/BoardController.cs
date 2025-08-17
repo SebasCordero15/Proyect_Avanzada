@@ -12,15 +12,14 @@ namespace PAW.Mvc.Controllers
 
         public BoardController(IHttpClientFactory http) => _http = http;
 
-        // =======================
-        // DTOs (privados al controlador)
-        // =======================
+        // DTOs privados
         private class TableroDto
         {
             public int Id { get; set; }
             public string Titulo { get; set; } = null!;
             public DateTime FechaCreacion { get; set; }
             public int UsuarioId { get; set; }
+            public List<ListumDto> Lista { get; set; } = new();
         }
 
         private class ListumDto
@@ -29,6 +28,7 @@ namespace PAW.Mvc.Controllers
             public string Titulo { get; set; } = null!;
             public int Orden { get; set; }
             public int TableroId { get; set; }
+            public List<TarjetumDto> Tarjeta { get; set; } = new();
         }
 
         private class TarjetumDto
@@ -51,7 +51,7 @@ namespace PAW.Mvc.Controllers
             public int UsuarioId { get; set; }
         }
 
-        // Utilidad para detectar si la petición viene desde fetch/AJAX
+        // Detectar si es AJAX/fetch
         private bool IsAjaxRequest() =>
             Request.Headers["X-Requested-With"] == "XMLHttpRequest" ||
             Request.Headers["Accept"].ToString().Contains("application/json", StringComparison.OrdinalIgnoreCase);
@@ -62,18 +62,10 @@ namespace PAW.Mvc.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _http.CreateClient("api");
-
             try
             {
-                // 1) Obtener tableros
-                var tablerosResponse = await client.GetAsync("api/Tablero");
-                if (!tablerosResponse.IsSuccessStatusCode)
-                {
-                    TempData["Error"] = $"Error al obtener tableros: {tablerosResponse.StatusCode}";
-                    return View(new List<TableroViewModel>());
-                }
-
-                var tablerosDto = await tablerosResponse.Content.ReadFromJsonAsync<List<TableroDto>>() ?? new();
+                // Ahora obtenemos todo el tablero con listas y tarjetas de una sola llamada
+                var tablerosDto = await client.GetFromJsonAsync<List<TableroDto>>("api/Tablero") ?? new List<TableroDto>();
 
                 var tablerosVm = tablerosDto.Select(t => new TableroViewModel
                 {
@@ -81,60 +73,24 @@ namespace PAW.Mvc.Controllers
                     Titulo = t.Titulo,
                     FechaCreacion = t.FechaCreacion,
                     UsuarioId = t.UsuarioId,
-                    NombreUsuario = null,
-                    Lista = new List<ListumViewModel>()
-                }).ToList();
-
-                // 2) Obtener listas por tablero
-                foreach (var tablero in tablerosVm)
-                {
-                    var listasResponse = await client.GetAsync($"api/Lista/tablero/{tablero.Id}");
-                    if (!listasResponse.IsSuccessStatusCode) continue;
-
-                    var listasDto = await listasResponse.Content.ReadFromJsonAsync<List<ListumDto>>() ?? new();
-
-                    tablero.Lista = listasDto.Select(l => new ListumViewModel
+                    Lista = t.Lista.OrderBy(l => l.Orden).Select(l => new ListumViewModel
                     {
                         Id = l.Id,
                         Titulo = l.Titulo,
                         Orden = l.Orden,
                         TableroId = l.TableroId,
-                        ListaTarjetas = new List<TarjetumViewModel>()
-                    }).OrderBy(l => l.Orden).ToList();
-
-                    // 3) Obtener tarjetas de cada lista
-                    foreach (var lista in tablero.Lista)
-                    {
-                        var tarjetasResponse = await client.GetAsync($"api/Tarjeta/lista/{lista.Id}");
-
-                        if (!tarjetasResponse.IsSuccessStatusCode)
+                        ListaTarjetas = l.Tarjeta.Select(c => new TarjetumViewModel
                         {
-                            // Aquí vemos si la llamada al API falla
-                            Console.WriteLine($"Error al obtener tarjetas para la lista {lista.Id}: {tarjetasResponse.StatusCode}");
-                            continue;
-                        }
-
-                        var tarjetasDto = await tarjetasResponse.Content.ReadFromJsonAsync<List<TarjetumDto>>() ?? new();
-
-                        if (!tarjetasDto.Any())
-                        {
-                            // Aquí vemos si la API devuelve lista vacía
-                            Console.WriteLine($"No se encontraron tarjetas para la lista {lista.Id}");
-                        }
-
-                        lista.ListaTarjetas = tarjetasDto.Select(t => new TarjetumViewModel
-                        {
-                            Id = t.Id,
-                            Titulo = t.Titulo,
-                            Descripcion = t.Descripcion,
-                            FechaCreacion = t.FechaCreacion,
-                            FechaVencimiento = t.FechaVencimiento,
-                            ListaId = t.ListaId,
-                            UsuarioAsignadoId = t.UsuarioAsignadoId
-                        }).ToList();
-                    
-                }
-                }
+                            Id = c.Id,
+                            Titulo = c.Titulo,
+                            Descripcion = c.Descripcion,
+                            FechaCreacion = c.FechaCreacion,
+                            FechaVencimiento = c.FechaVencimiento,
+                            ListaId = c.ListaId,
+                            UsuarioAsignadoId = c.UsuarioAsignadoId
+                        }).ToList()
+                    }).ToList()
+                }).ToList();
 
                 return View(tablerosVm);
             }
@@ -146,14 +102,13 @@ namespace PAW.Mvc.Controllers
         }
 
         // =======================
-        // TABLEROS - Details (Abrir un tablero)
+        // TABLEROS - Details
         // =======================
-        // GET: Board/Details/5
         public async Task<IActionResult> Details(int id)
         {
             var client = _http.CreateClient("api");
 
-            // Tablero
+            // Obtenemos tablero completo (listas + tarjetas) en una sola llamada
             var tRes = await client.GetAsync($"api/Tablero/{id}");
             if (!tRes.IsSuccessStatusCode)
             {
@@ -170,48 +125,27 @@ namespace PAW.Mvc.Controllers
                 Titulo = tDto.Titulo,
                 FechaCreacion = tDto.FechaCreacion,
                 UsuarioId = tDto.UsuarioId,
-                Lista = new List<ListumViewModel>()
-            };
-
-            // Listas
-            var lRes = await client.GetAsync($"api/Lista/tablero/{vm.Id}");
-            if (lRes.IsSuccessStatusCode)
-            {
-                var lDtos = await lRes.Content.ReadFromJsonAsync<List<ListumDto>>() ?? new();
-                vm.Lista = lDtos.OrderBy(l => l.Orden).Select(l => new ListumViewModel
+                Lista = tDto.Lista.OrderBy(l => l.Orden).Select(l => new ListumViewModel
                 {
                     Id = l.Id,
                     Titulo = l.Titulo,
                     Orden = l.Orden,
                     TableroId = l.TableroId,
-                    ListaTarjetas = new List<TarjetumViewModel>()
-                }).ToList();
-            }
-
-            // Tarjetas por lista
-            foreach (var lista in vm.Lista)
-            {
-                var cRes = await client.GetAsync($"api/Tarjeta/lista/{lista.Id}");
-                if (!cRes.IsSuccessStatusCode) continue;
-
-                var cDtos = await cRes.Content.ReadFromJsonAsync<List<TarjetumDto>>() ?? new();
-                lista.ListaTarjetas = cDtos.Select(c => new TarjetumViewModel
-                {
-                    Id = c.Id,
-                    Titulo = c.Titulo,
-                    Descripcion = c.Descripcion,
-                    FechaCreacion = c.FechaCreacion,
-                    FechaVencimiento = c.FechaVencimiento,
-                    ListaId = c.ListaId,
-                    UsuarioAsignadoId = c.UsuarioAsignadoId
-                }).ToList();
-            }
+                    ListaTarjetas = l.Tarjeta.Select(c => new TarjetumViewModel
+                    {
+                        Id = c.Id,
+                        Titulo = c.Titulo,
+                        Descripcion = c.Descripcion,
+                        FechaCreacion = c.FechaCreacion,
+                        FechaVencimiento = c.FechaVencimiento,
+                        ListaId = c.ListaId,
+                        UsuarioAsignadoId = c.UsuarioAsignadoId
+                    }).ToList()
+                }).ToList()
+            };
 
             return View(vm);
         }
-
-
-
 
         // =======================
         // TARJETAS
@@ -240,11 +174,9 @@ namespace PAW.Mvc.Controllers
             if (!res.IsSuccessStatusCode)
                 TempData["Error"] = "No se pudo crear la tarjeta.";
 
-            // Vuelve SIEMPRE al tablero correcto (sin depender del Referer)
             return RedirectToAction(nameof(Details), new { id = tableroId });
         }
 
-        // Editar tarjeta (para modal/JS)
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> EditCard(int id, string titulo, string? descripcion, DateTime? fechaVencimiento)
@@ -264,7 +196,7 @@ namespace PAW.Mvc.Controllers
             var res = await client.PutAsJsonAsync($"api/Tarjeta/{id}", payload);
             if (!res.IsSuccessStatusCode) return StatusCode((int)res.StatusCode);
 
-            return Ok(); // JS actualiza la UI sin recargar
+            return Ok();
         }
 
         [HttpPost]
@@ -279,51 +211,11 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = "No se pudo eliminar la tarjeta.";
             }
 
-            // Si viene de fetch (AJAX) devolvemos 200/xxx, si viene de form normal redirigimos
-            if (IsAjaxRequest()) return Ok();
-
-            if (Request.Headers["Referer"].ToString().Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
-                return Redirect(Request.Headers["Referer"].ToString());
-
-            return RedirectToAction(nameof(Index));
-        }
-
-        [HttpGet]
-        public async Task<IActionResult> GetCardsByList(int listaId)
-        {
-            var client = _http.CreateClient("api");
-            var res = await client.GetAsync($"api/Tarjeta/lista/{listaId}");
-            if (!res.IsSuccessStatusCode) return Json(Array.Empty<object>());
-
-            var tarjetas = await res.Content.ReadFromJsonAsync<List<TarjetumDto>>() ?? new();
-            return Json(tarjetas.OrderBy(t => t.Id));
-        }
-
-        // Mover tarjeta entre listas (drag & drop)
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> MoveCard(int id, int nuevaListaId)
-        {
-            var client = _http.CreateClient("api");
-            var res = await client.PostAsync($"api/Tarjeta/{id}/mover/{nuevaListaId}", content: null);
-
-            if (!res.IsSuccessStatusCode)
-            {
-                if (IsAjaxRequest()) return StatusCode((int)res.StatusCode);
-                TempData["Error"] = "No se pudo mover la tarjeta.";
-            }
-
-            if (IsAjaxRequest()) return Ok();
-
-            var referer = Request.Headers["Referer"].ToString();
-            if (referer.Contains("/Board/Details/", StringComparison.OrdinalIgnoreCase))
-                return Redirect(referer);
-
-            return RedirectToAction(nameof(Index));
+            return IsAjaxRequest() ? Ok() : RedirectToAction(nameof(Index));
         }
 
         // =======================
-        // COMENTARIOS (uso vía fetch)
+        // COMENTARIOS
         // =======================
         [HttpGet]
         public async Task<IActionResult> GetComments(int tarjetaId)
@@ -350,7 +242,7 @@ namespace PAW.Mvc.Controllers
             if (!res.IsSuccessStatusCode)
                 return StatusCode((int)res.StatusCode);
 
-            return Ok(); // fetch refresca la lista de comentarios
+            return Ok();
         }
 
         [HttpPost]
@@ -362,7 +254,8 @@ namespace PAW.Mvc.Controllers
             if (!res.IsSuccessStatusCode)
                 return StatusCode((int)res.StatusCode);
 
-            return Ok(); // fetch vuelve a cargar comentarios
+            return Ok();
         }
     }
 }
+

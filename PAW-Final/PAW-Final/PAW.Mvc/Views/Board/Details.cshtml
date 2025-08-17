@@ -2,21 +2,20 @@
 @{
     ViewData["Title"] = "Tablero";
 }
+
 <h2 class="mb-3">@Model.Titulo <small class="text-muted">(@Model.FechaCreacion?.ToString("dd/MM/yyyy"))</small></h2>
 
-@if (TempData["Error"] != null)
+@if (TempData["Error"] is string err && !string.IsNullOrWhiteSpace(err))
 {
-    <div class="alert alert-danger">@TempData["Error"]</div>
+    <div class="alert alert-danger">@err</div>
 }
 
-<!-- Antiforgery para fetch (editar/eliminar/mover tarjeta) -->
-<form asp-antiforgery="true" id="__af"></form>
+<form asp-antiforgery="true" id="__af" style="display:none"></form>
 
 <!-- Agregar lista -->
 <div class="mb-3">
     <details>
         <summary class="text-muted">➕ Agregar lista</summary>
-        <!-- 👇 ahora va a ListaController -->
         <form asp-controller="Lista" asp-action="CreateList" method="post" class="row g-2 mt-2">
             @Html.AntiForgeryToken()
             <input type="hidden" name="tableroId" value="@Model.Id" />
@@ -36,7 +35,6 @@
         <div class="list-column bg-light rounded p-2" style="min-width:300px;max-width:340px;">
             <div class="d-flex justify-content-between align-items-center mb-2">
                 <strong>@lista.Titulo</strong>
-                <!-- 👇 ahora va a ListaController -->
                 <form asp-controller="Lista" asp-action="DeleteList" method="post" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
                     @Html.AntiForgeryToken()
                     <input type="hidden" name="id" value="@lista.Id" />
@@ -44,13 +42,44 @@
                 </form>
             </div>
 
-            <!-- 👇 drop zone para tarjetas -->
             <div class="d-grid gap-2 card-list" data-lista-id="@lista.Id">
                 @if (lista.ListaTarjetas?.Any() ?? false)
                 {
                     foreach (var tarjeta in lista.ListaTarjetas)
                     {
-                        @Html.Partial("_CardItem", tarjeta)
+                        <div class="card-item" data-card-id="@tarjeta.Id" draggable="true">
+                            <div class="d-flex justify-content-between align-items-start gap-2">
+                                <div>
+                                    <strong class="fw-semibold">@tarjeta.Titulo</strong>
+                                    @if (!string.IsNullOrEmpty(tarjeta.Descripcion))
+                                    {
+                                        <div class="text-muted small mt-1">@tarjeta.Descripcion</div>
+                                    }
+                                    @if (tarjeta.FechaVencimiento.HasValue)
+                                    {
+                                        <div class="text-muted small">Vence: @tarjeta.FechaVencimiento.Value.ToString("dd/MM/yyyy")</div>
+                                    }
+                                </div>
+                                <button class="btn btn-outline-danger btn-sm btn-delete-card" data-card-id="@tarjeta.Id">Eliminar</button>
+                            </div>
+
+                            <!-- Comentarios AJAX -->
+                            <details class="mt-2" data-tarjeta="@tarjeta.Id" onclick="if(this.open){loadComments(@tarjeta.Id);}">
+                                <summary class="small text-muted">💬 Comentarios</summary>
+                                <div class="comments-box" id="comments-list-@tarjeta.Id">
+                                    <div class="small text-muted">Cargando comentarios…</div>
+                                </div>
+
+                                <form class="row g-2 align-items-center mt-1" onsubmit="return addComment(event, @tarjeta.Id);">
+                                    <div class="col-12">
+                                        <input class="form-control form-control-sm" type="text" name="contenido" placeholder="Escribe un comentario…" required />
+                                    </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-secondary btn-sm" type="submit">Agregar</button>
+                                    </div>
+                                </form>
+                            </details>
+                        </div>
                     }
                 }
                 else
@@ -59,13 +88,12 @@
                 }
             </div>
 
-            <!-- Agregar tarjeta -->
             <details class="mt-2">
                 <summary class="text-muted small">➕ Agregar tarjeta</summary>
                 <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
                     @Html.AntiForgeryToken()
                     <input type="hidden" name="listaId" value="@lista.Id" />
-                    <input type="hidden" name="tableroId" value="@lista.TableroId" />
+                    <input type="hidden" name="tableroId" value="@Model.Id" />
                     <div class="mb-2">
                         <input class="form-control form-control-sm" type="text" name="titulo" placeholder="Título" required />
                     </div>
@@ -85,141 +113,109 @@
 @section Scripts {
     <script>
         function getAF() {
-          const t = document.querySelector('#__af input[name="__RequestVerificationToken"]');
-          return t ? t.value : '';
+            const t = document.querySelector('#__af input[name="__RequestVerificationToken"]');
+            return t ? t.value : '';
         }
 
-        // ----- Abrir modal de edición (tu lógica actual)
-        document.addEventListener('click', (e) => {
-          const btn = e.target.closest('.btn-edit-card');
-          if (!btn) return;
-          e.preventDefault();
-          const id = btn.getAttribute('data-card-id');
-          const modalEl = document.getElementById('editCardModal-' + id);
-          if (!modalEl) return;
-          if (window.bootstrap?.Modal) new bootstrap.Modal(modalEl).show();
-          else modalEl.style.display = 'block';
-        });
-
-        // ----- Guardar edición (tu lógica actual)
-        document.addEventListener('submit', async (e) => {
-          const form = e.target.closest('form[data-edit-card-form]');
-          if (!form) return;
-          e.preventDefault();
-
-          const id = form.getAttribute('data-edit-card-form');
-          const fd = new FormData(form);
-          fd.append('__RequestVerificationToken', getAF());
-
-          const res = await fetch('@Url.Action("EditCard", "Board")', {
-            method: 'POST', credentials: 'same-origin', body: fd
-          });
-
-          if (res.ok) {
-            const card = document.querySelector(`.card-item[data-card-id="${id}"]`);
-            if (card) {
-              const title = fd.get('titulo') ?? '';
-              const desc  = (fd.get('descripcion') ?? '').toString().trim();
-              const due   = (fd.get('fechaVencimiento') ?? '').toString();
-
-              const titleEl = card.querySelector('.fw-semibold');
-              if (titleEl) titleEl.textContent = title;
-
-              let descEl = card.querySelector('.text-muted.small.mt-1');
-              if (desc) {
-                if (!descEl) {
-                  descEl = document.createElement('div');
-                  descEl.className = 'text-muted small mt-1';
-                  card.querySelector('.d-flex > div')?.appendChild(descEl);
-                }
-                descEl.textContent = desc;
-              } else if (descEl) {
-                descEl.remove();
-              }
-
-              let dateEl = Array.from(card.querySelectorAll('.text-muted.small'))
-                           .find(x => x.textContent?.startsWith('Vence:'));
-              if (due) {
-                const [y,m,d] = due.split('-');
-                const pretty = `${d}/${m}/${y}`;
-                if (!dateEl) {
-                  dateEl = document.createElement('div');
-                  dateEl.className = 'text-muted small';
-                  card.querySelector('.d-flex > div')?.appendChild(dateEl);
-                }
-                dateEl.textContent = `Vence: ${pretty}`;
-              } else if (dateEl) {
-                dateEl.remove();
-              }
-            }
-            const modalEl = document.getElementById('editCardModal-' + id);
-            window.bootstrap?.Modal.getInstance(modalEl)?.hide();
-          } else {
-            alert('No se pudo guardar la tarjeta.');
-          }
-        });
-
-        // ----- Eliminar tarjeta (tu lógica actual)
-        document.addEventListener('click', async (e) => {
-          const btn = e.target.closest('.btn-delete-card');
-          if (!btn) return;
-          e.preventDefault();
-
-          if (!confirm('¿Eliminar esta tarjeta?')) return;
-
-          const id = btn.getAttribute('data-card-id');
-          const fd = new FormData();
-          fd.append('id', id ?? '');
-          fd.append('__RequestVerificationToken', getAF());
-
-          const res = await fetch('@Url.Action("DeleteCard", "Board")', {
-            method: 'POST', credentials: 'same-origin', body: fd
-          });
-
-          if (res.ok) {
-            document.querySelector(`.card-item[data-card-id="${id}"]`)?.remove();
-          } else {
-            alert('No se pudo eliminar la tarjeta.');
-          }
-        });
-
-        // ===== Drag & Drop para mover tarjetas entre listas =====
-        (function enableDnD() {
-          // Asegurar que todas las tarjetas sean arrastrables
-          document.querySelectorAll('.card-item').forEach(el => {
+        // ----- Drag & Drop -----
+        document.querySelectorAll('.card-item').forEach(el => {
             el.setAttribute('draggable', 'true');
-            el.addEventListener('dragstart', ev => {
-              ev.dataTransfer.setData('text/plain', el.dataset.cardId);
-            });
-          });
+            el.addEventListener('dragstart', ev => ev.dataTransfer.setData('text/plain', el.dataset.cardId));
+        });
 
-          // Habilitar listas como zonas de drop
-          document.querySelectorAll('.card-list').forEach(list => {
+        document.querySelectorAll('.card-list').forEach(list => {
             list.addEventListener('dragover', ev => ev.preventDefault());
             list.addEventListener('drop', async ev => {
-              ev.preventDefault();
-              const cardId = ev.dataTransfer.getData('text/plain');
-              const nuevaListaId = list.dataset.listaId;
-
-              const body = new URLSearchParams({ id: cardId, nuevaListaId });
-              const res = await fetch('@Url.Action("MoveCard", "Board")', {
-                method: 'POST',
-                headers: { 'RequestVerificationToken': getAF(), 'Content-Type': 'application/x-www-form-urlencoded' },
-                body
-              });
-
-              if (res.ok) {
-                // Mover en DOM sin recargar
-                const card = document.querySelector(`.card-item[data-card-id="${cardId}"]`);
-                if (card) {
-                  list.appendChild(card);
-                  card.dataset.listaId = nuevaListaId;
-                }
-              } else {
-                alert('No se pudo mover la tarjeta');
-              }
+                ev.preventDefault();
+                const cardId = ev.dataTransfer.getData('text/plain');
+                const nuevaListaId = list.dataset.listaId;
+                const body = new URLSearchParams({ id: cardId, nuevaListaId });
+                const res = await fetch('@Url.Action("MoveCard", "Board")', {
+                    method: 'POST',
+                    headers: { 'RequestVerificationToken': getAF(), 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body
+                });
+                if (res.ok) {
+                    const card = document.querySelector(`.card-item[data-card-id="${cardId}"]`);
+                    if (card) list.appendChild(card);
+                } else { alert('No se pudo mover la tarjeta'); }
             });
-          });
-        })();
+        });
+
+        // ----- Eliminar tarjeta -----
+        document.addEventListener('click', async e => {
+            const btn = e.target.closest('.btn-delete-card');
+            if (!btn) return;
+            e.preventDefault();
+            if (!confirm('¿Eliminar esta tarjeta?')) return;
+            const id = btn.dataset.cardId;
+            const fd = new FormData();
+            fd.append('id', id ?? '');
+            fd.append('__RequestVerificationToken', getAF());
+            const res = await fetch('@Url.Action("DeleteCard", "Board")', { method: 'POST', credentials: 'same-origin', body: fd });
+            if (res.ok) document.querySelector(`.card-item[data-card-id="${id}"]`)?.remove();
+            else alert('No se pudo eliminar la tarjeta.');
+        });
+
+        // ===== Comentarios AJAX =====
+        async function loadComments(tarjetaId) {
+            const cont = document.getElementById('comments-list-' + tarjetaId);
+            if (!cont) return;
+            cont.innerHTML = '<div class="small text-muted">Cargando comentarios…</div>';
+            try {
+                const res = await fetch(`@Url.Action("GetComments", "Board")?tarjetaId=${tarjetaId}`, { credentials: 'same-origin' });
+                const data = await res.json();
+                if (!Array.isArray(data)) throw new Error('Invalid');
+                cont.innerHTML = data.length === 0 ? '<div class="small text-muted">Sin comentarios todavía.</div>' : '';
+                for (const c of data) {
+                    const row = document.createElement('div');
+                    row.className = 'comment-item d-flex justify-content-between align-items-center gap-2';
+                    const text = document.createElement('div');
+                    const fecha = c.fechaCreacion ? new Date(c.fechaCreacion).toLocaleString() : '';
+                    text.innerHTML = `<div>${escapeHtml(c.contenido||'')}</div><div class="small text-muted">${fecha}</div>`;
+                    const form = document.createElement('form');
+                    form.method = 'post';
+                    form.onsubmit = e => deleteComment(e, c.id);
+                    form.innerHTML = `<input type="hidden" name="id" value="${c.id}"><input type="hidden" name="__RequestVerificationToken" value="${getAF()}"><button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
+                    row.appendChild(text);
+                    row.appendChild(form);
+                    cont.appendChild(row);
+                }
+            } catch {
+                cont.innerHTML = '<div class="text-danger small">Error al cargar comentarios.</div>';
+            }
+        }
+
+        async function addComment(ev, tarjetaId) {
+            ev.preventDefault();
+            const form = ev.target;
+            const contenido = form.contenido.value.trim();
+            if (!contenido) return false;
+            const fd = new FormData();
+            fd.append('tarjetaId', tarjetaId);
+            fd.append('contenido', contenido);
+            fd.append('__RequestVerificationToken', getAF());
+            const res = await fetch('@Url.Action("CreateComment", "Board")', { method: 'POST', credentials: 'same-origin', body: fd });
+            if (res.ok) { form.reset(); loadComments(tarjetaId); }
+            else { alert('No se pudo agregar el comentario.'); }
+            return false;
+        }
+
+        async function deleteComment(ev, commentId) {
+            ev.preventDefault();
+            if (!confirm('¿Eliminar este comentario?')) return false;
+            const fd = new FormData();
+            fd.append('id', commentId);
+            fd.append('__RequestVerificationToken', getAF());
+            const res = await fetch('@Url.Action("DeleteComment", "Board")', { method: 'POST', credentials: 'same-origin', body: fd });
+            if (res.ok) {
+                const el = document.querySelector(`.comments-box #comment-${commentId}`);
+                if (el) el.remove();
+            } else { alert('No se pudo eliminar el comentario.'); }
+            return false;
+        }
+
+        function escapeHtml(s){ const map={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}; return String(s).replace(/[&<>"']/g,m=>map[m]); }
     </script>
 }
+
