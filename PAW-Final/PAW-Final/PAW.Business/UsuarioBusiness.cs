@@ -33,14 +33,20 @@ namespace PAW.Business
             await _usuarioRepository.AddAsync(usuario);
         }
 
-        public async Task Actualizar(Usuario usuario)
-        {
-            await _usuarioRepository.UpdateAsync(usuario);
-        }
+        
+
+       
+
 
         public async Task Eliminar(int id)
         {
             await _usuarioRepository.DeleteAsync(id);
+        }
+
+        public async Task Actualizar(Usuario usuario)
+        {
+            if (usuario == null) throw new ArgumentNullException(nameof(usuario));
+            await _usuarioRepository.UpdateUsuarioAsync(usuario); // 👈 usar el del repo
         }
     }
 }

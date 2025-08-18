@@ -7,9 +7,16 @@ namespace PAW.Business.Interfaces
         Task<List<Usuario>> ObtenerTodos();
         Task<Usuario?> ObtenerPorId(int id);
         Task<Usuario?> ObtenerPorCorreo(string correo);
+        
+
+       
+       
+    
         Task Crear(Usuario usuario);
-        Task Actualizar(Usuario usuario);
+      
         Task Eliminar(int id);
+       
+        Task Actualizar(Usuario usuario);
     }
 }
 

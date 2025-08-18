@@ -1,6 +1,18 @@
 ﻿@model List<PAW.Models.ViewModels.TableroViewModel>
+@using System.Security.Claims
 @{
     ViewData["Title"] = "Mis Tableros";
+
+    // 🔒 Filtrar solo los tableros del usuario logueado
+    var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+    var tablerosFiltrados = new List<PAW.Models.ViewModels.TableroViewModel>();
+
+    if (int.TryParse(userIdStr, out var userId))
+    {
+        tablerosFiltrados = (Model ?? new List<PAW.Models.ViewModels.TableroViewModel>())
+            .Where(t => t.UsuarioId == userId)
+            .ToList();
+    }
 }
 
 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -20,7 +32,7 @@
     <div class="alert alert-success">@ok</div>
 }
 
-@if (Model == null || Model.Count == 0)
+@if (tablerosFiltrados == null || tablerosFiltrados.Count == 0)
 {
     <div class="text-center my-5">
         <h4 class="fw-semibold">Aún no tienes tableros</h4>
@@ -31,7 +43,7 @@
 else
 {
     <div class="board-container">
-        @foreach (var tablero in Model)
+        @foreach (var tablero in tablerosFiltrados)
         {
             <div class="board" data-tablero="@tablero.Id">
                 <div class="board-header d-flex justify-content-between align-items-center">
@@ -74,7 +86,7 @@ else
                                 <div class="list-header d-flex justify-content-between align-items-center">
                                     <strong>@lista.Titulo</strong>
 
-                                    <!-- Menú lista (existente / de referencia de estilo) -->
+                                    <!-- Menú lista -->
                                     <div class="dropdown">
                                         <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acciones de lista">
                                             <i class="bi bi-three-dots-vertical"></i>
@@ -124,9 +136,9 @@ else
                                                         }
                                                     </div>
 
-                                                    <!-- MENÚ TARJETA (lo que pediste) -->
+                                                    <!-- Menú tarjeta -->
                                                     <div class="dropdown">
-                                                        <button class="btn btn-sm btn-light" id="menuTarjeta-@tarjeta.Id" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acciones de tarjeta">
+                                                        <button class="btn btn-sm btn-light" id="menuTarjeta-@tarjeta.Id" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" aria-label="Acciones de tarjeta">
                                                             <i class="bi bi-three-dots-vertical"></i>
                                                         </button>
                                                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTarjeta-@tarjeta.Id">
@@ -300,258 +312,73 @@ else
 }
 
 <style>
-    /* ====== Layout general ====== */
-    :root {
-        --bg: #0b1020; /* fondo oscuro elegante */
-        --panel: #0f172a; /* paneles (azul casi negro) */
-        --panel-soft: #111a2e;
-        --border: #1f2a44;
-        --muted: #9fb0cc;
-        --primary: #60a5fa; /* acento */
-        --primary-ink: #0b1020;
-        --ok: #22c55e;
-        --danger: #ef4444;
-        --shadow: 0 6px 18px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.02);
-    }
-
-    body {
-        background: radial-gradient(1200px 800px at 10% -10%, #1a2444 0%, #0b1020 45%) fixed, var(--bg);
-    }
-
-    /* ====== Cabeceras ====== */
-    h2, h3 {
-        color: #e8f0ff;
-    }
-
-    .text-muted {
-        color: var(--muted) !important;
-    }
-
-    /* ====== Contenedor de tableros ====== */
     .board-container {
         display: grid;
         gap: 1.5rem;
     }
 
-    /* ====== Tarjeta de tablero ====== */
     .board {
-        background: linear-gradient(180deg, var(--panel) 0%, var(--panel-soft) 100%);
-        border: 1px solid var(--border);
-        border-radius: 16px;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
         padding: 1rem;
-        box-shadow: var(--shadow);
     }
 
     .board-header {
         margin-bottom: .75rem;
     }
 
-    /* ====== Listas (columnas) ====== */
     .lists-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
         gap: 1rem;
         align-items: start;
     }
 
     .list-column {
-        background: rgba(255,255,255,.02);
-        border: 1px solid var(--border);
-        border-radius: 14px;
-        padding: .8rem;
-        min-height: 140px;
-        box-shadow: 0 1px 0 rgba(255,255,255,.03) inset;
-        transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
-        overflow: visible; /* ¡Importante! para que no corte los dropdowns */
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: .75rem;
+        min-height: 120px;
     }
-
-        .list-column:hover {
-            border-color: #2b3a60;
-            transform: translateY(-1px);
-        }
 
     .list-header {
-        margin-bottom: .55rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        margin-bottom: .5rem;
     }
 
-        .list-header strong {
-            color: #e6eeff;
-        }
-
-    /* ====== Tarjetas (items) ====== */
-    .cards-container {
-        overflow: visible;
-    }
-        /* ¡Importante! permite que el menú flote */
-        .cards-container .card-item {
-            position: relative; /* Para stacking del dropdown */
-            background: #0c142a;
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: .7rem .7rem .55rem;
-            margin-bottom: .6rem;
-            cursor: grab;
-            box-shadow: 0 6px 16px rgba(3,8,20,.25);
-            transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
-        }
-
-            .cards-container .card-item:hover {
-                transform: translateY(-1px);
-                border-color: #2b3a60;
-                box-shadow: 0 10px 22px rgba(3,8,20,.30);
-            }
-
-            .cards-container .card-item:active {
-                cursor: grabbing;
-            }
-
-            .cards-container .card-item strong {
-                color: #e9f2ff;
-            }
-
-            .cards-container .card-item p {
-                color: #b8c6e8;
-            }
-
-    .badge.bg-light.text-dark.border.small {
-        background: rgba(96,165,250,.15) !important;
-        color: #cfe5ff !important;
-        border-color: rgba(96,165,250,.25) !important;
+    .cards-container .card-item {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: .6rem .6rem .5rem;
+        margin-bottom: .5rem;
+        cursor: grab;
     }
 
-    /* ====== Botones y dropdowns ====== */
-    .btn,
-    .btn:focus,
-    .btn:active {
-        box-shadow: none !important;
-    }
-
-        .btn.btn-sm.btn-light {
-            background: rgba(255,255,255,.06);
-            border: 1px solid var(--border) !important;
-            color: #d8e4ff;
+        .cards-container .card-item:active {
+            cursor: grabbing;
         }
 
-            .btn.btn-sm.btn-light:hover {
-                background: rgba(255,255,255,.10);
-            }
-
-        .btn.btn-sm.btn-outline-secondary {
-            border-color: var(--border);
-            color: #c9d8ff;
-        }
-
-            .btn.btn-sm.btn-outline-secondary:hover {
-                background: rgba(255,255,255,.06);
-                color: #fff;
-            }
-
-    /* Asegurar visibilidad del menú en cards dentro de grids/overflows */
-    .dropdown-menu {
-        z-index: 2000; /* superior a modales por si acaso */
-        border-radius: 12px;
-        border: 1px solid var(--border);
-        background: #0b1428;
-        box-shadow: 0 18px 40px rgba(0,0,0,.45);
-        overflow: hidden;
-    }
-
-    .dropdown-item {
-        color: #d3e0ff;
-        padding: .55rem .9rem;
-    }
-
-        .dropdown-item:hover {
-            background: rgba(255,255,255,.06);
-            color: #fff;
-        }
-
-        .dropdown-item .text-danger {
-            color: var(--danger) !important;
-        }
-
-        .dropdown-item .text-primary {
-            color: var(--primary) !important;
-        }
-
-    /* ====== Formularios pequeños ====== */
-    .input-group-sm .form-control,
-    .form-control.form-control-sm,
-    .form-select.form-select-sm {
-        background: #0c142a;
-        color: #e6eeff;
-        border: 1px solid var(--border);
-    }
-
-        .input-group-sm .form-control::placeholder {
-            color: #8fa2c6;
-        }
-
-    .input-group-sm .btn-outline-primary {
-        border-color: rgba(96,165,250,.5);
-        color: #cfe5ff;
-    }
-
-        .input-group-sm .btn-outline-primary:hover {
-            background: rgba(96,165,250,.15);
-            color: #fff;
-        }
-
-    /* ====== Add list "dashed" ====== */
     .add-list {
-        background: rgba(96,165,250,.06);
-        border: 1px dashed rgba(96,165,250,.35);
+        background: #f1f5f9;
+        border-style: dashed;
         display: flex;
         align-items: center;
-        border-radius: 14px;
     }
 
-    /* ====== Comentarios ====== */
     .comments-box {
-        background: #0b1326;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        padding: .55rem .6rem;
-        margin-top: .3rem;
+        background: #f3f4f6;
+        border-radius: 8px;
+        padding: .5rem;
+        margin-top: .25rem;
     }
 
     .comment-item {
-        background: #0e1730;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        padding: .42rem .6rem;
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 6px;
+        padding: .4rem .6rem;
         margin: .35rem 0;
-        color: #dce7ff;
     }
-
-    /* ====== Utilidades ====== */
-    .badge {
-        font-weight: 500;
-        letter-spacing: .2px;
-    }
-
-    /* ====== Scrollbar sutil (webkit) ====== */
-    *::-webkit-scrollbar {
-        height: 10px;
-        width: 10px;
-    }
-
-    *::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    *::-webkit-scrollbar-thumb {
-        background: #1c2744;
-        border-radius: 10px;
-        border: 2px solid transparent;
-        background-clip: padding-box;
-    }
-
-        *::-webkit-scrollbar-thumb:hover {
-            background: #253560;
-        }
-
 </style>

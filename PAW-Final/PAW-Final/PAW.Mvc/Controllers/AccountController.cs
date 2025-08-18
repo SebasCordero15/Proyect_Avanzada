@@ -107,6 +107,8 @@ namespace PAW.Mvc.Controllers
         }
 
         // GET: Account/Edit
+        
+
         [HttpGet]
         public async Task<IActionResult> Edit()
         {
@@ -117,52 +119,87 @@ namespace PAW.Mvc.Controllers
             var usuario = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{userIdClaim}");
             if (usuario == null) return NotFound();
 
-            return View(usuario);
+            var vm = new UsuarioEditViewModel
+            {
+                Id = usuario.Id,
+                Nombre = usuario.Nombre,
+                Correo = usuario.Correo
+            };
+
+            return View(vm);
         }
 
         // POST: Account/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(UsuarioViewModel vm)
+        
+        public async Task<IActionResult> Edit(UsuarioEditViewModel vm)
         {
             if (!ModelState.IsValid) return View(vm);
 
+            // Id desde el claim (seguro)
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            if (string.IsNullOrWhiteSpace(userIdClaim)) return RedirectToAction("Login");
+            if (!int.TryParse(userIdClaim, out var userId)) return RedirectToAction("Login");
+
             var client = _http.CreateClient("api");
 
-            // Traer usuario actual de la API para asegurarnos que exista
-            var usuarioActual = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{vm.Id}");
-            if (usuarioActual == null)
-                return NotFound();
-
-            // Crear objeto para actualizar solo nombre y correo, manteniendo clave actual
-            var usuarioParaActualizar = new UsuarioViewModel
+            // Cargar usuario actual desde el API para rescatar Clave
+            var actual = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{userId}");
+            if (actual == null)
             {
-                Id = usuarioActual.Id,
-                Nombre = vm.Nombre,
-                Correo = vm.Correo,
-                Clave = usuarioActual.Clave // <--- mantenemos la clave existente
-            };
-
-            // Enviar PUT a la API
-            var res = await client.PutAsJsonAsync($"api/usuario/{vm.Id}", usuarioParaActualizar);
-            if (!res.IsSuccessStatusCode)
-            {
-                ModelState.AddModelError(string.Empty, "No se pudo actualizar el usuario.");
+                ModelState.AddModelError(string.Empty, "No se pudo cargar el usuario actual.");
                 return View(vm);
             }
 
-            // Actualizar claim de Name si cambió el nombre
-            var claimsIdentity = (ClaimsIdentity)User.Identity!;
-            var nameClaim = claimsIdentity.FindFirst(ClaimTypes.Name);
-            if (nameClaim != null && nameClaim.Value != vm.Nombre)
+            // Construir DTO completo para el PUT
+            var dto = new UsuarioViewModel
             {
-                claimsIdentity.RemoveClaim(nameClaim);
-                claimsIdentity.AddClaim(new Claim(ClaimTypes.Name, vm.Nombre));
+                Id = userId, // Forzar coincidencia con la ruta
+                Nombre = vm.Nombre?.Trim() ?? string.Empty,
+                Correo = vm.Correo?.Trim() ?? string.Empty,
+                Clave = actual.Clave // mantener la clave actual
+            };
+
+            // Log en consola de Visual Studio
+            System.Diagnostics.Debug.WriteLine(
+                $"[PUT Usuario] RutaId={userId}, Body={{ Id={dto.Id}, Nombre='{dto.Nombre}', Correo='{dto.Correo}', Clave={(string.IsNullOrEmpty(dto.Clave) ? "VACÍA" : "***")} }}");
+
+            // Ejecutar PUT
+            var res = await client.PutAsJsonAsync($"api/usuario/{userId}", dto);
+
+            if (!res.IsSuccessStatusCode)
+            {
+                var detail = await res.Content.ReadAsStringAsync();
+
+                ModelState.AddModelError(string.Empty,
+                    $"No se pudo actualizar el usuario. " +
+                    $"Status: {(int)res.StatusCode} - {res.ReasonPhrase}. " +
+                    $"Detalle API: {detail} " +
+                    $"(RutaId={userId}, BodyId={dto.Id})");
+
+                return View(vm);
             }
 
-            // Redirigir al Board
+            // Refrescar claims con los datos actualizados
+            var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.NameIdentifier, userId.ToString()),
+        new Claim(ClaimTypes.Name, dto.Nombre),
+        new Claim(ClaimTypes.Email, dto.Correo),
+    };
+
+            var identity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
+            await HttpContext.SignInAsync(
+                CookieAuthenticationDefaults.AuthenticationScheme,
+                new ClaimsPrincipal(identity)
+            );
+
+            TempData["Success"] = "Usuario actualizado correctamente.";
             return RedirectToAction("Index", "Board");
         }
+
+
     }
 }
 
