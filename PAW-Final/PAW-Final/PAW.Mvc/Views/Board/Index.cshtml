@@ -15,13 +15,15 @@
 {
     <div class="alert alert-danger">@err</div>
 }
-
-<form asp-antiforgery="true" id="__af" style="display:none"></form>
-
-@if (!(Model?.Any() ?? false))
+@if (TempData["Success"] is string ok && !string.IsNullOrWhiteSpace(ok))
 {
-    <div class="border rounded-3 bg-light p-5 text-center">
-        <h5 class="mb-2">Aún no tienes tableros</h5>
+    <div class="alert alert-success">@ok</div>
+}
+
+@if (Model == null || Model.Count == 0)
+{
+    <div class="text-center my-5">
+        <h4 class="fw-semibold">Aún no tienes tableros</h4>
         <p class="text-muted mb-3">Crea tu primer tablero para empezar a agregar listas y tarjetas.</p>
         <a asp-controller="Tablero" asp-action="Create" class="btn btn-primary">Crear mi primer tablero</a>
     </div>
@@ -36,71 +38,79 @@ else
                     <div>
                         <h3 class="mb-0">@tablero.Titulo</h3>
                         <small class="text-muted">@tablero.FechaCreacion?.ToString("dd/MM/yyyy")</small>
-                   
                     </div>
+
+                    <!-- Menú tablero -->
                     <div class="dropdown">
-                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false"> ⚙️ </button>
+                        <button class="btn btn-sm btn-outline-secondary" id="menuTablero-@tablero.Id" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-three-dots-vertical"></i>
+                        </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
-                            <li><a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">Editar</a></li>
-                            <li><a class="dropdown-item text-danger" href="#" onclick="deleteBoard(event, @tablero.Id)">Eliminar</a></li>
+                            <li>
+                                <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">
+                                    <i class="bi bi-pencil-square me-2"></i>Editar
+                                </a>
+                            </li>
+                            <li>
+                                <form asp-controller="Tablero" asp-action="Delete" asp-route-id="@tablero.Id" method="post" class="m-0"
+                                      onsubmit="return confirm('¿Eliminar este tablero y todo su contenido?');">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="dropdown-item text-danger">
+                                        <i class="bi bi-trash3 me-2"></i>Eliminar
+                                    </button>
+                                </form>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="mb-3 text-center">
-                    <details>
-                        <summary class="text-muted">➕ Agregar lista</summary>
-                        <form asp-controller="Lista" asp-action="CreateList" method="post" class="row g-2 justify-content-center mt-2">
-                            @Html.AntiForgeryToken()
-                            <input type="hidden" name="tableroId" value="@tablero.Id" />
-                            <div class="col-12 col-md-6">
-                                <input class="form-control" name="titulo" placeholder="Nombre de la lista" required />
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-primary btn-sm" type="submit">Crear lista</button>
-                            </div>
-                        </form>
-                    </details>
-                </div>
-
-                <div class="lists-container" data-tablero="@tablero.Id">
-                    @if (tablero.Lista?.Any() ?? false)
+                <div class="lists-wrapper">
+                    <!-- Listas -->
+                    @if (tablero.Lista != null && tablero.Lista.Any())
                     {
                         @foreach (var lista in tablero.Lista.OrderBy(l => l.Orden))
                         {
                             <div class="list-column" data-lista="@lista.Id" ondrop="drop(event)" ondragover="allowDrop(event)">
                                 <div class="list-header d-flex justify-content-between align-items-center">
                                     <strong>@lista.Titulo</strong>
+
+                                    <!-- Menú lista (existente / de referencia de estilo) -->
                                     <div class="dropdown">
-                                        <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">⋮</button>
+                                        <button class="btn btn-sm btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acciones de lista">
+                                            <i class="bi bi-three-dots-vertical"></i>
+                                        </button>
                                         <ul class="dropdown-menu dropdown-menu-end">
-                                            <li>
+                                            <li class="px-3 py-2">
                                                 <form asp-controller="Lista" asp-action="EditList" method="post" class="d-flex gap-1 m-0 p-0">
                                                     @Html.AntiForgeryToken()
                                                     <input type="hidden" name="id" value="@lista.Id" />
-                                                    <input type="text" name="titulo" value="@lista.Titulo" class="form-control form-control-sm" style="width:120px;" required />
-                                                    <button class="btn btn-sm btn-primary p-1" type="submit">Guardar</button>
+                                                    <input type="text" name="titulo" value="@lista.Titulo" class="form-control form-control-sm" style="width:140px;" required />
+                                                    <button class="btn btn-sm btn-primary" type="submit">Guardar</button>
                                                 </form>
                                             </li>
                                             <li>
-                                                <form asp-controller="Lista" asp-action="DeleteList" method="post" class="m-0 p-0" onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
+                                                <form asp-controller="Lista" asp-action="DeleteList" method="post" class="m-0"
+                                                      onsubmit="return confirm('¿Eliminar esta lista y sus tarjetas?');">
                                                     @Html.AntiForgeryToken()
                                                     <input type="hidden" name="id" value="@lista.Id" />
-                                                    <button class="dropdown-item text-danger" type="submit">Eliminar</button>
+                                                    <button class="dropdown-item text-danger" type="submit">
+                                                        <i class="bi bi-trash3 me-2"></i>Eliminar lista
+                                                    </button>
                                                 </form>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
 
-                                <div class="cards-container" data-lista="@lista.Id">
-                                    @if (lista.ListaTarjetas?.Any() ?? false)
+                                <!-- Tarjetas -->
+                                <div class="cards-container">
+                                    @if (lista.ListaTarjetas != null && lista.ListaTarjetas.Any())
                                     {
                                         @foreach (var tarjeta in lista.ListaTarjetas)
                                         {
-                                            <div class="card-item" id="card-@tarjeta.Id" draggable="true" ondragstart="drag(event)">
+                                            <div class="card-item shadow-sm" id="card-@tarjeta.Id" draggable="true" ondragstart="drag(event)">
                                                 <div class="d-flex justify-content-between align-items-start gap-2">
-                                                    <div>
+                                                    <div class="flex-fill pe-2">
                                                         <strong>@tarjeta.Titulo</strong>
                                                         @if (!string.IsNullOrEmpty(tarjeta.Descripcion))
                                                         {
@@ -108,63 +118,126 @@ else
                                                         }
                                                         @if (tarjeta.FechaVencimiento.HasValue)
                                                         {
-                                                            <div class="small text-muted">Vence: @tarjeta.FechaVencimiento.Value.ToString("dd/MM/yyyy")</div>
+                                                            <div class="badge bg-light text-dark border small">
+                                                                Vence: @tarjeta.FechaVencimiento.Value.ToString("dd/MM/yyyy")
+                                                            </div>
                                                         }
                                                     </div>
-                                                    <form asp-controller="Board" asp-action="DeleteCard" method="post" onsubmit="return confirm('¿Eliminar esta tarjeta?');">
-                                                        @Html.AntiForgeryToken()
-                                                        <input type="hidden" name="id" value="@tarjeta.Id" />
-                                                        <button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>
-                                                    </form>
+
+                                                    <!-- MENÚ TARJETA (lo que pediste) -->
+                                                    <div class="dropdown">
+                                                        <button class="btn btn-sm btn-light" id="menuTarjeta-@tarjeta.Id" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Acciones de tarjeta">
+                                                            <i class="bi bi-three-dots-vertical"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTarjeta-@tarjeta.Id">
+                                                            <li>
+                                                                <button type="button" class="dropdown-item" data-bs-toggle="modal" data-bs-target="#modalEditTarjeta-@tarjeta.Id">
+                                                                    <i class="bi bi-pencil-square me-2 text-primary"></i>Editar
+                                                                </button>
+                                                            </li>
+                                                            <li>
+                                                                <form asp-controller="Tarjeta" asp-action="DeleteCard" method="post" class="m-0"
+                                                                      onsubmit="return confirm('¿Eliminar esta tarjeta?');">
+                                                                    @Html.AntiForgeryToken()
+                                                                    <input type="hidden" name="id" value="@tarjeta.Id" />
+                                                                    <button type="submit" class="dropdown-item text-danger">
+                                                                        <i class="bi bi-trash3 me-2"></i>Eliminar
+                                                                    </button>
+                                                                </form>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
 
-                                                <details class="mt-2" data-tarjeta="@tarjeta.Id" onclick="if(this.open){loadComments(@tarjeta.Id);}">
+                                                <!-- Comentarios de la tarjeta -->
+                                                <details class="mt-2" id="comments-@tarjeta.Id" onclick="if(this.open){loadComments(@tarjeta.Id);}">
                                                     <summary class="small text-muted">💬 Comentarios</summary>
                                                     <div class="comments-box" id="comments-list-@tarjeta.Id">
                                                         <div class="small text-muted">Cargando comentarios…</div>
                                                     </div>
-                                                    <form class="row g-2 align-items-center mt-1" onsubmit="return addComment(event, @tarjeta.Id);">
-                                                        <div class="col-12">
-                                                            <input class="form-control form-control-sm" type="text" name="contenido" placeholder="Escribe un comentario…" required />
+                                                    <form class="row g-2 align-items-center mt-2" onsubmit="return addComment(@tarjeta.Id, this);">
+                                                        <div class="col-9">
+                                                            <input type="text" name="contenido" class="form-control form-control-sm" placeholder="Escribe un comentario…" required />
                                                         </div>
-                                                        <div class="col-auto">
-                                                            <button class="btn btn-secondary btn-sm" type="submit">Agregar</button>
+                                                        <div class="col-3 text-end">
+                                                            <button type="submit" class="btn btn-sm btn-outline-primary">Agregar</button>
                                                         </div>
                                                     </form>
                                                 </details>
                                             </div>
+
+                                            <!-- MODAL EDITAR TARJETA -->
+                                            <div class="modal fade" id="modalEditTarjeta-@tarjeta.Id" tabindex="-1" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title"><i class="bi bi-pencil-square me-2"></i>Editar tarjeta</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                                        </div>
+                                                        <form asp-controller="Tarjeta" asp-action="EditCard" method="post">
+                                                            @Html.AntiForgeryToken()
+                                                            <input type="hidden" name="id" value="@tarjeta.Id" />
+                                                            <div class="modal-body">
+                                                                <div class="mb-2">
+                                                                    <label class="form-label">Título</label>
+                                                                    <input name="titulo" class="form-control" value="@tarjeta.Titulo" required />
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label class="form-label">Descripción</label>
+                                                                    <textarea name="descripcion" class="form-control" rows="3">@tarjeta.Descripcion</textarea>
+                                                                </div>
+                                                                <div class="mb-2">
+                                                                    <label class="form-label">Fecha de vencimiento</label>
+                                                                    <input type="date" name="fechaVencimiento" class="form-control"
+                                                                           value="@(tarjeta.FechaVencimiento.HasValue? tarjeta.FechaVencimiento.Value.ToString("yyyy-MM-dd") : "")" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                                                <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /MODAL EDITAR TARJETA -->
                                         }
-                                    }
-                                    else
-                                    {
-                                        <p class="text-muted small mb-2">No hay tarjetas</p>
                                     }
                                 </div>
 
-                                <details class="mt-2">
-                                    <summary class="text-muted small">➕ Agregar tarjeta</summary>
-                                    <form asp-controller="Board" asp-action="CreateCard" method="post" class="mt-2">
-                                        @Html.AntiForgeryToken()
-                                        <input type="hidden" name="listaId" value="@lista.Id" />
-                                        <div class="mb-2">
-                                            <input class="form-control form-control-sm" type="text" name="titulo" placeholder="Título" required />
-                                        </div>
-                                        <div class="mb-2">
-                                            <textarea class="form-control form-control-sm" name="descripcion" rows="2" placeholder="Descripción (opcional)"></textarea>
-                                        </div>
-                                        <div class="d-flex gap-2 align-items-center">
-                                            <input class="form-control form-control-sm" type="date" name="fechaVencimiento" />
-                                            <button class="btn btn-primary btn-sm" type="submit">Crear tarjeta</button>
-                                        </div>
-                                    </form>
-                                </details>
+                                <!-- Nueva tarjeta -->
+                                <form asp-controller="Tarjeta" asp-action="CreateCard" method="post" class="mt-2">
+                                    @Html.AntiForgeryToken()
+                                    <input type="hidden" name="listaId" value="@lista.Id" />
+                                    <div class="input-group input-group-sm">
+                                        <input name="titulo" class="form-control" placeholder="Nueva tarjeta…" required />
+                                        <button class="btn btn-outline-primary" type="submit">Agregar</button>
+                                    </div>
+                                    <div class="collapse mt-2" id="collapseCardExtra-@lista.Id">
+                                        <textarea name="descripcion" class="form-control form-control-sm mb-2" rows="2" placeholder="Descripción (opcional)"></textarea>
+                                        <input type="date" name="fechaVencimiento" class="form-control form-control-sm" />
+                                    </div>
+                                    <button class="btn btn-link btn-sm mt-1 p-0" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseCardExtra-@lista.Id"
+                                            aria-expanded="false" aria-controls="collapseCardExtra-@lista.Id">
+                                        Más opciones
+                                    </button>
+                                </form>
                             </div>
                         }
                     }
-                    else
-                    {
-                        <p class="text-muted small">No hay listas</p>
-                    }
+
+                    <!-- Agregar nueva lista -->
+                    <div class="list-column add-list">
+                        <form asp-controller="Lista" asp-action="CreateList" method="post">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="tableroId" value="@tablero.Id" />
+                            <div class="input-group input-group-sm">
+                                <input name="titulo" class="form-control" placeholder="Nueva lista…" required />
+                                <button class="btn btn-outline-success" type="submit">Agregar</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         }
@@ -173,177 +246,312 @@ else
 
 @section Scripts {
     <script>
-        // DRAG & DROP
-        let dragged;
-        function allowDrop(ev) { ev.preventDefault(); }
-        function drag(ev) { dragged = ev.target; }
-        function drop(ev) {
+        // Drag & Drop básico
+        function allowDrop(ev){ ev.preventDefault(); }
+        function drag(ev){ ev.dataTransfer.setData("text", ev.target.id); }
+        async function drop(ev){
             ev.preventDefault();
-            if (!dragged) return;
-            let targetList = ev.target.closest('.cards-container');
-            if (!targetList) return;
-            targetList.appendChild(dragged);
-            dragged = null;
-        }
+            const cardId = ev.dataTransfer.getData("text");
+            const el = document.getElementById(cardId);
+            const targetList = ev.currentTarget.closest("[data-lista]");
+            if(!el || !targetList) return;
+            targetList.querySelector(".cards-container").appendChild(el);
 
-        // COMENTARIOS AJAX
-        function getAntiForgery() {
-            const tokenInput = document.querySelector('#__af input[name="__RequestVerificationToken"]');
-            return tokenInput ? tokenInput.value : '';
-        }
-
-        async function loadComments(tarjetaId) {
-            const cont = document.getElementById('comments-list-' + tarjetaId);
-            if (!cont) return;
-            cont.innerHTML = '<div class="small text-muted">Cargando comentarios…</div>';
+            // Llamada para mover tarjeta
+            const id = parseInt(cardId.replace("card-",""));
+            const nuevaListaId = parseInt(targetList.getAttribute("data-lista"));
             try {
-                const res = await fetch(`@Url.Action("GetComments", "Board")?tarjetaId=${tarjetaId}`, { credentials:'same-origin' });
-                const data = await res.json();
-                if(!Array.isArray(data)) throw new Error('Invalid');
-                if(data.length===0){cont.innerHTML='<div class="small text-muted">Sin comentarios todavía.</div>';return;}
-                cont.innerHTML='';
-                for(const c of data){
-                    const row = document.createElement('div');
-                    row.className='comment-item d-flex justify-content-between align-items-center gap-2';
-                    const text = document.createElement('div');
-                    const fecha = c.fechaCreacion ? new Date(c.fechaCreacion).toLocaleString() : '';
-                    text.innerHTML=`<div>${escapeHtml(c.contenido||'')}</div><div class="small text-muted">${fecha}</div>`;
-                    const form=document.createElement('form');
-                    form.method='post';
-                    form.onsubmit=e=>deleteComment(e,c.id);
-                    form.innerHTML=`<input type="hidden" name="id" value="${c.id}"><input type="hidden" name="__RequestVerificationToken" value="${getAntiForgery()}"><button class="btn btn-outline-danger btn-sm" type="submit">Eliminar</button>`;
-                    row.appendChild(text);row.appendChild(form);cont.appendChild(row);
-                }
-            } catch { cont.innerHTML='<div class="text-danger small">Error al cargar comentarios.</div>'; }
+                const form = document.createElement('form');
+                form.method = 'post';
+                form.action = `/Tarjeta/MoveCard?id=${id}&nuevaListaId=${nuevaListaId}`;
+
+                const tokenInput = document.createElement('input');
+                tokenInput.type = 'hidden';
+                tokenInput.name = '__RequestVerificationToken';
+                tokenInput.value = document.querySelector('input[name="__RequestVerificationToken"]').value;
+                form.appendChild(tokenInput);
+
+                document.body.appendChild(form);
+                form.submit();
+            } catch (e) {
+                console.error(e);
+                alert('No se pudo mover la tarjeta.');
+            }
         }
 
-        async function addComment(ev, tarjetaId){
-            ev.preventDefault();
-            const form=ev.target;
-            const contenido=form.contenido.value.trim();
-            if(!contenido) return false;
-            const fd=new FormData();
-            fd.append('tarjetaId', tarjetaId);
-            fd.append('contenido', contenido);
-            fd.append('__RequestVerificationToken', getAntiForgery());
-            const res=await fetch(`@Url.Action("CreateComment", "Board")`,{method:'POST',credentials:'same-origin',body:fd});
-            if(res.ok){form.reset(); loadComments(tarjetaId);} else{alert('No se pudo agregar el comentario.');}
-            return false;
+        // Comentarios (placeholders)
+        function loadComments(cardId){
+            const box = document.getElementById(`comments-list-${cardId}`);
+            if(!box) return;
+            box.innerHTML = `<div class="small text-muted">Sin comentarios aún.</div>`;
         }
-
-        async function deleteComment(ev){
-            ev.preventDefault();
-            if(!confirm('¿Eliminar este comentario?')) return false;
-            const fd=new FormData(ev.target);
-            fd.append('__RequestVerificationToken',getAntiForgery());
-            const res=await fetch(`@Url.Action("DeleteComment", "Board")`,{method:'POST',credentials:'same-origin',body:fd});
-            if(res.ok){ const details=ev.target.closest('details'); const tarjetaId=details?.getAttribute('data-tarjeta'); if(tarjetaId) loadComments(tarjetaId);} else {alert('No se pudo eliminar el comentario.');}
-            return false;
-        }
-
-        function escapeHtml(s){const map={'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'};return String(s).replace(/[&<>"']/g,m=>map[m]);}
-
-        async function deleteBoard(ev, tableroId) {
-            ev.preventDefault();
-            if (!confirm('¿Eliminar este tablero y todas sus listas y tarjetas?')) return false;
-            const fd = new FormData(); fd.append('__RequestVerificationToken', getAntiForgery());
-            try {
-                const res = await fetch(`/Tablero/DeleteBoard/${tableroId}`, { method: 'POST', credentials: 'same-origin', body: fd });
-                if (res.ok) {
-                    const boardEl = document.querySelector(`.board[data-tablero='${tableroId}']`);
-                    if (boardEl) boardEl.remove();
-                } else { alert('No se pudo eliminar el tablero.'); }
-            } catch { alert('Error al eliminar el tablero.'); }
+        function addComment(cardId, form){
+            const input = form.querySelector('[name="contenido"]');
+            if(!input || !input.value.trim()) return false;
+            const list = document.getElementById(`comments-list-${cardId}`);
+            const item = document.createElement('div');
+            item.className = 'comment-item';
+            item.textContent = input.value.trim();
+            list.prepend(item);
+            input.value = '';
             return false;
         }
     </script>
 }
 
-
 <style>
-    .board-container {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    /* ====== Layout general ====== */
+    :root {
+        --bg: #0b1020; /* fondo oscuro elegante */
+        --panel: #0f172a; /* paneles (azul casi negro) */
+        --panel-soft: #111a2e;
+        --border: #1f2a44;
+        --muted: #9fb0cc;
+        --primary: #60a5fa; /* acento */
+        --primary-ink: #0b1020;
+        --ok: #22c55e;
+        --danger: #ef4444;
+        --shadow: 0 6px 18px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.02);
     }
 
+    body {
+        background: radial-gradient(1200px 800px at 10% -10%, #1a2444 0%, #0b1020 45%) fixed, var(--bg);
+    }
+
+    /* ====== Cabeceras ====== */
+    h2, h3 {
+        color: #e8f0ff;
+    }
+
+    .text-muted {
+        color: var(--muted) !important;
+    }
+
+    /* ====== Contenedor de tableros ====== */
+    .board-container {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    /* ====== Tarjeta de tablero ====== */
     .board {
-        background: #f8f9fa;
-        border-radius: 10px;
+        background: linear-gradient(180deg, var(--panel) 0%, var(--panel-soft) 100%);
+        border: 1px solid var(--border);
+        border-radius: 16px;
         padding: 1rem;
-        box-shadow: 0 4px 12px rgba(0,0,0,.1);
+        box-shadow: var(--shadow);
     }
 
     .board-header {
-        margin-bottom: 1rem;
+        margin-bottom: .75rem;
     }
 
-    .lists-container {
-        display: flex;
+    /* ====== Listas (columnas) ====== */
+    .lists-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1rem;
-        overflow-x: auto;
-        padding-bottom: .5rem;
+        align-items: start;
     }
 
     .list-column {
-        background: #e2e6ea;
-        border-radius: 8px;
-        min-width: 250px;
-        max-width: 320px;
-        padding: .5rem;
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        flex-shrink: 0;
-        position: relative;
+        background: rgba(255,255,255,.02);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: .8rem;
+        min-height: 140px;
+        box-shadow: 0 1px 0 rgba(255,255,255,.03) inset;
+        transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+        overflow: visible; /* ¡Importante! para que no corte los dropdowns */
     }
 
+        .list-column:hover {
+            border-color: #2b3a60;
+            transform: translateY(-1px);
+        }
+
     .list-header {
-        font-weight: 700;
-        margin-bottom: .5rem;
-        text-align: center;
+        margin-bottom: .55rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
-    .cards-container {
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-        min-height: 50px;
-    }
-
-    .card-item {
-        background: #fff;
-        border-radius: 6px;
-        padding: .5rem;
-        box-shadow: 0 2px 6px rgba(0,0,0,.1);
-        transition: transform .15s, box-shadow .15s;
-        cursor: grab;
-    }
-
-        .card-item:active {
-            cursor: grabbing;
+        .list-header strong {
+            color: #e6eeff;
         }
 
-    .board-footer {
-        text-align: center;
-        margin-top: 1rem;
+    /* ====== Tarjetas (items) ====== */
+    .cards-container {
+        overflow: visible;
+    }
+        /* ¡Importante! permite que el menú flote */
+        .cards-container .card-item {
+            position: relative; /* Para stacking del dropdown */
+            background: #0c142a;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: .7rem .7rem .55rem;
+            margin-bottom: .6rem;
+            cursor: grab;
+            box-shadow: 0 6px 16px rgba(3,8,20,.25);
+            transition: transform .15s ease, box-shadow .2s ease, border-color .2s ease;
+        }
+
+            .cards-container .card-item:hover {
+                transform: translateY(-1px);
+                border-color: #2b3a60;
+                box-shadow: 0 10px 22px rgba(3,8,20,.30);
+            }
+
+            .cards-container .card-item:active {
+                cursor: grabbing;
+            }
+
+            .cards-container .card-item strong {
+                color: #e9f2ff;
+            }
+
+            .cards-container .card-item p {
+                color: #b8c6e8;
+            }
+
+    .badge.bg-light.text-dark.border.small {
+        background: rgba(96,165,250,.15) !important;
+        color: #cfe5ff !important;
+        border-color: rgba(96,165,250,.25) !important;
     }
 
+    /* ====== Botones y dropdowns ====== */
+    .btn,
+    .btn:focus,
+    .btn:active {
+        box-shadow: none !important;
+    }
+
+        .btn.btn-sm.btn-light {
+            background: rgba(255,255,255,.06);
+            border: 1px solid var(--border) !important;
+            color: #d8e4ff;
+        }
+
+            .btn.btn-sm.btn-light:hover {
+                background: rgba(255,255,255,.10);
+            }
+
+        .btn.btn-sm.btn-outline-secondary {
+            border-color: var(--border);
+            color: #c9d8ff;
+        }
+
+            .btn.btn-sm.btn-outline-secondary:hover {
+                background: rgba(255,255,255,.06);
+                color: #fff;
+            }
+
+    /* Asegurar visibilidad del menú en cards dentro de grids/overflows */
+    .dropdown-menu {
+        z-index: 2000; /* superior a modales por si acaso */
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        background: #0b1428;
+        box-shadow: 0 18px 40px rgba(0,0,0,.45);
+        overflow: hidden;
+    }
+
+    .dropdown-item {
+        color: #d3e0ff;
+        padding: .55rem .9rem;
+    }
+
+        .dropdown-item:hover {
+            background: rgba(255,255,255,.06);
+            color: #fff;
+        }
+
+        .dropdown-item .text-danger {
+            color: var(--danger) !important;
+        }
+
+        .dropdown-item .text-primary {
+            color: var(--primary) !important;
+        }
+
+    /* ====== Formularios pequeños ====== */
+    .input-group-sm .form-control,
+    .form-control.form-control-sm,
+    .form-select.form-select-sm {
+        background: #0c142a;
+        color: #e6eeff;
+        border: 1px solid var(--border);
+    }
+
+        .input-group-sm .form-control::placeholder {
+            color: #8fa2c6;
+        }
+
+    .input-group-sm .btn-outline-primary {
+        border-color: rgba(96,165,250,.5);
+        color: #cfe5ff;
+    }
+
+        .input-group-sm .btn-outline-primary:hover {
+            background: rgba(96,165,250,.15);
+            color: #fff;
+        }
+
+    /* ====== Add list "dashed" ====== */
+    .add-list {
+        background: rgba(96,165,250,.06);
+        border: 1px dashed rgba(96,165,250,.35);
+        display: flex;
+        align-items: center;
+        border-radius: 14px;
+    }
+
+    /* ====== Comentarios ====== */
     .comments-box {
-        background: #f3f4f6;
-        border-radius: 8px;
-        padding: .5rem;
-        margin-top: .25rem;
+        background: #0b1326;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: .55rem .6rem;
+        margin-top: .3rem;
     }
 
     .comment-item {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 6px;
-        padding: .4rem .6rem;
+        background: #0e1730;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: .42rem .6rem;
         margin: .35rem 0;
+        color: #dce7ff;
     }
+
+    /* ====== Utilidades ====== */
+    .badge {
+        font-weight: 500;
+        letter-spacing: .2px;
+    }
+
+    /* ====== Scrollbar sutil (webkit) ====== */
+    *::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: #1c2744;
+        border-radius: 10px;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+    }
+
+        *::-webkit-scrollbar-thumb:hover {
+            background: #253560;
+        }
+
 </style>

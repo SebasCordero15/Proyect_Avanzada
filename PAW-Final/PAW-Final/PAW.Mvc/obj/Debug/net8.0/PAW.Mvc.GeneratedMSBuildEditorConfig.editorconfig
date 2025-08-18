@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PAW.Mvc
 build_property.RootNamespace = PAW.Mvc
-build_property.ProjectDir = C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Mvc\
+build_property.ProjectDir = C:\Users\gabri\OneDrive\Documents\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Mvc\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\juans\OneDrive\Documentos\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Mvc
+build_property.MSBuildProjectDirectory = C:\Users\gabri\OneDrive\Documents\GitHub\Proyect_Avanzada\PAW-Final\PAW-Final\PAW.Mvc
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Edit.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Login.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Register.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/Details.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/Index.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_CardCreateForm.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_CardCreateForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcX0NhcmRDcmVhdGVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_CardItem.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_CardItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcX0NhcmRJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_DeleteTableroPartial.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Board/_DeleteTableroPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9hcmRcX0RlbGV0ZVRhYmxlcm9QYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Home/Index.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Home/Privacy.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/Error.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Create.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Edit.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Index.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/_Form.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Tablero/_Form.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVyb1xfRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/_ViewImports.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/_ViewStart.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/juans/OneDrive/Documentos/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/_Layout.cshtml]
+[C:/Users/gabri/OneDrive/Documents/GitHub/Proyect_Avanzada/PAW-Final/PAW-Final/PAW.Mvc/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-e85g42yamp
