@@ -3,44 +3,122 @@
     ViewData["Title"] = "Iniciar sesión";
 }
 
-<div class="container py-5" style="max-width: 480px;">
-    <div class="card shadow-sm">
-        <div class="card-body p-4">
-            <div class="text-center mb-3">
-                <i class="bi bi-kanban" style="font-size:2rem;opacity:.8"></i>
-                <h4 class="mt-2 mb-0">PAW Board</h4>
-                <div class="text-muted">Iniciar sesión</div>
+<style>
+    /* Tono profesional, fondo suave */
+    .auth-bg {
+        background: radial-gradient(1200px 800px at 20% -10%, rgba(13,110,253,.08), transparent 60%), radial-gradient(1000px 600px at 120% 110%, rgba(32,201,151,.08), transparent 60%), var(--bs-body-bg);
+    }
+
+    .brand-badge {
+        width: 56px;
+        height: 56px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(13,110,253,.12), rgba(32,201,151,.12));
+        color: var(--bs-primary);
+    }
+
+    .form-label small {
+        color: var(--bs-secondary-color);
+    }
+</style>
+
+<div class="auth-bg min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-5">
+                <div class="card shadow-sm border-0">
+                    <div class="card-body p-4 p-md-5">
+
+                        <!-- Encabezado -->
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <div class="brand-badge">
+                                <i class="bi bi-kanban" style="font-size:1.4rem;"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">PAW Board</h4>
+                                <div class="text-muted">Accede a tu cuenta</div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen de validación -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <form asp-action="Login" method="post" novalidate>
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" asp-for="ReturnUrl" />
+
+                            <!-- Correo -->
+                            <div class="mb-3">
+                                <label asp-for="Correo" class="form-label">
+                                    Correo electrónico
+                                    <small>(tu@correo.com)</small>
+                                </label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                    <input asp-for="Correo" class="form-control" autocomplete="email" inputmode="email" />
+                                </div>
+                                <span asp-validation-for="Correo" class="text-danger small"></span>
+                            </div>
+
+                            <!-- Clave -->
+                            <div class="mb-3">
+                                <label asp-for="Clave" class="form-label">Contraseña</label>
+                                <div class="input-group" x-data>
+                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                    <input asp-for="Clave"
+                                           class="form-control"
+                                           type="password"
+                                           id="pwdInput"
+                                           autocomplete="current-password" />
+                                    <button class="btn btn-outline-secondary" type="button" id="togglePwd" aria-label="Mostrar u ocultar contraseña">
+                                        <i class="bi bi-eye" id="togglePwdIcon"></i>
+                                    </button>
+                                </div>
+                                <span asp-validation-for="Clave" class="text-danger small"></span>
+                            </div>
+
+                            <button class="btn btn-primary w-100 py-2" type="submit">
+                                Iniciar sesión
+                            </button>
+                        </form>
+
+                        <div class="mt-4 text-center">
+                            <small class="text-muted">
+                                ¿No tienes cuenta?
+                                <a asp-action="Register" class="link-primary">Regístrate aquí</a>
+                            </small>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Pie de página pequeñito -->
+                <div class="text-center text-muted mt-3" style="font-size:.85rem;">
+                    © @DateTime.Now.Year PAW Board
+                </div>
             </div>
-
-            <form asp-action="Login" method="post" novalidate>
-                @Html.AntiForgeryToken()
-                <input type="hidden" asp-for="ReturnUrl" />
-
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-2"></div>
-
-                <div class="mb-3">
-                    <label asp-for="Correo" class="form-label"></label>
-                    <input asp-for="Correo" class="form-control" placeholder="tu@correo.com" />
-                    <span asp-validation-for="Correo" class="text-danger"></span>
-                </div>
-
-                <div class="mb-3">
-                    <label asp-for="Clave" class="form-label"></label>
-                    <input asp-for="Clave" class="form-control" type="password" placeholder="••••••••" />
-                    <span asp-validation-for="Clave" class="text-danger"></span>
-                </div>
-
-                <button class="btn btn-primary w-100">Entrar</button>
-
-
-            </form>
-            <div class="mt-3 text-center">
-    <small>¿No tienes cuenta? <a asp-action="Register">Regístrate aquí</a></small>
-</div
         </div>
     </div>
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Mostrar / ocultar contraseña
+        (function () {
+            const btn = document.getElementById('togglePwd');
+            const icon = document.getElementById('togglePwdIcon');
+            const input = document.getElementById('pwdInput');
+            if (!btn || !icon || !input) return;
+
+            btn.addEventListener('click', () => {
+                const isPwd = input.getAttribute('type') === 'password';
+                input.setAttribute('type', isPwd ? 'text' : 'password');
+                icon.classList.toggle('bi-eye');
+                icon.classList.toggle('bi-eye-slash');
+            });
+        })();
+    </script>
 }

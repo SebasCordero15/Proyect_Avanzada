@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj": {}
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
         "projectName": "PAW.API",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,24 +26,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj"
               }
             }
           }
@@ -92,24 +91,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj",
         "projectName": "PAW.Business",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\PAW.Business.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,15 +117,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj"
               }
             }
           }
@@ -162,24 +160,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
         "projectName": "PAW.Data",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -188,15 +186,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
               }
             }
           }
@@ -250,24 +247,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
         "projectName": "PAW.Models",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -276,7 +273,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -316,24 +312,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
         "projectName": "PAW.Mvc",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\PAW.Mvc.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -342,21 +338,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\PAW.API.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
               }
             }
           }
@@ -395,24 +390,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
+    "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
         "projectName": "PAW.Repository",
-        "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
-        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\obj\\",
+        "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\PAW.Repository.csproj",
+        "packagesPath": "C:\\Users\\sebas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sebas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -421,18 +416,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\PAW.Data.csproj"
               },
-              "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\PAW.Models.csproj"
               }
             }
           }
@@ -474,7 +468,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

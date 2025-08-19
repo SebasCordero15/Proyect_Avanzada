@@ -1,8 +1,61 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inicio";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<style>
+    .hero-wrap {
+        min-height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(800px 500px at 10% -10%, rgba(13,110,253,.08), transparent 60%), radial-gradient(700px 450px at 120% 110%, rgba(32,201,151,.06), transparent 60%), var(--bs-body-bg);
+    }
+
+    .hero-card {
+        border: 0;
+        box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+
+    .brand-badge {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        background: linear-gradient(135deg, rgba(13,110,253,.12), rgba(32,201,151,.12));
+        color: var(--bs-primary);
+        margin: 0 auto 1rem;
+    }
+
+    @@media (max-width: 576px) {
+        .display-5 {
+            font-size: 1.9rem;
+        }
+    }
+</style>
+
+<div class="hero-wrap">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9 col-lg-7">
+                <div class="card hero-card">
+                    <div class="card-body p-4 p-md-5 text-center">
+                        <div class="brand-badge">
+                            <i class="bi bi-kanban" style="font-size:1.6rem;"></i>
+                        </div>
+                        <h1 class="display-5 fw-semibold mb-2">PAW Board</h1>
+                        <p class="text-secondary mb-4">Organiza tu trabajo con tableros, listas y tarjetas.</p>
+
+                        <a asp-controller="Board" asp-action="Index" class="btn btn-primary btn-lg px-4">
+                            Ir a tableros
+                        </a>
+                    </div>
+                </div>
+
+                <div class="text-center text-muted mt-3" style="font-size:.9rem;">
+                    © @DateTime.Now.Year PAW Board
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

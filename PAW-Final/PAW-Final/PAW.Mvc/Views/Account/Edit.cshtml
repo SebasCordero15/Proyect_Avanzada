@@ -3,41 +3,107 @@
     ViewData["Title"] = "Editar perfil";
 }
 
-<div class="container py-3" style="max-width: 680px;">
-    <h2 class="mb-3">Editar perfil</h2>
-
-    @if (TempData["Success"] is string ok && !string.IsNullOrWhiteSpace(ok))
-    {
-        <div class="alert alert-success">@ok</div>
+<style>
+    .page-bg {
+        background: radial-gradient(1100px 700px at -10% -10%, rgba(13,110,253,.08), transparent 60%), radial-gradient(900px 600px at 120% 110%, rgba(32,201,151,.08), transparent 60%), var(--bs-body-bg);
     }
 
-    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    .profile-badge {
+        width: 64px;
+        height: 64px;
+        display: grid;
+        place-items: center;
+        border-radius: 16px;
+        background: linear-gradient(135deg, rgba(13,110,253,.12), rgba(32,201,151,.12));
+        color: var(--bs-primary);
+    }
 
-    <form asp-action="Edit" method="post" class="card shadow-sm">
-        @Html.AntiForgeryToken()
-        <input type="hidden" asp-for="Id" />
+    .subtle {
+        color: var(--bs-secondary-color);
+    }
+</style>
 
-        <div class="card-body">
-            <div class="mb-3">
-                <label asp-for="Nombre" class="form-label"></label>
-                <input asp-for="Nombre" class="form-control" />
-                <span asp-validation-for="Nombre" class="text-danger"></span>
-            </div>
+<div class="page-bg min-vh-100 d-flex align-items-center py-4">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-md-9 col-lg-7">
 
-            <div class="mb-3">
-                <label asp-for="Correo" class="form-label"></label>
-                <input asp-for="Correo" class="form-control" />
-                <span asp-validation-for="Correo" class="text-danger"></span>
+                @if (TempData["Success"] is string ok && !string.IsNullOrWhiteSpace(ok))
+                {
+                    <div class="alert alert-success alert-dismissible fade show shadow-sm" role="alert">
+                        <i class="bi bi-check-circle me-2"></i>@ok
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                    </div>
+                }
+
+                <form asp-action="Edit" method="post" class="card shadow-sm border-0">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+
+                    <div class="card-body p-4 p-md-5">
+                        <!-- Encabezado -->
+                        <div class="d-flex align-items-center gap-3 mb-4">
+                            <div class="profile-badge">
+                                <i class="bi bi-person" style="font-size:1.5rem;"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-0">Editar perfil</h4>
+                                <div class="subtle">Actualiza tu información básica</div>
+                            </div>
+                        </div>
+
+                        <!-- Resumen de validación -->
+                        <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                        <!-- Nombre -->
+                        <div class="mb-3">
+                            <label asp-for="Nombre" class="form-label">Nombre y apellidos</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-person"></i></span>
+                                <input asp-for="Nombre" class="form-control" autocomplete="name" />
+                            </div>
+                            <span asp-validation-for="Nombre" class="text-danger small"></span>
+                        </div>
+
+                        <!-- Correo -->
+                        <div class="mb-3">
+                            <label asp-for="Correo" class="form-label">Correo electrónico</label>
+                            <div class="input-group">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input asp-for="Correo" class="form-control" type="email" inputmode="email" autocomplete="email" />
+                            </div>
+                            <span asp-validation-for="Correo" class="text-danger small"></span>
+                        </div>
+                    </div>
+
+                    <div class="card-footer d-flex justify-content-end gap-2 bg-white">
+                        <a asp-controller="Board" asp-action="Index" class="btn btn-outline-secondary">
+                            Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            Guardar cambios
+                        </button>
+                    </div>
+                </form>
+
+                <div class="text-center subtle mt-3" style="font-size:.9rem;">
+                    © @DateTime.Now.Year PAW Board
+                </div>
             </div>
         </div>
-
-        <div class="card-footer d-flex justify-content-end gap-2 bg-white">
-            <a asp-controller="Board" asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
-            <button type="submit" class="btn btn-primary">Guardar cambios</button>
-        </div>
-    </form>
+    </div>
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
+    <script>
+        // Oculta automáticamente el mensaje de éxito después de 4s (opcional)
+        setTimeout(() => {
+            const el = document.querySelector('.alert.alert-success');
+            if (el) {
+                const bsAlert = bootstrap.Alert.getOrCreateInstance(el);
+                bsAlert.close();
+            }
+        }, 4000);
+    </script>
 }
