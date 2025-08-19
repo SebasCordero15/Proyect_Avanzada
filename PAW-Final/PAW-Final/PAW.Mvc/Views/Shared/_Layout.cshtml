@@ -3,36 +3,79 @@
     var returnUrl = Context?.Request?.Path + Context?.Request?.QueryString;
 }
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - PAW.Mvc</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/PAW.Mvc.styles.css" asp-append-version="true" />
+
+    <style>
+        /* Navbar celeste claro con excelente contraste para el texto */
+        .navbar-sky {
+            background: linear-gradient(180deg, #eaf3ff 0%, #dff0ff 100%);
+            border-bottom: 1px solid rgba(13, 110, 253, .12);
+            /* Colores de Bootstrap Navbar (BS5) */
+            --bs-navbar-color: #0b335b;
+            --bs-navbar-hover-color: #0a58ca;
+            --bs-navbar-active-color: #0a58ca;
+            --bs-navbar-brand-color: #0b335b;
+            --bs-navbar-brand-hover-color: #0a58ca;
+            --bs-navbar-toggler-border-color: rgba(11, 51, 91, .25);
+        }
+
+            .navbar-sky .nav-link {
+                font-weight: 500;
+            }
+
+            .navbar-sky .dropdown-menu {
+                box-shadow: 0 10px 30px rgba(0,0,0,.08);
+                border: 1px solid rgba(0,0,0,.06);
+            }
+
+        /* Contenedor principal con respiro */
+        main {
+            padding-top: .25rem;
+            padding-bottom: 2rem;
+        }
+
+        /* Footer sutil */
+        .app-footer {
+            border-top: 1px solid rgba(0,0,0,.06);
+            color: var(--bs-secondary-color);
+            background: #fff;
+        }
+    </style>
+
+    @RenderSection("Styles", required: false)
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">PAW.Mvc</a>
+        <nav class="navbar navbar-expand-lg navbar-light navbar-sky shadow-sm">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" asp-area="" asp-controller="Home" asp-action="Index">
+                    <span class="rounded-3 d-inline-grid place-items-center px-2 py-1"
+                          style="background: rgba(13,110,253,.12); color:#0d6efd;">
+                        <i class="bi bi-kanban"></i>
+                    </span>
+                    <span class="fw-semibold">PAW.Mvc</span>
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#appNavbar"
                         aria-controls="appNavbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between" id="appNavbar">
+                <div class="collapse navbar-collapse" id="appNavbar">
                     <ul class="navbar-nav me-auto">
-
-
-
                         @* Solo muestra el board si está autenticado *@
                         @if (User?.Identity?.IsAuthenticated ?? false)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Board" asp-action="Index">Miro</a>
+                                <a class="nav-link" asp-area="" asp-controller="Board" asp-action="Index">Miro</a>
                             </li>
                         }
                     </ul>
@@ -42,7 +85,8 @@
                         @if (User?.Identity?.IsAuthenticated ?? false)
                         {
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-dark" href="#" id="userMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="userMenu" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
                                     @User.Identity!.Name
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userMenu">
@@ -50,14 +94,12 @@
                                         @User.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
-                                    
                                     <li>
                                         <a class="dropdown-item" asp-controller="Account" asp-action="Edit">Editar perfil</a>
                                     </li>
                                     <li><hr class="dropdown-divider" /></li>
-
-                                    <li>
-                                        <form asp-controller="Account" asp-action="Logout" method="post" class="px-3">
+                                    <li class="px-3 pb-2">
+                                        <form asp-controller="Account" asp-action="Logout" method="post">
                                             @Html.AntiForgeryToken()
                                             <button class="btn btn-sm btn-outline-danger w-100">Salir</button>
                                         </form>
@@ -68,7 +110,7 @@
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link btn btn-sm btn-outline-primary px-3 ms-2"
+                                <a class="nav-link btn btn-sm btn-primary px-3 ms-2 text-white"
                                    asp-controller="Account" asp-action="Login"
                                    asp-route-returnUrl="@returnUrl">
                                     Iniciar sesión
@@ -82,14 +124,15 @@
     </header>
 
     <div class="container">
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - PAW.Mvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="app-footer py-3 mt-auto">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <div>© @DateTime.Now.Year PAW.Mvc</div>
+            <div><a asp-area="" asp-controller="Home" asp-action="Privacy" class="link-secondary">Privacidad</a></div>
         </div>
     </footer>
 
@@ -99,3 +142,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

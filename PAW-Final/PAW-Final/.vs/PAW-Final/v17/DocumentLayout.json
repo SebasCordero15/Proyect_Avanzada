@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\sebas\\desktop\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\account\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -230,20 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAiwHwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-19T03:41:48.736Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
@@ -251,8 +238,7 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Index.cshtml",
               "ViewState": "AgIAAPEAAAAAAAAAAAArwPcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T05:39:21.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T05:39:21.152Z"
             },
             {
               "$type": "Document",
@@ -324,8 +310,7 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\Edit.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-19T01:14:33.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T01:14:33.743Z"
             },
             {
               "$type": "Document",
@@ -337,8 +322,7 @@
               "RelativeToolTip": "PAW-Final\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-08-17T05:35:28.861Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T05:35:28.861Z"
             },
             {
               "$type": "Document",
@@ -350,12 +334,11 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Edit.cshtml",
               "ViewState": "AgIAAE8AAAAAAAAAAAAswG0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T06:39:08.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T06:39:08.511Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Home\\Index.cshtml",
@@ -368,16 +351,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAcwJAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-08-17T05:37:07.02Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\sebas\\Desktop\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAiwHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T03:41:48.736Z"
             },
             {
               "$type": "Document",
@@ -389,8 +384,7 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Register.cshtml",
               "ViewState": "AgIAAFEAAAAAAAAAAAAcwIAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-19T03:46:02.094Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T03:46:02.094Z"
             },
             {
               "$type": "Document",
@@ -426,8 +420,7 @@
               "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-19T01:34:49.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-19T01:34:49.875Z"
             },
             {
               "$type": "Document",
