@@ -13,7 +13,7 @@ public partial class Usuario
 
     public string Clave { get; set; } = null!;
 
-    public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
+    
 
     public virtual ICollection<Tablero> Tableros { get; set; } = new List<Tablero>();
 

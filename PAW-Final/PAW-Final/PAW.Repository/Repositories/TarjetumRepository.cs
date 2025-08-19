@@ -14,7 +14,7 @@ namespace PAW.Repository.Repositories
             return await _dbSet
           .Where(t => t.ListaId == listaId)
         .Include(t => t.Lista) // <- importante
-        .Include(t => t.Comentarios) // opcional
+        
         .ToListAsync();
         }
 

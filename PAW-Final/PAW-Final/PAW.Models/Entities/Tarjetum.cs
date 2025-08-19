@@ -19,7 +19,7 @@ public partial class Tarjetum
 
     public int? UsuarioAsignadoId { get; set; }
 
-    public virtual ICollection<Comentario> Comentarios { get; set; } = new List<Comentario>();
+    
 
     public virtual Listum Lista { get; set; } = null!;
 

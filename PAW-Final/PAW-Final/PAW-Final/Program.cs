@@ -25,14 +25,14 @@ builder.Services.AddDbContext<ProyectDbContext>(options =>
 // Repos
 builder.Services.AddScoped(typeof(IRepositoryBase<>), typeof(RepositoryBase<>));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
-builder.Services.AddScoped<IComentarioRepository, ComentarioRepository>();
+
 builder.Services.AddScoped<IListumRepository, ListumRepository>();
 builder.Services.AddScoped<ITableroRepository, TableroRepository>();
 builder.Services.AddScoped<ITarjetumRepository, TarjetumRepository>();
 
 // Business
 builder.Services.AddScoped<IUsuarioBusiness, UsuarioBusiness>();
-builder.Services.AddScoped<IComentarioBusiness, ComentarioBusiness>();
+
 builder.Services.AddScoped<IListumBusiness, ListumBusiness>();
 builder.Services.AddScoped<ITableroBusiness, TableroBusiness>();
 builder.Services.AddScoped<ITarjetumBusiness, TarjetumBusiness>();

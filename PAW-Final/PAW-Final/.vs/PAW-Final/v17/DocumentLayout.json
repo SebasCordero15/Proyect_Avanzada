@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\tablero\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\tablero\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\tablero\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\tablero\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E51EE1E4-CDE8-41FE-A870-1EA658752707}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\proyectdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\_cardcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_cardcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\tablero\\_deletetableropartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\tablero\\_deletetableropartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\tablero\\_form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\tablero\\_form.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\repositories\\tarjetumrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\tableroviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -47,28 +107,8 @@
       "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\viewmodels\\usuarioeditviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\tarjetacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|solutionrelative:paw-final\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\boardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.repository\\repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,10 +121,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\_deletetableropartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_deletetableropartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EC1F5C60-A9AB-42B0-83BB-BC69F2BE5488}|PAW-Final\\PAW.API.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw-final\\controllers\\tablerocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -111,32 +147,12 @@
       "RelativeMoniker": "D:0:0:{86620E3A-C881-4FE3-88AA-362F9FB019E5}|PAW.Repository\\PAW.Repository.csproj|solutionrelative:paw.repository\\interfaces\\irepositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tarjetum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\listum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\listacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8247C843-100A-4207-A10B-5DFA022A8B32}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\tablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\_cardcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_cardcreateform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\gabri\\onedrive\\documents\\github\\proyect_avanzada\\paw-final\\paw-final\\paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6C61725F-68A0-46BE-8875-280E1B8D8397}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\board\\_carditem.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -146,108 +162,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUsuarioBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
-              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
-              "RelativeToolTip": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBEAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T04:16:32.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Index.cshtml",
-              "ViewState": "AgIAAG4BAAAAAAAAAAAYwIABAAAAAAAAAAAAAA==",
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\Create.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Tablero\\Create.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\Create.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T05:39:21.152Z",
+              "WhenOpened": "2025-08-19T01:34:49.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Edit.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Edit.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Edit.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T06:39:08.511Z"
+              "DocumentIndex": 7,
+              "Title": "TarjetaController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TarjetaController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\TarjetaController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TarjetaController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\TarjetaController.cs",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwKEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T20:16:33.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "PAW-Final\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T06:36:10.663Z",
+              "DocumentIndex": 11,
+              "Title": "_DeleteTableroPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\_DeleteTableroPartial.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Tablero\\_DeleteTableroPartial.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\_DeleteTableroPartial.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\_DeleteTableroPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T05:42:12.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAH4AAAAAAAAAAAAgwIcAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T06:37:00.063Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\Index.cshtml",
+              "ViewState": "AgIAAPEAAAAAAAAAAAArwPcAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T05:39:21.152Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioBusiness.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
-              "RelativeDocumentMoniker": "PAW.Business\\UsuarioBusiness.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
-              "RelativeToolTip": "PAW.Business\\UsuarioBusiness.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAkwAYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T06:47:28.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "BoardController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\BoardController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\BoardController.cs",
-              "ViewState": "AgIAAOcAAAAAAAAAAAAwwPgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T20:14:49.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsuarioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
-              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
-              "RelativeToolTip": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T07:10:30.027Z"
             },
             {
               "$type": "Document",
@@ -264,7 +231,235 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_CardCreateForm.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-16T20:52:37.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_CardItem.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-16T20:51:06.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProyectDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\ProyectDbContext.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwGgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T00:25:04.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ListaController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\ListaController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\ListaController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\ListaController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\ListaController.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAAAkwHcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T20:14:33.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Tablero\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\Edit.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAkwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T01:14:33.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BoardController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\BoardController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\BoardController.cs",
+              "ViewState": "AgIAALsAAAAAAAAAAAAgwIwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-16T20:14:49.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IUsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\Interfaces\\IUsuarioBusiness.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA3wBEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T04:16:32.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Tarjetum.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAIA4wBUAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T05:45:20.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Form.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\_Form.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Tablero\\_Form.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Tablero\\_Form.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Tablero\\_Form.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T00:35:51.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UsuarioBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\UsuarioBusiness.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\UsuarioBusiness.cs",
+              "RelativeToolTip": "PAW.Business\\UsuarioBusiness.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwAYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T06:47:28.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TableroController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\TableroController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\TableroController.cs",
+              "ViewState": "AgIAAIMAAAAAAAAAAAAYwJQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T05:50:50.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Program.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
+              "RelativeToolTip": "PAW-Final\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAjwCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T06:13:37.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAIA4wA8AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T05:46:09.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAgwIcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T06:37:00.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TarjetumRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\TarjetumRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-19T00:25:12.779Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "PAW-Final\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "PAW-Final\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T06:36:10.663Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Edit.cshtml",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Account\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Account\\Edit.cshtml",
+              "RelativeToolTip": "PAW.Mvc\\Views\\Account\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T06:39:08.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsuarioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "RelativeToolTip": "PAW.Repository\\Repositories\\UsuarioRepository.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-17T07:10:30.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "TableroViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\TableroViewModel.cs",
               "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\TableroViewModel.cs",
@@ -272,12 +467,11 @@
               "RelativeToolTip": "PAW.Models\\ViewModels\\TableroViewModel.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAA1wAsAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T06:22:32.26Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-17T06:22:32.26Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 22,
               "Title": "IUsuarioRepository.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
               "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IUsuarioRepository.cs",
@@ -289,31 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "TarjetaController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TarjetaController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\TarjetaController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TarjetaController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\TarjetaController.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAowMoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T20:16:33.539Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TableroController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\TableroController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\TableroController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\TableroController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowKkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T05:50:50.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "UsuarioEditViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioEditViewModel.cs",
               "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioEditViewModel.cs",
@@ -325,31 +495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Usuario.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Usuario.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Usuario.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T05:46:09.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
-              "RelativeDocumentMoniker": "PAW-Final\\Program.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Program.cs",
-              "RelativeToolTip": "PAW-Final\\Program.cs",
-              "ViewState": "AgIAAEcAAAAAAAAAAAAEwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T06:13:37.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 26,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\appsettings.json",
               "RelativeDocumentMoniker": "PAW-Final\\appsettings.json",
@@ -361,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 27,
               "Title": "RepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\RepositoryBase.cs",
               "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\RepositoryBase.cs",
@@ -373,7 +519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "UsuarioViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\ViewModels\\UsuarioViewModel.cs",
               "RelativeDocumentMoniker": "PAW.Models\\ViewModels\\UsuarioViewModel.cs",
@@ -385,7 +531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 29,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
@@ -397,7 +543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "TableroBusiness.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\TableroBusiness.cs",
               "RelativeDocumentMoniker": "PAW.Business\\TableroBusiness.cs",
@@ -409,7 +555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "TableroController.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW-Final\\Controllers\\TableroController.cs",
               "RelativeDocumentMoniker": "PAW-Final\\Controllers\\TableroController.cs",
@@ -421,19 +567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "_DeleteTableroPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_DeleteTableroPartial.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_DeleteTableroPartial.cshtml",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_DeleteTableroPartial.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_DeleteTableroPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-17T05:42:12.818Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 32,
               "Title": "ITableroBusiness.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Business\\Interfaces\\ITableroBusiness.cs",
               "RelativeDocumentMoniker": "PAW.Business\\Interfaces\\ITableroBusiness.cs",
@@ -445,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "ITableroRepository.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\ITableroRepository.cs",
               "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\ITableroRepository.cs",
@@ -457,7 +591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "TableroRepository.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Repositories\\TableroRepository.cs",
               "RelativeDocumentMoniker": "PAW.Repository\\Repositories\\TableroRepository.cs",
@@ -469,7 +603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "IRepositoryBase.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Repository\\Interfaces\\IRepositoryBase.cs",
               "RelativeDocumentMoniker": "PAW.Repository\\Interfaces\\IRepositoryBase.cs",
@@ -481,7 +615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 36,
               "Title": "Listum.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Listum.cs",
               "RelativeDocumentMoniker": "PAW.Models\\Entities\\Listum.cs",
@@ -493,31 +627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "Tarjetum.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tarjetum.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tarjetum.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Tarjetum.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA3wAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T05:45:20.647Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Comentario.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Comentario.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Comentario.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Comentario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-17T05:45:57.611Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Tablero.cs",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Models\\Entities\\Tablero.cs",
               "RelativeDocumentMoniker": "PAW.Models\\Entities\\Tablero.cs",
@@ -526,42 +636,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-17T05:45:14.06Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "ListaController.cs",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\ListaController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\ListaController.cs",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Controllers\\ListaController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\ListaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-16T20:14:33.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "_CardCreateForm.cshtml",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_CardCreateForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-16T20:52:37.287Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "_CardItem.cshtml",
-              "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
-              "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documents\\GitHub\\Proyect_Avanzada\\PAW-Final\\PAW-Final\\PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Board\\_CardItem.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-08-16T20:51:06.364Z"
             }
           ]
         }

@@ -42,15 +42,6 @@ namespace PAW.Mvc.Controllers
             public int? UsuarioAsignadoId { get; set; }
         }
 
-        private class ComentarioDto
-        {
-            public int Id { get; set; }
-            public string Contenido { get; set; } = null!;
-            public DateTime FechaCreacion { get; set; }
-            public int TarjetaId { get; set; }
-            public int UsuarioId { get; set; }
-        }
-
         // Detectar si es AJAX/fetch
         private bool IsAjaxRequest() =>
             Request.Headers["X-Requested-With"] == "XMLHttpRequest" ||
@@ -64,7 +55,7 @@ namespace PAW.Mvc.Controllers
             var client = _http.CreateClient("api");
             try
             {
-                // Ahora obtenemos todo el tablero con listas y tarjetas de una sola llamada
+                // Obtenemos tableros con listas y tarjetas en una sola llamada
                 var tablerosDto = await client.GetFromJsonAsync<List<TableroDto>>("api/Tablero") ?? new List<TableroDto>();
 
                 var tablerosVm = tablerosDto.Select(t => new TableroViewModel
@@ -108,7 +99,6 @@ namespace PAW.Mvc.Controllers
         {
             var client = _http.CreateClient("api");
 
-            // Obtenemos tablero completo (listas + tarjetas) en una sola llamada
             var tRes = await client.GetAsync($"api/Tablero/{id}");
             if (!tRes.IsSuccessStatusCode)
             {
@@ -157,25 +147,42 @@ namespace PAW.Mvc.Controllers
             if (string.IsNullOrWhiteSpace(titulo))
             {
                 TempData["Error"] = "El título de la tarjeta es obligatorio.";
-                return RedirectToAction(nameof(Details), new { id = tableroId });
+                return RedirectToAction("Index", "Board");
             }
 
-            var client = _http.CreateClient("api");
-            var payload = new TarjetumDto
+            try
             {
-                Titulo = titulo.Trim(),
-                Descripcion = string.IsNullOrWhiteSpace(descripcion) ? null : descripcion.Trim(),
-                FechaVencimiento = fechaVencimiento,
-                ListaId = listaId,
-                FechaCreacion = DateTime.UtcNow
-            };
+                var client = _http.CreateClient("api");
+                var payload = new TarjetumDto
+                {
+                    Titulo = titulo.Trim(),
+                    Descripcion = string.IsNullOrWhiteSpace(descripcion) ? null : descripcion.Trim(),
+                    FechaVencimiento = fechaVencimiento,
+                    ListaId = listaId,
+                    FechaCreacion = DateTime.UtcNow
+                };
 
-            var res = await client.PostAsJsonAsync("api/Tarjeta", payload);
-            if (!res.IsSuccessStatusCode)
-                TempData["Error"] = "No se pudo crear la tarjeta.";
+                var res = await client.PostAsJsonAsync("api/Tarjeta", payload);
 
-            return RedirectToAction(nameof(Details), new { id = tableroId });
+                if (res.IsSuccessStatusCode)
+                {
+                    TempData["Success"] = "Tarjeta creada correctamente.";
+                }
+                else
+                {
+                    var err = await res.Content.ReadAsStringAsync();
+                    TempData["Error"] = $"No se pudo crear la tarjeta. ({(int)res.StatusCode}) {res.ReasonPhrase}. {err}";
+                }
+            }
+            catch (Exception ex)
+            {
+                TempData["Error"] = $"Error inesperado: {ex.Message}";
+            }
+
+            // 👉 Siempre redirige a Board/Index
+            return RedirectToAction("Index", "Board");
         }
+
 
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -213,49 +220,5 @@ namespace PAW.Mvc.Controllers
 
             return IsAjaxRequest() ? Ok() : RedirectToAction(nameof(Index));
         }
-
-        // =======================
-        // COMENTARIOS
-        // =======================
-        [HttpGet]
-        public async Task<IActionResult> GetComments(int tarjetaId)
-        {
-            var client = _http.CreateClient("api");
-            var res = await client.GetAsync($"api/Comentario/tarjeta/{tarjetaId}");
-            if (!res.IsSuccessStatusCode) return Json(Array.Empty<ComentarioDto>());
-
-            var data = await res.Content.ReadFromJsonAsync<List<ComentarioDto>>() ?? new();
-            return Json(data.OrderByDescending(c => c.FechaCreacion));
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateComment(int tarjetaId, string contenido)
-        {
-            if (string.IsNullOrWhiteSpace(contenido))
-                return BadRequest("El contenido es obligatorio.");
-
-            var client = _http.CreateClient("api");
-            var payload = new ComentarioDto { TarjetaId = tarjetaId, Contenido = contenido.Trim() };
-
-            var res = await client.PostAsJsonAsync("api/Comentario", payload);
-            if (!res.IsSuccessStatusCode)
-                return StatusCode((int)res.StatusCode);
-
-            return Ok();
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteComment(int id)
-        {
-            var client = _http.CreateClient("api");
-            var res = await client.DeleteAsync($"api/Comentario/{id}");
-            if (!res.IsSuccessStatusCode)
-                return StatusCode((int)res.StatusCode);
-
-            return Ok();
-        }
     }
 }
-

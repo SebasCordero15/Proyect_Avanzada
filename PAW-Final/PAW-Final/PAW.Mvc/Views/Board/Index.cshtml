@@ -3,15 +3,18 @@
 @{
     ViewData["Title"] = "Mis Tableros";
 
-    // 🔒 Filtrar solo los tableros del usuario logueado
+    // (Opcional) filtrar por usuario logueado
     var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var tablerosFiltrados = new List<PAW.Models.ViewModels.TableroViewModel>();
-
     if (int.TryParse(userIdStr, out var userId))
     {
         tablerosFiltrados = (Model ?? new List<PAW.Models.ViewModels.TableroViewModel>())
             .Where(t => t.UsuarioId == userId)
             .ToList();
+    }
+    else
+    {
+        tablerosFiltrados = Model ?? new();
     }
 }
 
@@ -59,9 +62,15 @@ else
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="menuTablero-@tablero.Id">
                             <li>
-                                <a class="dropdown-item" asp-controller="Tablero" asp-action="Edit" asp-route-id="@tablero.Id">
+                                <!-- 👉 Un solo modal global, pasamos datos aquí -->
+                                <button type="button"
+                                        class="dropdown-item"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#modalEditTablero"
+                                        data-id="@tablero.Id"
+                                        data-titulo="@tablero.Titulo">
                                     <i class="bi bi-pencil-square me-2"></i>Editar
-                                </a>
+                                </button>
                             </li>
                             <li>
                                 <form asp-controller="Tablero" asp-action="Delete" asp-route-id="@tablero.Id" method="post" class="m-0"
@@ -77,7 +86,6 @@ else
                 </div>
 
                 <div class="lists-wrapper">
-                    <!-- Listas -->
                     @if (tablero.Lista != null && tablero.Lista.Any())
                     {
                         @foreach (var lista in tablero.Lista.OrderBy(l => l.Orden))
@@ -160,27 +168,11 @@ else
                                                         </ul>
                                                     </div>
                                                 </div>
-
-                                                <!-- Comentarios de la tarjeta -->
-                                                <details class="mt-2" id="comments-@tarjeta.Id" onclick="if(this.open){loadComments(@tarjeta.Id);}">
-                                                    <summary class="small text-muted">💬 Comentarios</summary>
-                                                    <div class="comments-box" id="comments-list-@tarjeta.Id">
-                                                        <div class="small text-muted">Cargando comentarios…</div>
-                                                    </div>
-                                                    <form class="row g-2 align-items-center mt-2" onsubmit="return addComment(@tarjeta.Id, this);">
-                                                        <div class="col-9">
-                                                            <input type="text" name="contenido" class="form-control form-control-sm" placeholder="Escribe un comentario…" required />
-                                                        </div>
-                                                        <div class="col-3 text-end">
-                                                            <button type="submit" class="btn btn-sm btn-outline-primary">Agregar</button>
-                                                        </div>
-                                                    </form>
-                                                </details>
                                             </div>
 
-                                            <!-- MODAL EDITAR TARJETA -->
-                                            <div class="modal fade" id="modalEditTarjeta-@tarjeta.Id" tabindex="-1" aria-hidden="true">
-                                                <div class="modal-dialog">
+                                            <!-- MODAL EDITAR TARJETA (puedes mantenerlos o migrar a un modal único igual que con Tablero) -->
+                                            <div class="modal fade" id="modalEditTarjeta-@tarjeta.Id" tabindex="-1" aria-hidden="true" data-bs-focus="false">
+                                                <div class="modal-dialog modal-dialog-centered">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h5 class="modal-title"><i class="bi bi-pencil-square me-2"></i>Editar tarjeta</h5>
@@ -221,6 +213,7 @@ else
                                 <form asp-controller="Tarjeta" asp-action="CreateCard" method="post" class="mt-2">
                                     @Html.AntiForgeryToken()
                                     <input type="hidden" name="listaId" value="@lista.Id" />
+                                    <input type="hidden" name="tableroId" value="@tablero.Id" />
                                     <div class="input-group input-group-sm">
                                         <input name="titulo" class="form-control" placeholder="Nueva tarjeta…" required />
                                         <button class="btn btn-outline-primary" type="submit">Agregar</button>
@@ -256,9 +249,36 @@ else
     </div>
 }
 
+
+<div class="modal fade" id="modalEditTablero" tabindex="-1" aria-hidden="true" data-bs-focus="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><i class="bi bi-pencil-square me-2"></i>Editar tablero</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+
+            <form method="post">
+                @Html.AntiForgeryToken()
+                <input type="hidden" name="Id" value="" />
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Título</label>
+                        <input name="Titulo" class="form-control" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 @section Scripts {
     <script>
-        // Drag & Drop básico
+        // Drag & Drop básico (si lo usas)
         function allowDrop(ev){ ev.preventDefault(); }
         function drag(ev){ ev.dataTransfer.setData("text", ev.target.id); }
         async function drop(ev){
@@ -268,61 +288,76 @@ else
             const targetList = ev.currentTarget.closest("[data-lista]");
             if(!el || !targetList) return;
             targetList.querySelector(".cards-container").appendChild(el);
-
-            // Llamada para mover tarjeta
-            const id = parseInt(cardId.replace("card-",""));
-            const nuevaListaId = parseInt(targetList.getAttribute("data-lista"));
-            try {
-                const form = document.createElement('form');
-                form.method = 'post';
-                form.action = `/Tarjeta/MoveCard?id=${id}&nuevaListaId=${nuevaListaId}`;
-
-                const tokenInput = document.createElement('input');
-                tokenInput.type = 'hidden';
-                tokenInput.name = '__RequestVerificationToken';
-                tokenInput.value = document.querySelector('input[name="__RequestVerificationToken"]').value;
-                form.appendChild(tokenInput);
-
-                document.body.appendChild(form);
-                form.submit();
-            } catch (e) {
-                console.error(e);
-                alert('No se pudo mover la tarjeta.');
-            }
+            // Aquí podrías llamar a tu endpoint MoveCard si lo deseas.
         }
 
-        // Comentarios (placeholders)
-        function loadComments(cardId){
-            const box = document.getElementById(`comments-list-${cardId}`);
-            if(!box) return;
-            box.innerHTML = `<div class="small text-muted">Sin comentarios aún.</div>`;
-        }
-        function addComment(cardId, form){
-            const input = form.querySelector('[name="contenido"]');
-            if(!input || !input.value.trim()) return false;
-            const list = document.getElementById(`comments-list-${cardId}`);
-            const item = document.createElement('div');
-            item.className = 'comment-item';
-            item.textContent = input.value.trim();
-            list.prepend(item);
-            input.value = '';
-            return false;
+        // Modal global: poblar y apuntar al endpoint correcto
+        const modal = document.getElementById('modalEditTablero');
+        if (modal) {
+          modal.addEventListener('show.bs.modal', (ev) => {
+            const btn = ev.relatedTarget;
+            const id = btn?.getAttribute('data-id');
+            const titulo = btn?.getAttribute('data-titulo') ?? '';
+
+            modal.querySelector('input[name="Id"]').value = id || '';
+            modal.querySelector('input[name="Titulo"]').value = titulo;
+
+            const form = modal.querySelector('form');
+            form.action = `/Tablero/Edit/${id}`; // ← tu acción POST de edición
+          });
         }
     </script>
 }
 
 <style>
+    /* —— CSS clave para evitar parpadeo —— */
+    /* 1) No mover el board cuando el modal esté abierto */
+    body.modal-open .board:hover {
+        transform: none !important;
+    }
+
+    /* 2) Dropdown/Modal por encima de todo y sin recortes */
+    .dropdown-menu {
+        z-index: 1065;
+    }
+
+    .board, .lists-wrapper, .list-column, .cards-container {
+        overflow: visible;
+    }
+
+    /* —— Estilos bonitos (puedes mantener los que ya tenías) —— */
+    :root {
+        --bg: #f6f7fb;
+        --card: #ffffff;
+        --border: #e6e9ef;
+        --text: #111827;
+        --muted: #6b7280;
+        --primary: #2563eb;
+        --primary-600: #1d4ed8;
+        --success: #16a34a;
+        --danger: #dc2626;
+        --shadow-sm: 0 1px 2px rgba(16,24,40,.06), 0 1px 1px rgba(16,24,40,.03);
+        --shadow-md: 0 10px 15px rgba(17,24,39,.08), 0 4px 6px rgba(17,24,39,.06);
+    }
+
     .board-container {
         display: grid;
         gap: 1.5rem;
     }
 
     .board {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 10px;
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
         padding: 1rem;
+        box-shadow: var(--shadow-sm);
+        transition: box-shadow .2s ease, transform .12s ease;
+        position: relative;
     }
+
+        .board:hover {
+            box-shadow: var(--shadow-md); /* sin transform para no sacudir */
+        }
 
     .board-header {
         margin-bottom: .75rem;
@@ -330,55 +365,103 @@ else
 
     .lists-wrapper {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 1rem;
         align-items: start;
     }
 
     .list-column {
         background: #f8fafc;
-        border: 1px solid #e5e7eb;
-        border-radius: 10px;
-        padding: .75rem;
-        min-height: 120px;
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: .8rem;
+        min-height: 140px;
+        transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+        overflow: visible;
     }
+
+        .list-column:hover {
+            border-color: #dbe2ea;
+            box-shadow: var(--shadow-sm);
+        }
 
     .list-header {
-        margin-bottom: .5rem;
+        margin-bottom: .6rem;
+        padding-bottom: .35rem;
+        border-bottom: 1px dashed #e5e7eb;
     }
 
-    .cards-container .card-item {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 8px;
-        padding: .6rem .6rem .5rem;
-        margin-bottom: .5rem;
+    .cards-container {
+        overflow: visible;
+    }
+
+    .card-item {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: .75rem;
+        margin-bottom: .6rem;
         cursor: grab;
+        transition: border-color .2s, box-shadow .2s, transform .12s, background .2s;
+        box-shadow: var(--shadow-sm);
     }
 
-        .cards-container .card-item:active {
+        .card-item:hover {
+            border-color: #dbe2ea;
+            box-shadow: var(--shadow-md);
+        }
+
+        .card-item:active {
             cursor: grabbing;
         }
 
+    .badge.bg-light.text-dark.border.small {
+        background: #f1f5f9 !important;
+        border-color: #e5e7eb !important;
+        color: #0f172a !important;
+        font-weight: 500;
+    }
+
+    .btn.btn-sm.btn-light {
+        background: #f8fafc;
+        border: 1px solid var(--border);
+        transition: background .15s ease, border-color .15s ease;
+    }
+
+        .btn.btn-sm.btn-light:hover {
+            background: #f3f4f6;
+            border-color: #dbe2ea;
+        }
+
+    .dropdown-menu {
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-md);
+        overflow: hidden;
+        padding: .4rem 0;
+        inset: auto !important;
+        transform: translateZ(0);
+    }
+
+    .input-group.input-group-sm .form-control {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .input-group.input-group-sm .btn {
+        border-radius: 0 10px 10px 0;
+    }
+
     .add-list {
         background: #f1f5f9;
-        border-style: dashed;
+        border: 1px dashed #cfd8e3;
+        border-radius: 14px;
         display: flex;
         align-items: center;
+        transition: background .2s ease, border-color .2s ease;
     }
 
-    .comments-box {
-        background: #f3f4f6;
-        border-radius: 8px;
-        padding: .5rem;
-        margin-top: .25rem;
-    }
-
-    .comment-item {
-        background: #fff;
-        border: 1px solid #e5e7eb;
-        border-radius: 6px;
-        padding: .4rem .6rem;
-        margin: .35rem 0;
-    }
+        .add-list:hover {
+            background: #eef2f7;
+            border-color: #b9c5d6;
+        }
 </style>
