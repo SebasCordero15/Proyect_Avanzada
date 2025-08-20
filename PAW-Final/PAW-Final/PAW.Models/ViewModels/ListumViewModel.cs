@@ -19,7 +19,7 @@ namespace PAW.Models.ViewModels
         [Display(Name = "ID del tablero")]
         public int TableroId { get; set; }
 
-        // Propiedad auxiliar
+  
         [Display(Name = "Título del tablero")]
         public string? TituloTablero { get; set; }
 

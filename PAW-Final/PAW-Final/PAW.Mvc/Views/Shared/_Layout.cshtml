@@ -1,5 +1,5 @@
 ﻿@{
-    // Para que al iniciar sesión regreses a la página actual
+
     var returnUrl = Context?.Request?.Path + Context?.Request?.QueryString;
 }
 <!DOCTYPE html>
@@ -14,11 +14,11 @@
     <link rel="stylesheet" href="~/PAW.Mvc.styles.css" asp-append-version="true" />
 
     <style>
-        /* Navbar celeste claro con excelente contraste para el texto */
+ 
         .navbar-sky {
             background: linear-gradient(180deg, #eaf3ff 0%, #dff0ff 100%);
             border-bottom: 1px solid rgba(13, 110, 253, .12);
-            /* Colores de Bootstrap Navbar (BS5) */
+     
             --bs-navbar-color: #0b335b;
             --bs-navbar-hover-color: #0a58ca;
             --bs-navbar-active-color: #0a58ca;
@@ -36,13 +36,13 @@
                 border: 1px solid rgba(0,0,0,.06);
             }
 
-        /* Contenedor principal con respiro */
+   
         main {
             padding-top: .25rem;
             padding-bottom: 2rem;
         }
 
-        /* Footer sutil */
+
         .app-footer {
             border-top: 1px solid rgba(0,0,0,.06);
             color: var(--bs-secondary-color);

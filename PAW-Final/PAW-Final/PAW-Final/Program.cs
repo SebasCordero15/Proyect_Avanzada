@@ -39,21 +39,21 @@ builder.Services.AddScoped<ITarjetumBusiness, TarjetumBusiness>();
 
 
 
-// 🔓 CORS DEV (agrega aquí los orígenes que te llaman: Swagger, tu MVC, etc.)
+
 const string CorsDev = "CorsDev";
 builder.Services.AddCors(opt =>
 {
     opt.AddPolicy(CorsDev, p =>
     {
         p.WithOrigins(
-             "https://localhost:7218", // Swagger de esta API (si aplica)
+             "https://localhost:7218", 
              "http://localhost:7218",
-             "https://localhost:7151", // tu MVC (ajusta)
+             "https://localhost:7151", 
              "http://localhost:5000"
           )
          .AllowAnyHeader()
          .AllowAnyMethod();
-        // Nota: NO uses AllowCredentials con AllowAnyOrigin
+        
     });
 });
 
@@ -67,14 +67,14 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-// 👇 ¡CORS debe ir antes de MapControllers!
+
 app.UseCors(CorsDev);
 
 app.UseAuthorization();
 
 app.MapControllers();
 
-// Endpoint de salud rápido (opcional)
+
 app.MapGet("/ping", () => Results.Ok("pong"));
 
 app.Run();

@@ -28,7 +28,7 @@ namespace PAW.Models.ViewModels
         [Display(Name = "Usuario asignado")]
         public int? UsuarioAsignadoId { get; set; }
 
-        // Propiedades auxiliares
+
         [Display(Name = "Título de la lista")]
         public string? TituloLista { get; set; }
 

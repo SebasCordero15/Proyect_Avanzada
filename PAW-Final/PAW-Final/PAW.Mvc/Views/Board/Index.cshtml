@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "Mis Tableros";
 
-    // (Opcional) filtrar por usuario logueado
+ 
     var userIdStr = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
     var tablerosFiltrados = new List<PAW.Models.ViewModels.TableroViewModel>();
     if (int.TryParse(userIdStr, out var userId))
@@ -278,7 +278,7 @@ else
 
 @section Scripts {
     <script>
-        // Drag & Drop básico (si lo usas)
+  
         function allowDrop(ev){ ev.preventDefault(); }
         function drag(ev){ ev.dataTransfer.setData("text", ev.target.id); }
         async function drop(ev){
@@ -288,10 +288,10 @@ else
             const targetList = ev.currentTarget.closest("[data-lista]");
             if(!el || !targetList) return;
             targetList.querySelector(".cards-container").appendChild(el);
-            // Aquí podrías llamar a tu endpoint MoveCard si lo deseas.
+  
         }
 
-        // Modal global: poblar y apuntar al endpoint correcto
+ 
         const modal = document.getElementById('modalEditTablero');
         if (modal) {
           modal.addEventListener('show.bs.modal', (ev) => {
@@ -303,7 +303,7 @@ else
             modal.querySelector('input[name="Titulo"]').value = titulo;
 
             const form = modal.querySelector('form');
-            form.action = `/Tablero/Edit/${id}`; // ← tu acción POST de edición
+            form.action = `/Tablero/Edit/${id}`; 
           });
         }
     </script>

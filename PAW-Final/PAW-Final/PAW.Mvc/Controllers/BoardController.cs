@@ -12,7 +12,7 @@ namespace PAW.Mvc.Controllers
 
         public BoardController(IHttpClientFactory http) => _http = http;
 
-        // DTOs privados
+
         private class TableroDto
         {
             public int Id { get; set; }
@@ -42,7 +42,7 @@ namespace PAW.Mvc.Controllers
             public int? UsuarioAsignadoId { get; set; }
         }
 
-        // Detectar si es AJAX/fetch
+
         private bool IsAjaxRequest() =>
             Request.Headers["X-Requested-With"] == "XMLHttpRequest" ||
             Request.Headers["Accept"].ToString().Contains("application/json", StringComparison.OrdinalIgnoreCase);

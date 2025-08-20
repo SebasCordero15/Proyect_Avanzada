@@ -81,7 +81,7 @@ namespace PAW.Web.ApiControllers
 
             await _tarjetumBusiness.Crear(tarjeta);
 
-            // Retornamos CreatedAt con la ruta para obtener la tarjeta creada
+    
             return CreatedAtAction(nameof(GetById), new { id = tarjeta.Id }, model);
         }
 

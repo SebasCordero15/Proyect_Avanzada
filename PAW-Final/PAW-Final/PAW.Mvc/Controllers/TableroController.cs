@@ -46,7 +46,7 @@ namespace PAW.Mvc.Controllers
 
             try
             {
-                // Mapear VM → entidad
+    
                 var tablero = new Tablero
                 {
                     Titulo = vm.Titulo,
@@ -65,7 +65,7 @@ namespace PAW.Mvc.Controllers
                     return View(vm);
                 }
 
-                // → Ir a Board/Index
+      
                 TempData["Success"] = "Tablero creado correctamente.";
                 return RedirectToAction("Index", "Board");
             }
@@ -111,7 +111,7 @@ namespace PAW.Mvc.Controllers
                     return View(vm);
                 }
 
-                // Puedes dejarlo aquí o también enviar a Board/Index si prefieres
+       
                 TempData["Success"] = "Tablero actualizado correctamente.";
                 return RedirectToAction(nameof(Index));
             }
@@ -122,9 +122,7 @@ namespace PAW.Mvc.Controllers
             }
         }
 
-        // ❌ Eliminado el GET: Tablero/Delete (ya no usamos partials ni modales)
 
-        // ✅ POST directo: Tablero/Delete
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete(int id)
@@ -141,7 +139,7 @@ namespace PAW.Mvc.Controllers
                 TempData["Success"] = "Tablero eliminado.";
             }
 
-            // → Siempre llevar a Board/Index
+ 
             return RedirectToAction("Index", "Board");
         }
     }

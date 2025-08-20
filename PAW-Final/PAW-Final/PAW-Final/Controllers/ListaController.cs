@@ -74,22 +74,22 @@ namespace PAW.API.Controllers
 
             try
             {
-                // Obtener la entidad existente rastreada por EF
+  
                 var existente = await _listumBusiness.ObtenerPorId(id);
                 if (existente == null)
                     return NotFound($"No se encontró la lista con ID {id}.");
 
-                // Actualizar solo la propiedad necesaria
+       
                 existente.Titulo = listaActualizada.Titulo.Trim();
 
-                // Guardar cambios
+          
                 await _listumBusiness.Actualizar(existente);
 
                 return NoContent();
             }
             catch (Exception ex)
             {
-                // Retornar detalle completo del error para depuración
+     
                 return StatusCode(500, $"Error inesperado: {ex.Message}\n{ex.StackTrace}");
             }
         }

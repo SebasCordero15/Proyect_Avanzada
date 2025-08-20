@@ -30,7 +30,7 @@ namespace PAW.Mvc.Controllers
             {
                 var client = _httpClientFactory.CreateClient("api");
 
-                // 1️⃣ Obtener listas actuales para calcular el orden
+          
                 var listasResponse = await client.GetAsync($"api/Lista/tablero/{tableroId}");
                 int nuevoOrden = 1;
 
@@ -41,7 +41,6 @@ namespace PAW.Mvc.Controllers
                         nuevoOrden = listas.Max(l => l.Orden) + 1;
                 }
 
-                // 2️⃣ Mapear a la entidad que espera la API
                 var nuevaListaEntidad = new Listum
                 {
                     Titulo = titulo.Trim(),
@@ -51,12 +50,12 @@ namespace PAW.Mvc.Controllers
                     Tablero = null
                 };
 
-                // 3️⃣ Enviar al API
+         
                 var response = await client.PostAsJsonAsync("api/Lista", nuevaListaEntidad);
 
                 if (!response.IsSuccessStatusCode)
                 {
-                    // Leer el contenido de error devuelto por el API
+            
                     var errorContent = await response.Content.ReadAsStringAsync();
                     TempData["Error"] = $"No se pudo crear la lista. Status: {(int)response.StatusCode} - {response.ReasonPhrase}. Detalle: {errorContent}";
                 }
@@ -74,7 +73,7 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = $"Error inesperado: {ex.Message}";
             }
 
-            // 🔄 Redirigir al Index de Board
+
             return RedirectToAction("Index", "Board");
         }
 
@@ -92,7 +91,6 @@ namespace PAW.Mvc.Controllers
             {
                 var client = _httpClientFactory.CreateClient("api");
 
-                // Primero obtenemos la lista existente
                 var getResponse = await client.GetAsync($"api/Lista/{id}");
                 if (!getResponse.IsSuccessStatusCode)
                 {
@@ -107,10 +105,10 @@ namespace PAW.Mvc.Controllers
                     return RedirectToAction("Index", "Board");
                 }
 
-                // Cambiamos solo el título
+     
                 listaExistente.Titulo = titulo.Trim();
 
-                // Enviamos la actualización completa
+  
                 var putResponse = await client.PutAsJsonAsync($"api/Lista/{id}", listaExistente);
                 if (!putResponse.IsSuccessStatusCode)
                 {
@@ -143,7 +141,7 @@ namespace PAW.Mvc.Controllers
             if (!res.IsSuccessStatusCode)
                 TempData["Error"] = "No se pudo eliminar la lista.";
 
-            // Redirige siempre al Index de Board
+
             return RedirectToAction("Index", "Board");
         }
 

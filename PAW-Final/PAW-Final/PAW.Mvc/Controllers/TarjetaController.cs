@@ -51,7 +51,7 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = $"Error inesperado: {ex.Message}";
             }
 
-            // 👉 siempre a Board/Index
+       
             return RedirectToAction("Index", "Board");
         }
 
@@ -69,7 +69,7 @@ namespace PAW.Mvc.Controllers
             {
                 var client = _http.CreateClient("api");
 
-                // Traer la tarjeta actual (para mantener campos no editables)
+           
                 var get = await client.GetAsync($"api/Tarjeta/{id}");
                 if (!get.IsSuccessStatusCode)
                 {
@@ -102,7 +102,7 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = $"Error inesperado: {ex.Message}";
             }
 
-            // 👉 siempre a Board/Index
+       
             return RedirectToAction("Index", "Board");
         }
 
@@ -128,7 +128,6 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = $"Error inesperado: {ex.Message}";
             }
 
-            // 👉 siempre a Board/Index
             return RedirectToAction("Index", "Board");
         }
 
@@ -154,7 +153,7 @@ namespace PAW.Mvc.Controllers
                 TempData["Error"] = $"Error inesperado: {ex.Message}";
             }
 
-            // 👉 siempre a Board/Index
+ 
             return RedirectToAction("Index", "Board");
         }
     }

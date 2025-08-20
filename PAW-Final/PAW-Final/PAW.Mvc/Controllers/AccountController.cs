@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using PAW.Models.ViewModels;
 using System.Net.Http.Json;
 using System.Security.Claims;
+using PAW.API.Utils;
 
 namespace PAW.Mvc.Controllers
 {
@@ -32,18 +33,19 @@ namespace PAW.Mvc.Controllers
                 var usuario = await client.GetFromJsonAsync<UsuarioViewModel>(
                     $"api/usuario/correo/{Uri.EscapeDataString(vm.Correo)}");
 
-                if (usuario is null || usuario.Clave != vm.Clave)
+                // 🔑 Validación con helper
+                if (usuario is null || !PasswordHelper.VerifyPassword(usuario.Clave, vm.Clave))
                 {
                     ModelState.AddModelError(string.Empty, "Credenciales inválidas.");
                     return View(vm);
                 }
 
                 var claims = new List<Claim>
-                {
-                    new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Name, usuario.Nombre),
-                    new Claim(ClaimTypes.Email, usuario.Correo)
-                };
+        {
+            new Claim(ClaimTypes.NameIdentifier, usuario.Id.ToString()),
+            new Claim(ClaimTypes.Name, usuario.Nombre),
+            new Claim(ClaimTypes.Email, usuario.Correo)
+        };
 
                 var claimsIdentity = new ClaimsIdentity(
                     claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -137,14 +139,14 @@ namespace PAW.Mvc.Controllers
         {
             if (!ModelState.IsValid) return View(vm);
 
-            // Id desde el claim (seguro)
+    
             var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (string.IsNullOrWhiteSpace(userIdClaim)) return RedirectToAction("Login");
             if (!int.TryParse(userIdClaim, out var userId)) return RedirectToAction("Login");
 
             var client = _http.CreateClient("api");
 
-            // Cargar usuario actual desde el API para rescatar Clave
+     
             var actual = await client.GetFromJsonAsync<UsuarioViewModel>($"api/usuario/{userId}");
             if (actual == null)
             {
@@ -152,7 +154,6 @@ namespace PAW.Mvc.Controllers
                 return View(vm);
             }
 
-            // Construir DTO completo para el PUT
             var dto = new UsuarioViewModel
             {
                 Id = userId, // Forzar coincidencia con la ruta
@@ -161,11 +162,11 @@ namespace PAW.Mvc.Controllers
                 Clave = actual.Clave // mantener la clave actual
             };
 
-            // Log en consola de Visual Studio
+          
             System.Diagnostics.Debug.WriteLine(
                 $"[PUT Usuario] RutaId={userId}, Body={{ Id={dto.Id}, Nombre='{dto.Nombre}', Correo='{dto.Correo}', Clave={(string.IsNullOrEmpty(dto.Clave) ? "VACÍA" : "***")} }}");
 
-            // Ejecutar PUT
+       
             var res = await client.PutAsJsonAsync($"api/usuario/{userId}", dto);
 
             if (!res.IsSuccessStatusCode)
@@ -181,7 +182,6 @@ namespace PAW.Mvc.Controllers
                 return View(vm);
             }
 
-            // Refrescar claims con los datos actualizados
             var claims = new List<Claim>
     {
         new Claim(ClaimTypes.NameIdentifier, userId.ToString()),

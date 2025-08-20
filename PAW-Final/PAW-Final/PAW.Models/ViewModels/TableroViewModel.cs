@@ -19,11 +19,11 @@ namespace PAW.Models.ViewModels
         [Display(Name = "ID del usuario")]
         public int UsuarioId { get; set; }
 
-        // Propiedad auxiliar
+      
         [Display(Name = "Nombre del usuario")]
         public string? NombreUsuario { get; set; }
 
-        // ✅ Aquí agregamos la lista de listas del tablero
+   
         public List<ListumViewModel> Lista { get; set; } = new();
     }
 }

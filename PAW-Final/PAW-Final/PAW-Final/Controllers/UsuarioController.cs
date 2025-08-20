@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PAW.API.Utils;
 using PAW.Business.Interfaces;
 using PAW.Models.Entities;
 
@@ -49,9 +50,12 @@ namespace PAW.API.Controllers
         [HttpPost]
         public async Task<ActionResult> CrearUsuario([FromBody] Usuario nuevoUsuario)
         {
+            nuevoUsuario.Clave = PasswordHelper.HashPassword(nuevoUsuario.Clave);
             await _usuarioBusiness.Crear(nuevoUsuario);
+
             return CreatedAtAction(nameof(GetUsuario), new { id = nuevoUsuario.Id }, nuevoUsuario);
         }
+
 
         // PUT: api/usuario/5
         [HttpPut("{id}")]

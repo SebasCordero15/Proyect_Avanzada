@@ -44,7 +44,7 @@ namespace PAW.Data.MSSql
                       .HasColumnType("datetime")
                       .HasDefaultValueSql("(getdate())");
 
-                // Tablero -> Usuario (creador). No cascada al eliminar usuario.
+      
                 entity.HasOne(d => d.Usuario)
                       .WithMany(p => p.Tableros)
                       .HasForeignKey(d => d.UsuarioId)
@@ -81,14 +81,14 @@ namespace PAW.Data.MSSql
                 entity.Property(e => e.FechaVencimiento)
                       .HasColumnType("datetime");
 
-                // ✅ Cascada: al borrar una Lista se borran sus Tarjetas
+
                 entity.HasOne(d => d.Lista)
                       .WithMany(p => p.Tarjeta)
                       .HasForeignKey(d => d.ListaId)
                       .OnDelete(DeleteBehavior.Cascade)
                       .HasConstraintName("FK_Tarjeta_Lista");
 
-                // Si borran al usuario asignado, la tarjeta queda sin asignación
+       
                 entity.HasOne(d => d.UsuarioAsignado)
                       .WithMany(p => p.Tarjeta)
                       .HasForeignKey(d => d.UsuarioAsignadoId)
